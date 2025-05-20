@@ -1,0 +1,24 @@
+#-----------------------------------------------------------
+# Vivado v2024.1 (64-bit)
+# SW Build 5076996 on Wed May 22 18:36:09 MDT 2024
+# IP Build 5075265 on Wed May 22 21:45:21 MDT 2024
+# SharedData Build 5076995 on Wed May 22 18:29:18 MDT 2024
+# Start of session at: Thu Oct 10 02:08:17 2024
+# Process ID: 48312
+# Current directory: /home/gorruy/zynq_test/zynq_test.runs/system_processing_system7_0_0_synth_1
+# Command line: vivado -log system_processing_system7_0_0.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source system_processing_system7_0_0.tcl
+# Log file: /home/gorruy/zynq_test/zynq_test.runs/system_processing_system7_0_0_synth_1/system_processing_system7_0_0.vds
+# Journal file: /home/gorruy/zynq_test/zynq_test.runs/system_processing_system7_0_0_synth_1/vivado.jou
+# Running On        :gorruy-TUF-Gaming-FX705DY-FX705DY
+# Platform          :Ubuntu
+# Operating System  :Ubuntu 22.04.5 LTS
+# Processor Detail  :AMD Ryzen 5 3550H with Radeon Vega Mobile Gfx
+# CPU Frequency     :3667.881 MHz
+# CPU Physical cores:4
+# CPU Logical cores :8
+# Host memory       :8124 MB
+# Swap memory       :2147 MB
+# Total Virtual     :10271 MB
+# Available Virtual :2013 MB
+#-----------------------------------------------------------
+source system_processing_system7_0_0.tcl -notrace
