@@ -1,8 +1,8 @@
 module matrix_block_mul_tb;
 
   // Parameters
-  localparam WIDTH   = 8;
-  localparam LENGTH  = 8;
+  localparam WIDTH   = 2;
+  localparam LENGTH  = 2;
   localparam DIG_MAX = 32;
   localparam CLK_PERIOD = 10; // Clock period in ns
 
@@ -13,6 +13,7 @@ module matrix_block_mul_tb;
   logic [DIG_MAX-1:0]    a_matrix[WIDTH-1:0][LENGTH-1:0];
   logic [DIG_MAX-1:0]    b_matrix[WIDTH-1:0][LENGTH-1:0];
   logic [DIG_MAX-1:0]    c_matrix[WIDTH-1:0][LENGTH-1:0];
+  logic [$clog2(WIDTH) - 1:0] done;
 
   // Expected result for verification
   logic [DIG_MAX-1:0]    expected_c_matrix[WIDTH-1:0][LENGTH-1:0];
@@ -31,7 +32,8 @@ module matrix_block_mul_tb;
     .start_i  ( start_i  ),
     .a_matrix ( a_matrix ),
     .b_matrix ( b_matrix ),
-    .c_matrix ( c_matrix )
+    .c_matrix ( c_matrix ),
+    .done_o   ( done     )
   );
 
   // Clock generation
@@ -77,7 +79,7 @@ module matrix_block_mul_tb;
     start_i = 0;
 
     // Wait for the computation to complete (WIDTH cycles)
-    #(CLK_PERIOD * WIDTH);
+    wait ( done === 1'b1 );
 
     // Check results
     $display("Test Case 1: 2x2 Matrix Multiplication");
@@ -122,7 +124,7 @@ module matrix_block_mul_tb;
     start_i = 0;
 
     // Wait for completion
-    #(CLK_PERIOD * WIDTH);
+    wait ( done === 1'b1 );
 
     // Check results
     $display("\nTest Case 2: Identity Matrix Multiplication");
