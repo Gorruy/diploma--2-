@@ -1,11 +1,8 @@
-`timescale 1 ns / 1 ps
-
-module matrix_mul #
+module acc_top #
 (
   // AXI SPECIFIC
   parameter integer C_S00_AXIS_TDATA_WIDTH	= 32
-)
-(
+) (
   // AXI SPECIFIC
   input wire  s00_axis_aclk,
   input wire  s00_axis_aresetn,

@@ -1,5 +1,3 @@
-`timescale 1ns / 1ps
-
 module matrix_block_mul_tb;
 
   // Parameters
@@ -9,7 +7,7 @@ module matrix_block_mul_tb;
   localparam CLK_PERIOD = 10; // Clock period in ns
 
   // Testbench signals
-  logic                  clk_i;
+  bit                    clk;
   logic                  srst_i;
   logic                  start_i;
   logic [DIG_MAX-1:0]    a_matrix[WIDTH-1:0][LENGTH-1:0];
@@ -19,39 +17,42 @@ module matrix_block_mul_tb;
   // Expected result for verification
   logic [DIG_MAX-1:0]    expected_c_matrix[WIDTH-1:0][LENGTH-1:0];
 
+  default clocking cb @( posedge clk );
+  endclocking
+
   // Instantiate the DUT (Device Under Test)
   matrix_block_mul #(
-    .WIDTH(WIDTH),
-    .LENGTH(LENGTH),
-    .DIG_MAX(DIG_MAX)
-  ) dut (
-    .clk_i(clk_i),
-    .srst_i(srst_i),
-    .start_i(start_i),
-    .a_matrix(a_matrix),
-    .b_matrix(b_matrix),
-    .c_matrix(c_matrix)
+    .WIDTH   ( WIDTH     ),
+    .LENGTH  ( LENGTH    ),
+    .DIG_MAX ( DIG_MAX   )
+  ) DUT (
+    .clk_i    ( clk      ),
+    .srst_i   ( srst_i   ),
+    .start_i  ( start_i  ),
+    .a_matrix ( a_matrix ),
+    .b_matrix ( b_matrix ),
+    .c_matrix ( c_matrix )
   );
 
   // Clock generation
   initial begin
-    clk_i = 0;
-    forever #(CLK_PERIOD/2) clk_i = ~clk_i;
+    clk = 1'b0;
+    forever #(CLK_PERIOD/2) clk = !clk;
   end
 
   // Test procedure
   initial begin
     // Initialize signals
-    srst_i = 0;
-    start_i = 0;
-    a_matrix = '{default:0};
-    b_matrix = '{default:0};
-    expected_c_matrix = '{default:0};
+    srst_i = 1'b0;
+    start_i = 1'b0;
+    a_matrix = '{default: '0};
+    b_matrix = '{default: '0};
+    expected_c_matrix = '{default: '0};
 
     // Reset the module
-    srst_i = 1;
+    srst_i = 1'b1;
     #(CLK_PERIOD * 2);
-    srst_i = 0;
+    srst_i = 1'b0;
     #(CLK_PERIOD);
 
     // Test Case 1: 2x2 matrices for simplicity (subset of 8x8)
@@ -137,7 +138,7 @@ module matrix_block_mul_tb;
 
     // End simulation
     #(CLK_PERIOD * 2);
-    $finish;
+    $stop();
   end
 
 endmodule
