@@ -1,4 +1,3 @@
-
 `timescale 1 ns / 1 ps
 
 	module s_axi_slv #
@@ -161,6 +160,7 @@
 	endgenerate
 
 	// Add user logic here
+
 
 	// User logic ends
 
