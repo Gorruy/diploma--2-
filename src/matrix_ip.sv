@@ -11,7 +11,7 @@ module matrix_ip (
   output logic done_o
 );
   loclaparam MAT_NUM = MAX_WIDTH / MIN_WIDTH;
-
+  localparam SHIFT_S = $clog2(MAT_NUM);
   localparam DIG_MAX = 32;
 
   logic [DIG_MAX - 1:0] a_matrix   [MAX_WIDTH - 1:0][MAX_LENGTH - 1:0];
@@ -21,6 +21,11 @@ module matrix_ip (
   logic [DIG_MAX - 1:0] inter_matr [MAT_NUM:0][MIN_WIDTH - 1:0][MIN_LENGTH - 1:0];
   logic [DIG_MAX - 1:0] current_am [MAT_NUM:0][MIN_WIDTH - 1:0][MIN_LENGTH - 1:0];
   logic [DIG_MAX - 1:0] current_bm [MAT_NUM:0][MIN_WIDTH - 1:0][MIN_LENGTH - 1:0];
+
+  logic [SHIFT_S - 1:0] xshift;
+  logic [SHIFT_S - 1:0] yshift;
+
+  logic                 run;
 
   genvar i;
 
@@ -40,6 +45,37 @@ module matrix_ip (
         );
       end
   endgenerate
+
+
+  always_ff @( posedge clk_i )
+    begin
+      if ( srst_i )
+        begin
+          xshift <= '0;
+          yshift <= '0;
+        end
+      else if ( run )
+        begin
+          if ( xshift == (SHIFT_S)'(MAT_NUM - 1) )
+            begin
+              xshift <= '0;
+              yshift <= yshift + (SHIFT_S)'(1);
+            end
+          else
+            xshift <= xshift + (SHIFT_S)'(1);
+        end
+    end
+
+  always_comb
+    begin
+      current_am = a_matrix[0 + MIN_WIDTH * xshift:+MIN_WIDTH][0 + MIN_LENGTH * yshift:+MIN_LENGTH];
+      current_bm = b_matrix[0 + MIN_LENGTH * yshift:+MIN_LENGTH][0 + MIN_WIDTH * xshift:+MIN_WIDTH];
+    end
+
+  always_ff @( posedge clk_i )
+    begin
+
+    end
 
 
 
