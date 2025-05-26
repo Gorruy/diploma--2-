@@ -1,0 +1,536 @@
+/*
+
+AMD Vivado v2024.2.2 (64-bit) [Major: 2024, Minor: 2]
+SW Build: 6060944 on Thu Mar 06 19:10:09 MST 2025
+IP Build: 6050500 on Thu Mar  6 23:33:39 MST 2025
+IP Build: 6050500 on Thu Mar  6 23:33:39 MST 2025
+
+Process ID (PID): 4419
+License: Customer
+Mode: GUI Mode
+
+Current time: 	Sun May 25 16:40:07 MSK 2025
+Time zone: 	Moscow Standard Time (Europe/Moscow)
+
+OS: Ubuntu
+OS Version: 6.8.0-59-generic
+OS Architecture: amd64
+Available processors (cores): 8
+LSB Release Description: DISTRIB_ID=Ubuntu
+
+Display: 0
+Screen size: 1920x1080
+Local screen bounds: x = 70, y = 27, width = 1850, height = 1053
+Screen resolution (DPI): 100
+Available screens: 1
+Default font: family=Dialog,name=Dialog,style=plain,size=12
+Scale size: 12
+OS font scaling: 100%
+Anti-Alias Enabled: false
+
+Java version: 	21.0.1 64-bit
+
+Java home: 	/mnt/big_chungus/vivado_/Vivado/2024.2/tps/lnx64/jre21.0.1_12
+Java executable: 	/mnt/big_chungus/vivado_/Vivado/2024.2/tps/lnx64/jre21.0.1_12/bin/java
+Java arguments: 	[-Dsun.java2d.pmoffscreen=false, -Dhttps.protocols=TLSv1,TLSv1.1,TLSv1.2, -Dsun.java2d.xrender=false, -Dsun.java2d.uiScale.enabled=false, -Dswing.aatext=true, -XX:-UsePerfData, -Djdk.map.althashing.threshold=512, -XX:StringTableSize=4072, -XX:+UseStringDeduplication, -XX:MaxGCPauseMillis=200, -XX:ParallelGCThreads=4, -XX:+ParallelRefProcEnabled, --add-opens=java.desktop/javax.swing.plaf.synth=ALL-UNNAMED, --add-opens=java.base/java.nio=ALL-UNNAMED, --add-opens=java.desktop/sun.swing=ALL-UNNAMED, --add-opens=java.desktop/javax.swing=ALL-UNNAMED, --add-opens=java.desktop/javax.swing.tree=ALL-UNNAMED, --add-opens=java.desktop/javax.swing.plaf.basic=ALL-UNNAMED, --add-opens=java.desktop/javax.swing.plaf.synth=ALL-UNNAMED, --add-opens=java.desktop/javax.swing.plaf.basic=ALL-UNNAMED, --add-opens=java.desktop/javax.swing=ALL-UNNAMED, --add-opens=java.desktop/javax.swing.tree=ALL-UNNAMED, --add-opens=java.desktop/java.awt.event=ALL-UNNAMED, --add-opens=java.desktop/sun.awt.X11=ALL-UNNAMED, --add-exports=java.desktop/javax.swing.plaf.synth=ALL-UNNAMED, --add-exports=java.base/java.nio=ALL-UNNAMED, --add-exports=java.desktop/sun.swing=ALL-UNNAMED, --add-exports=java.desktop/javax.swing=ALL-UNNAMED, --add-exports=java.desktop/javax.swing.tree=ALL-UNNAMED, --add-exports=java.desktop/javax.swing.plaf.basic=ALL-UNNAMED, --add-exports=java.desktop/sun.swing=ALL-UNNAMED, --add-exports=java.desktop/sun.swing.table=ALL-UNNAMED, --add-exports=java.desktop/sun.swing.plaf.synth=ALL-UNNAMED, --add-exports=java.desktop/sun.awt.shell=ALL-UNNAMED, --add-exports=java.base/sun.security.action=ALL-UNNAMED, --add-exports=java.desktop/sun.font=ALL-UNNAMED, --add-opens=java.desktop/sun.awt.X11=ALL-UNNAMED, -XX:NewSize=80m, -XX:MaxNewSize=80m, -Xms512m, -Xmx4072m, -Xss10m, -Xrs]
+Java initial memory (-Xms): 	512 MB
+Java maximum memory (-Xmx):	 3 GB
+
+User name: 	gorruy
+User home directory: /home/gorruy
+User working directory: /home/gorruy/Desktop/diploma--2-/vivado
+User country: 	US
+User language: 	en
+User locale: 	en_US
+
+RDI_BASEROOT: /mnt/big_chungus/vivado_/Vivado
+HDI_APPROOT: /mnt/big_chungus/vivado_/Vivado/2024.2
+RDI_DATADIR: /mnt/big_chungus/vivado_/SharedData/2024.2/data:/mnt/big_chungus/vivado_/Vivado/2024.2/data
+RDI_BINDIR: /mnt/big_chungus/vivado_/Vivado/2024.2/bin
+
+Vivado preferences file: /home/gorruy/.Xilinx/Vivado/2024.2/vivado.xml
+Vivado preferences directory: /home/gorruy/.Xilinx/Vivado/2024.2/
+Vivado layouts directory: /home/gorruy/.Xilinx/Vivado/2024.2/data/layouts
+PlanAhead jar file: 	/mnt/big_chungus/vivado_/Vivado/2024.2/lib/classes/planAhead.jar
+Vivado log file: 	/home/gorruy/Desktop/diploma--2-/vivado/vivado.log
+Vivado journal file: 	/home/gorruy/Desktop/diploma--2-/vivado/vivado.jou
+Engine tmp dir: 	./.Xil/Vivado-4419-gorruy-TUF-Gaming-FX705DY-FX705DY
+Non-Default Parameters:	[]
+
+Xilinx & AMD Environment Variables
+--------------------------------------------------------------------------------------------
+GNOME_SHELL_SESSION_MODE: ubuntu
+RDI_APPROOT: /mnt/big_chungus/vivado_/Vivado/2024.2
+RDI_BASEROOT: /mnt/big_chungus/vivado_/Vivado
+RDI_BINROOT: /mnt/big_chungus/vivado_/Vivado/2024.2/bin
+RDI_BUILD: yes
+RDI_DATADIR: /mnt/big_chungus/vivado_/SharedData/2024.2/data:/mnt/big_chungus/vivado_/Vivado/2024.2/data
+RDI_INSTALLROOT: /mnt/big_chungus/vivado_
+RDI_INSTALLVER: 2024.2
+RDI_JAVA_PLATFORM: 
+RDI_JAVA_VERSION: 21.0.1_12
+RDI_LIBDIR: /mnt/big_chungus/vivado_/Vivado/2024.2/lib/lnx64.o/Ubuntu/22:/mnt/big_chungus/vivado_/Vivado/2024.2/lib/lnx64.o/Ubuntu:/mnt/big_chungus/vivado_/Vivado/2024.2/lib/lnx64.o
+RDI_OPT_EXT: .o
+RDI_PATCHROOT: 
+RDI_PLATFORM: lnx64
+RDI_PREPEND_PATH: /mnt/big_chungus/vivado_/Vitis/2024.2/bin:/mnt/big_chungus/vivado_/Vivado/2024.2/ids_lite/ISE/bin/lin64
+RDI_PROG: /mnt/big_chungus/vivado_/Vivado/2024.2/bin/unwrapped/lnx64.o/vivado
+RDI_SESSION_INFO: /home/gorruy/Desktop/diploma--2-/vivado:gorruy-TUF-Gaming-FX705DY-FX705DY_1748180141_4345
+RDI_SHARED_DATA: /mnt/big_chungus/vivado_/SharedData/2024.2/data
+RDI_TPS_ROOT: /mnt/big_chungus/vivado_/Vivado/2024.2/tps/lnx64
+RDI_USE_JDK21: True
+SHELL: /bin/bash
+XILINX: /mnt/big_chungus/vivado_/Vivado/2024.2/ids_lite/ISE
+XILINX_DSP: /mnt/big_chungus/vivado_/Vivado/2024.2/ids_lite/ISE
+XILINX_HLS: /mnt/big_chungus/vivado_/Vitis/2024.2
+XILINX_PLANAHEAD: /mnt/big_chungus/vivado_/Vivado/2024.2
+XILINX_SDK: /mnt/big_chungus/vivado_/Vitis/2024.2
+XILINX_VITIS: /mnt/big_chungus/vivado_/Vitis/2024.2
+XILINX_VIVADO: /mnt/big_chungus/vivado_/Vivado/2024.2
+
+
+GUI allocated memory:	512 MB
+GUI max memory:		4,072 MB
+Engine allocated memory: 1,449 MB
+
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+Copyright 2022-2025 Advanced Micro Devices, Inc. All Rights Reserved.
+
+*/
+
+// TclEventType: START_GUI
+// Tcl Message: start_gui 
+// TclEventType: PROJECT_OPEN_DIALOG
+// [GUI Memory]: 109 MB (+112025kb) [00:03:39]
+// [Engine Memory]: 1,396 MB (+1312520kb) [00:03:39]
+// Opening Vivado Project: zynq_test.xpr. Version: Vivado v2024.2.2 
+// TclEventType: DEBUG_PROBE_SET_CHANGE
+// Tcl Message: open_project zynq_test.xpr 
+// TclEventType: FLOW_ADDED
+// WARNING: HTimer (HSTRUtils Dump STR Log Timer) is taking 1335ms to process. Increasing delay to 5000 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  1342 ms.
+// HMemoryUtils.trashcanNow. Engine heap size: 1,459 MB. GUI used memory: 70 MB. Current time: 5/25/25, 4:40:08 PM MSK
+// TclEventType: MSGMGR_MOVEMSG
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: FILE_SET_NEW
+// TclEventType: RUN_CURRENT
+// TclEventType: PROJECT_DASHBOARD_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// HMemoryUtils.trashcanNow. Engine heap size: 1,737 MB. GUI used memory: 67 MB. Current time: 5/25/25, 4:40:28 PM MSK
+// HMemoryUtils.trashcanNow. Engine heap size: 1,737 MB. GUI used memory: 67 MB. Current time: 5/25/25, 4:40:34 PM MSK
+// TclEventType: COMPOSITE_FILE_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: PROJECT_NEW
+// [GUI Memory]: 120 MB (+5971kb) [00:04:26]
+// [Engine Memory]: 1,845 MB (+397711kb) [00:04:26]
+// WARNING: HEventQueue.dispatchEvent() is taking  3503 ms.
+// Tcl Message: open_project zynq_test.xpr 
+// Tcl Message: Scanning sources... Finished scanning sources 
+// Tcl Message: INFO: [IP_Flow 19-234] Refreshing IP repositories 
+// Tcl Message: INFO: [IP_Flow 19-2313] Loaded Vivado IP repository '/mnt/big_chungus/vivado_/Vivado/2024.2/data/ip'. INFO: [Project 1-5579] Found utility IPs instantiated in one or more block designs which have equivalent inline hdl with improved performance and reduced diskspace. It is recommended to migrate these utility IPs to inline hdl using the command upgrade_project -migrate_to_inline_hdl. The utility IPs may be deprecated in future releases. More information on inline hdl is available in UG994. 
+// Project name: zynq_test; location: /home/gorruy/Desktop/diploma--2-/vivado; part: xc7z010clg400-1
+// HMemoryUtils.trashcanNow. Engine heap size: 1,884 MB. GUI used memory: 73 MB. Current time: 5/25/25, 4:40:53 PM MSK
+// Tcl Message: open_project: Time (s): cpu = 00:00:35 ; elapsed = 00:00:48 . Memory (MB): peak = 7999.137 ; gain = 478.383 ; free physical = 313 ; free virtual = 4065 
+dismissDialog("Open Project"); // bh (Open Project Progress)
+// [GUI Memory]: 128 MB (+2090kb) [00:04:29]
+// [GUI Memory]: 152 MB (+17669kb) [00:04:34]
+// Tcl Message: update_compile_order -fileset sources_1 
+// PAPropertyPanels.initPanels (matrix_block_mul.sv) elapsed time: 0.2s
+// Elapsed time: 59 seconds
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, matrix_block_mul (matrix_block_mul.sv)]", 2, false); // E (PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE)
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, IP Integrator, Open Block Design]", 7, false); // g (PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, Flow Navigator Tree)
+// Run Command: PAResourceCommand.PACommandNames_OPEN_BLOCK_DESIGN
+// Tcl Message: open_bd_design {/home/gorruy/Desktop/diploma--2-/vivado/zynq_test.srcs/sources_1/bd/system/system.bd} 
+// TclEventType: LOAD_FEATURE
+// TclEventType: RSB_SCRIPT_TASK
+// Tcl Message: Reading block design file </home/gorruy/Desktop/diploma--2-/vivado/zynq_test.srcs/sources_1/bd/system/system.bd>... 
+// HMemoryUtils.trashcanNow. Engine heap size: 1,974 MB. GUI used memory: 74 MB. Current time: 5/25/25, 4:42:03 PM MSK
+// TclEventType: RSB_CHANGE_CURRENT_DIAGRAM
+// TclEventType: LOAD_FEATURE
+// Tcl Message: Adding component instance block -- xilinx.com:ip:processing_system7:5.5 - processing_system7_0 
+// TclEventType: RSB_PROPERTY_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: COMPOSITE_FILE_CHANGE
+// TclEventType: RSB_PROPERTY_CHANGE
+// TclEventType: COMPOSITE_FILE_CHANGE
+// TclEventType: RSB_PROPERTY_CHANGE
+// TclEventType: COMPOSITE_FILE_CHANGE
+// TclEventType: RSB_PROPERTY_CHANGE
+// TclEventType: COMPOSITE_FILE_CHANGE
+// TclEventType: RSB_PROPERTY_CHANGE
+// TclEventType: COMPOSITE_FILE_CHANGE
+// TclEventType: RSB_PROPERTY_CHANGE
+// TclEventType: COMPOSITE_FILE_CHANGE
+// TclEventType: RSB_PROPERTY_CHANGE
+// TclEventType: COMPOSITE_FILE_CHANGE
+// TclEventType: RSB_PROPERTY_CHANGE
+// TclEventType: COMPOSITE_FILE_CHANGE
+// [Engine Memory]: 1,974 MB (+38137kb) [00:05:51]
+// TclEventType: RSB_PROPERTY_CHANGE
+// TclEventType: COMPOSITE_FILE_CHANGE
+// TclEventType: RSB_PROPERTY_CHANGE
+// Tcl Message: Adding component instance block -- xilinx.com:ip:xlconcat:2.1 - xlconcat_0 Adding component instance block -- xilinx.com:ip:xlconcat:2.1 - xlconcat_1 Adding component instance block -- xilinx.com:ip:axi_dma:7.1 - axi_dma_0 
+// TclEventType: COMPOSITE_FILE_CHANGE
+// TclEventType: RSB_PROPERTY_CHANGE
+// TclEventType: COMPOSITE_FILE_CHANGE
+// TclEventType: RSB_PROPERTY_CHANGE
+// TclEventType: COMPOSITE_FILE_CHANGE
+// TclEventType: RSB_PROPERTY_CHANGE
+// TclEventType: COMPOSITE_FILE_CHANGE
+// TclEventType: RSB_PROPERTY_CHANGE
+// TclEventType: COMPOSITE_FILE_CHANGE
+// TclEventType: RSB_PROPERTY_CHANGE
+// Tcl Message: Adding component instance block -- xilinx.com:ip:smartconnect:1.0 - axi_smc Adding component instance block -- xilinx.com:ip:proc_sys_reset:5.0 - rst_ps7_0_200M Adding component instance block -- xilinx.com:ip:axi_interconnect:2.1 - axi_mem_intercon 
+// TclEventType: RSB_PROPERTY_CHANGE
+// TclEventType: RSB_LOCK_CHANGE
+// TclEventType: RSB_CHANGE_CURRENT_DIAGRAM
+// TclEventType: RSB_LOCK_CHANGE
+// TclEventType: RSB_CHANGE_CURRENT_DIAGRAM
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: RSB_OPEN_DIAGRAM
+// TclEventType: RSB_INSERT_ADDRNETWORK
+// TclEventType: RSB_OPEN_DIAGRAM
+// [Engine Memory]: 2,083 MB (+10878kb) [00:05:53]
+// WARNING: HEventQueue.dispatchEvent() is taking  1559 ms.
+// Tcl Message: Successfully read diagram <system> from block design file </home/gorruy/Desktop/diploma--2-/vivado/zynq_test.srcs/sources_1/bd/system/system.bd> 
+// Elapsed time: 19 seconds
+runTclCommand (PAResourceOtoP.PAViews_SYSTEM, "unselect_objects"); // gh (PAResourceOtoP.PAViews_SYSTEM, PlanAheadTabSystem)
+closeView(PAResourceOtoP.PAViews_PROJECT_SUMMARY, "Project Summary"); // x (PAResourceOtoP.PAViews_PROJECT_SUMMARY, PlanAheadTabProject Summary)
+// HMemoryUtils.trashcanNow. Engine heap size: 2,094 MB. GUI used memory: 79 MB. Current time: 5/25/25, 4:42:18 PM MSK
+// Tcl Message: open_bd_design: Time (s): cpu = 00:00:08 ; elapsed = 00:00:19 . Memory (MB): peak = 8121.188 ; gain = 0.000 ; free physical = 189 ; free virtual = 3438 
+// 'bN' command handler elapsed time: 19 seconds
+// WARNING: HTimer (Open addressing views timer) is taking 811ms to process. Increasing delay to 1300 ms.
+dismissDialog("Open Block Design"); // bh (Open Block Design Progress)
+// Elapsed Time for: 'PAResourceItoN.MsgLongTask_MESSAGE_LONG_TASK/L.f': 01m:28s
+// Elapsed Time for: 'PAResourceItoN.MsgLongTask_MESSAGE_LONG_TASK/L.f': 01m:30s
+// Elapsed time: 14 seconds
+selectMenu(PAResourceItoN.MainMenuMgr_TOOLS, "Tools"); // ai (PAResourceItoN.MainMenuMgr_TOOLS, Tools)
+selectMenuItem(PAResourceCommand.PACommandNames_IP_PACKAGER_WIZARD, "Create and Package New IP..."); // aq (PAResourceCommand.PACommandNames_IP_PACKAGER_WIZARD, ip_packager_wizard_menu)
+dismissMenu(PAResourceItoN.MainMenuMgr_TOOLS, "Tools"); // ai (PAResourceItoN.MainMenuMgr_TOOLS, Tools)
+// Run Command: PAResourceCommand.PACommandNames_IP_PACKAGER_WIZARD
+selectButton("NEXT", "Next", "Create and Package New IP"); // JButton (NEXT)
+selectRadioButton(PAResourceItoN.NewIpWizard_PACKAGE_SPECIFIED_DIRECTORY_CHOOSE, "Package a specified directory. Choose a directory as the source for creating a new IP Definition."); // b (PAResourceItoN.NewIpWizard_PACKAGE_SPECIFIED_DIRECTORY_CHOOSE)
+selectButton("NEXT", "Next", "Create and Package New IP"); // JButton (NEXT)
+// Elapsed time: 10 seconds
+setText(PAResourceItoN.NewIpWizard_IP_DEFINITION_SOURCE_LOCATION, "/home/gorruy/Desktop/diploma--2-/src/"); // Z (PAResourceItoN.NewIpWizard_IP_DEFINITION_SOURCE_LOCATION)
+selectButton("NEXT", "Next", "Create and Package New IP"); // JButton (NEXT)
+selectButton("OptionPane.button", "Overwrite", "Overwrite Existing IP Definition"); // JButton (OptionPane.button)
+setText(PAResourceEtoH.EditIPProjectNameChooser_PROJECT_NAME, "matrix_ip"); // ad (PAResourceEtoH.EditIPProjectNameChooser_PROJECT_NAME)
+selectButton("NEXT", "Next", "Create and Package New IP"); // JButton (NEXT)
+selectButton("FINISH", "Finish", "Create and Package New IP"); // JButton (FINISH)
+// 'n' command handler elapsed time: 22 seconds
+dismissDialog("Create and Package New IP"); // x (dialog0)
+// TclEventType: FILE_SET_NEW
+// TclEventType: RUN_ADD
+// TclEventType: RUN_CURRENT
+// TclEventType: PROJECT_DASHBOARD_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: FILE_SET_OPTIONS_CHANGE
+// Tcl Message: ipx::infer_core -vendor user.org -library user -taxonomy /UserIP /home/gorruy/Desktop/diploma--2-/src 
+// TclEventType: FILE_SET_OPTIONS_CHANGE
+// [GUI Memory]: 162 MB (+3224kb) [00:06:33]
+// TclEventType: FILE_SET_OPTIONS_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_MESSAGE_UPDATE
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_MESSAGE_UPDATE
+// TclEventType: PROJECT_CLOSE
+// Tcl Message: INFO: [IP_Flow 19-2181] Payment is not required for this core. 
+// Tcl Message: ipx::infer_core: Time (s): cpu = 00:00:07 ; elapsed = 00:00:07 . Memory (MB): peak = 8198.926 ; gain = 0.000 ; free physical = 536 ; free virtual = 3654 
+// TclEventType: FILE_SET_NEW
+// TclEventType: RUN_ADD
+// TclEventType: RUN_CURRENT
+// TclEventType: PROJECT_DASHBOARD_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_NEW
+// Tcl Message: ipx::edit_ip_in_project -upgrade true -name matrix_ip -directory /home/gorruy/Desktop/diploma--2-/vivado/zynq_test.tmp /home/gorruy/Desktop/diploma--2-/src/component.xml 
+// Tcl Message: INFO: [IP_Flow 19-234] Refreshing IP repositories INFO: [IP_Flow 19-1704] No user IP repositories specified 
+// TclEventType: PROJECT_NEW
+// WARNING: HEventQueue.dispatchEvent() is taking  2705 ms.
+// Tcl Message: INFO: [IP_Flow 19-2313] Loaded Vivado IP repository '/mnt/big_chungus/vivado_/Vivado/2024.2/data/ip'. 
+// TclEventType: FILE_SET_OPTIONS_CHANGE
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: IP_LOCK_CHANGE
+// TclEventType: PACKAGER_CURRENT_CORE
+// Run Command: PAResourceCommand.PACommandNames_IP_PACKAGER
+// WARNING: HEventQueue.dispatchEvent() is taking  1128 ms.
+// Tcl Message: create_project: Time (s): cpu = 00:00:12 ; elapsed = 00:00:22 . Memory (MB): peak = 8202.137 ; gain = 3.211 ; free physical = 465 ; free virtual = 3591 
+// Tcl Message: INFO: [IP_Flow 19-234] Refreshing IP repositories 
+// Tcl Message: INFO: [IP_Flow 19-795] Syncing license key meta-data 
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_MESSAGE_UPDATE
+// Tcl Message: ipx::edit_ip_in_project: Time (s): cpu = 00:00:15 ; elapsed = 00:00:23 . Memory (MB): peak = 8242.840 ; gain = 43.914 ; free physical = 453 ; free virtual = 3582 
+// Tcl Message: ipx::current_core /home/gorruy/Desktop/diploma--2-/src/component.xml 
+// HMemoryUtils.trashcanNow. Engine heap size: 2,180 MB. GUI used memory: 97 MB. Current time: 5/25/25, 4:43:28 PM MSK
+// Elapsed Time for: 'PAResourceItoN.MsgLongTask_MESSAGE_LONG_TASK/x.h': 58s
+// Elapsed time: 58 seconds
+dismissDialog("IP Packager"); // bh (IP Packager Progress)
+// Elapsed Time for: 'PAResourceItoN.MsgLongTask_MESSAGE_LONG_TASK/L.f': 32s
+// Elapsed Time for: 'PAResourceItoN.MsgLongTask_MESSAGE_LONG_TASK/L.f': 36s
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// Tcl Message: update_compile_order -fileset sources_1 
+// Elapsed Time for: 'PAResourceItoN.MsgLongTask_MESSAGE_LONG_TASK/L.f': 38s
+// [GUI Memory]: 171 MB (+390kb) [00:07:39]
+// [Engine Memory]: 2,189 MB (+2168kb) [00:07:39]
+// Elapsed Time for: 'PAResourceItoN.MsgLongTask_MESSAGE_LONG_TASK/L.f': 40s
+// HMemoryUtils.trashcanNow. Engine heap size: 2,200 MB. GUI used memory: 95 MB. Current time: 5/25/25, 4:44:08 PM MSK
+// Elapsed time: 21 seconds
+selectList(PAResourceOtoP.PackagerStepsPanel_PACKAGER_STEPS_LIST, "Ports and Interfaces", 4); // S (PAResourceOtoP.PackagerStepsPanel_PACKAGER_STEPS_LIST)
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, acc_top (acc_top.sv)]", 1); // E (PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE)
+collapseTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, acc_top (acc_top.sv)]", 1); // E (PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE)
+selectTreeTable(PAResourceOtoP.PortAndInterfaceFacetTable_PORT_AND_INTERFACE_FACET_TABLE, "s00_axis ; slave ;  ;  ;  ;  ;  ;  ;  ; ", 1, (String) null, 1, true); // w (PAResourceOtoP.PortAndInterfaceFacetTable_PORT_AND_INTERFACE_FACET_TABLE) - Node
+selectTreeTable(PAResourceOtoP.PortAndInterfaceFacetTable_PORT_AND_INTERFACE_FACET_TABLE, "s00_axis ; slave ;  ;  ;  ;  ;  ;  ;  ; ", 1, (String) null, 2, true); // w (PAResourceOtoP.PortAndInterfaceFacetTable_PORT_AND_INTERFACE_FACET_TABLE) - Node
+selectTreeTable(PAResourceOtoP.PortAndInterfaceFacetTable_PORT_AND_INTERFACE_FACET_TABLE, "s00_axis ; slave ;  ;  ;  ;  ;  ;  ;  ; ", 1, "xilinx.com", 3, true); // w (PAResourceOtoP.PortAndInterfaceFacetTable_PORT_AND_INTERFACE_FACET_TABLE) - Node
+expandTreeTable(PAResourceOtoP.PortAndInterfaceFacetTable_PORT_AND_INTERFACE_FACET_TABLE, "s00_axis ; slave ;  ;  ;  ;  ;  ;  ;  ; ", 1); // w (PAResourceOtoP.PortAndInterfaceFacetTable_PORT_AND_INTERFACE_FACET_TABLE)
+selectTreeTable(PAResourceOtoP.PortAndInterfaceFacetTable_PORT_AND_INTERFACE_FACET_TABLE, "s00_axis ; slave ;  ;  ;  ;  ;  ;  ;  ; ", 1, "xilinx.com", 3, true, false, false, false, false, true); // w (PAResourceOtoP.PortAndInterfaceFacetTable_PORT_AND_INTERFACE_FACET_TABLE) - Double Click - Node
+// WARNING: HEventQueue.dispatchEvent() is taking  1271 ms.
+selectTab(PAResourceEtoH.EditInterfaceDialog_TABBED_PANE, PAResourceEtoH.EditInterfaceDialog_PORT_MAPPING, "Port Mapping", 1); // D (PAResourceEtoH.EditInterfaceDialog_TABBED_PANE)
+selectTab(PAResourceEtoH.EditInterfaceDialog_TABBED_PANE, PAResourceEtoH.EditInterfaceDialog_PARAMETERS, "Parameters", 2); // D (PAResourceEtoH.EditInterfaceDialog_TABBED_PANE)
+dismissDialog("Edit Interface"); // C (dialog1)
+selectMenu(PAResourceItoN.MainMenuMgr_TOOLS, "Tools"); // ai (PAResourceItoN.MainMenuMgr_TOOLS, Tools)
+dismissMenu(PAResourceItoN.MainMenuMgr_TOOLS, "Tools"); // ai (PAResourceItoN.MainMenuMgr_TOOLS, Tools)
+// Elapsed time: 20 seconds
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, IP-XACT]", 2); // E (PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE)
+// [GUI Memory]: 180 MB (+915kb) [00:08:36]
+selectView(PAResourceOtoP.PAViews_SYSTEM, "System", 215, 131, 1122, 543, false, false, false, true, false); // gh (PAResourceOtoP.PAViews_SYSTEM, PlanAheadTabSystem) - Popup Trigger
+selectMenu(PAResourceQtoS.SystemBuilderView_PINNING, "Pinning"); // an (PAResourceQtoS.SystemBuilderView_PINNING, Pinning)
+selectMenuItem(PAResourceQtoS.SystemBuilderMenu_ADD_IP, "Add IP..."); // aq (PAResourceQtoS.SystemBuilderMenu_ADD_IP, Add IP...)
+setText("PAResourceAtoD.CoreTreeTablePanel_CORE_TREE_TABLE_SEARCH_FIELD", "matrix"); // OverlayTextField (PAResourceAtoD.CoreTreeTablePanel_CORE_TREE_TABLE_SEARCH_FIELD)
+collapseTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, IP-XACT]", 2); // E (PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, acc_top (acc_top.sv)]", 1, true); // E (PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE) - Node
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Synthesis, Run Synthesis]", 16, false); // g (PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, Flow Navigator Tree)
+// Run Command: PAResourceCommand.PACommandNames_RUN_SYNTHESIS
+selectButton(RDIResource.BaseDialog_OK, "OK", "Launch Runs"); // a (RDIResource.BaseDialog_OK)
+selectButton(RDIResource.BaseDialog_CANCEL, "Cancel", "Launch Runs"); // a (RDIResource.BaseDialog_CANCEL)
+// 'i' command handler elapsed time: 3 seconds
+dismissDialog("Launch Runs"); // g (dialog2)
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Constraints]", 3); // E (PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Constraints, constrs_1]", 4, false); // E (PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Constraints, constrs_1]", 4, false); // E (PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Constraints, constrs_1]", 4, false, false, false, false, false, true); // E (PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE) - Double Click
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Constraints, constrs_1]", 4, false, false, false, false, true, false); // E (PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE) - Popup Trigger
+selectButton(PAResourceCommand.PACommandNames_ADD_SOURCES, "Sources_add_sources"); // C (PAResourceCommand.PACommandNames_ADD_SOURCES, Sources_add_sources)
+// Run Command: PAResourceCommand.PACommandNames_ADD_SOURCES
+selectButton("NEXT", "Next", "Add Sources"); // JButton (NEXT)
+selectButton(PAResourceAtoD.ConstraintsChooserPanel_CREATE_FILE, "Create File", "Add Sources"); // a (PAResourceAtoD.ConstraintsChooserPanel_CREATE_FILE)
+// Tcl Command: 'file mkdir /home/gorruy/Desktop/diploma--2-/vivado/zynq_test.tmp/matrix_ip.srcs/constrs_1'
+// Tcl Message: file mkdir /home/gorruy/Desktop/diploma--2-/vivado/zynq_test.tmp/matrix_ip.srcs/constrs_1 
+// Elapsed time: 16 seconds
+setText(PAResourceAtoD.CreateConstraintsFilePanel_FILE_NAME, "matrix_cstr"); // ad (PAResourceAtoD.CreateConstraintsFilePanel_FILE_NAME)
+selectMoreButton(PAResourceAtoD.CreateConstraintsFilePanel_SPECIFY_FILE_DIRECTORY, (String) null, "Create Constraints File"); // s (PAResourceAtoD.CreateConstraintsFilePanel_SPECIFY_FILE_DIRECTORY)
+setFolderChooser("/home/gorruy/Desktop/diploma--2-/src");
+selectButton(RDIResource.BaseDialog_OK, "OK", "Create Constraints File"); // a (RDIResource.BaseDialog_OK)
+dismissDialog("Create Constraints File"); // u (dialog4)
+selectButton("FINISH", "Finish", "Add Sources"); // JButton (FINISH)
+// 'f' command handler elapsed time: 32 seconds
+dismissDialog("Add Sources"); // c (dialog3)
+// Tcl Message: close [ open /home/gorruy/Desktop/diploma--2-/src/matrix_cstr.xdc w ] 
+// TclEventType: PACKAGER_MESSAGE_UPDATE
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: add_files -fileset constrs_1 /home/gorruy/Desktop/diploma--2-/src/matrix_cstr.xdc 
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Constraints, constrs_1]", 4); // E (PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Constraints, constrs_1, matrix_cstr.xdc]", 5, false); // E (PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Constraints, constrs_1, matrix_cstr.xdc]", 5, false, false, false, false, false, true); // E (PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE) - Double Click
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Constraints, constrs_1, matrix_cstr.xdc]", 5, false); // E (PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Constraints, constrs_1, matrix_cstr.xdc]", 5, false); // E (PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE)
+// HMemoryUtils.trashcanNow. Engine heap size: 2,237 MB. GUI used memory: 108 MB. Current time: 5/25/25, 4:46:18 PM MSK
+// Elapsed time: 1799 seconds
+selectMenu(PAResourceItoN.MainMenuMgr_TOOLS, "Tools"); // ai (PAResourceItoN.MainMenuMgr_TOOLS, Tools)
+// HMemoryUtils.trashcanNow. Engine heap size: 2,247 MB. GUI used memory: 101 MB. Current time: 5/25/25, 5:16:18 PM MSK
+selectMenuItem(RDIResourceCommand.RDICommands_PROPERTY_EDITOR, "Property Editor"); // aq (RDIResourceCommand.RDICommands_PROPERTY_EDITOR, property_editor_menu)
+dismissMenu(PAResourceItoN.MainMenuMgr_TOOLS, "Tools"); // ai (PAResourceItoN.MainMenuMgr_TOOLS, Tools)
+// Run Command: RDIResourceCommand.RDICommands_PROPERTY_EDITOR
+selectTable(RDIResource.PropertyEditor_ROW_HEADER, "matrix_cstr.xdc", 0, "matrix_cstr.xdc", 0); // K (RDIResource.PropertyEditor_ROW_HEADER)
+selectView(RDIResource.RDIViews_PROPERTY_EDITOR, "Property Editor", 75, 75, 1012, 605, false, false, false, true, false); // bh (RDIResource.RDIViews_PROPERTY_EDITOR, PlanAheadTabProperty Editor) - Popup Trigger
+selectTable(RDIResource.PropertyEditor_ROW_HEADER, "matrix_cstr.xdc", 0, "matrix_cstr.xdc", 0, false, false, false, true, false); // K (RDIResource.PropertyEditor_ROW_HEADER) - Popup Trigger
+selectMenuItem(RDIResource.PropertyEditor_ADD, "Add"); // aq (RDIResource.PropertyEditor_ADD)
+selectCheckBoxTree(RDIResource.PropertyOptions_VISIBILITY_TREE, "[Properties]", 2, false, true, ui.utils.collection.couples.TriState.False); // aB.j (RDIResource.PropertyOptions_VISIBILITY_TREE)
+closeView(RDIResource.RDIViews_PROPERTY_EDITOR, "Property Editor"); // bh (RDIResource.RDIViews_PROPERTY_EDITOR, PlanAheadTabProperty Editor)
+selectMenu(PAResourceItoN.MainMenuMgr_TOOLS, "Tools"); // ai (PAResourceItoN.MainMenuMgr_TOOLS, Tools)
+dismissMenu(PAResourceItoN.MainMenuMgr_TOOLS, "Tools"); // ai (PAResourceItoN.MainMenuMgr_TOOLS, Tools)
+selectMenu(PAResourceItoN.MainMenuMgr_REPORTS, "Reports"); // ai (PAResourceItoN.MainMenuMgr_REPORTS, Reports)
+dismissMenu(PAResourceItoN.MainMenuMgr_REPORTS, "Reports"); // ai (PAResourceItoN.MainMenuMgr_REPORTS, Reports)
+selectMenu(PAResourceItoN.MainMenuMgr_TOOLS, "Tools"); // ai (PAResourceItoN.MainMenuMgr_TOOLS, Tools)
+dismissMenu(PAResourceItoN.MainMenuMgr_TOOLS, "Tools"); // ai (PAResourceItoN.MainMenuMgr_TOOLS, Tools)
+selectMenu(PAResourceItoN.MainMenuMgr_FLOW, "Flow"); // ai (PAResourceItoN.MainMenuMgr_FLOW, Flow)
+dismissMenu(PAResourceItoN.MainMenuMgr_FLOW, "Flow"); // ai (PAResourceItoN.MainMenuMgr_FLOW, Flow)
+selectMenu(PAResourceItoN.MainMenuMgr_TOOLS, "Tools"); // ai (PAResourceItoN.MainMenuMgr_TOOLS, Tools)
+selectMenu(RDIResourceCommand.RDICommands_CUSTOM_COMMANDS, "Custom Commands"); // an (RDIResourceCommand.RDICommands_CUSTOM_COMMANDS, Custom Commands)
+dismissMenu(PAResourceItoN.MainMenuMgr_TOOLS, "Tools"); // ai (PAResourceItoN.MainMenuMgr_TOOLS, Tools)
+selectCodeEditor("matrix_cstr.xdc", 330, 191); // ae (matrix_cstr.xdc)
+// Elapsed time: 40 seconds
+selectMenu(PAResourceItoN.MainMenuMgr_WINDOW, "Window"); // ai (PAResourceItoN.MainMenuMgr_WINDOW, Window)
+dismissMenu(PAResourceItoN.MainMenuMgr_WINDOW, "Window"); // ai (PAResourceItoN.MainMenuMgr_WINDOW, Window)
+selectMenu(PAResourceItoN.MainMenuMgr_REPORTS, "Reports"); // ai (PAResourceItoN.MainMenuMgr_REPORTS, Reports)
+dismissMenu(PAResourceItoN.MainMenuMgr_REPORTS, "Reports"); // ai (PAResourceItoN.MainMenuMgr_REPORTS, Reports)
+selectMenu(PAResourceItoN.MainMenuMgr_TOOLS, "Tools"); // ai (PAResourceItoN.MainMenuMgr_TOOLS, Tools)
+dismissMenu(PAResourceItoN.MainMenuMgr_TOOLS, "Tools"); // ai (PAResourceItoN.MainMenuMgr_TOOLS, Tools)
+selectMenu(PAResourceItoN.MainMenuMgr_FLOW, "Flow"); // ai (PAResourceItoN.MainMenuMgr_FLOW, Flow)
+dismissMenu(PAResourceItoN.MainMenuMgr_FLOW, "Flow"); // ai (PAResourceItoN.MainMenuMgr_FLOW, Flow)
+selectMenu(PAResourceItoN.MainMenuMgr_TOOLS, "Tools"); // ai (PAResourceItoN.MainMenuMgr_TOOLS, Tools)
+dismissMenu(PAResourceItoN.MainMenuMgr_TOOLS, "Tools"); // ai (PAResourceItoN.MainMenuMgr_TOOLS, Tools)
+selectMenu(PAResourceItoN.MainMenuMgr_FLOW, "Flow"); // ai (PAResourceItoN.MainMenuMgr_FLOW, Flow)
+selectMenu(PAResourceItoN.MainMenuMgr_SETTINGS, "Settings"); // an (PAResourceItoN.MainMenuMgr_SETTINGS, Settings)
+selectMenu(PAResourceCommand.PACommandNames_SIMULATION_RUN, "Run Simulation"); // ai (PAResourceCommand.PACommandNames_SIMULATION_RUN)
+selectMenu(PAResourceCommand.PACommandNames_SIMULATION_RUN, "Run Simulation"); // ai (PAResourceCommand.PACommandNames_SIMULATION_RUN)
+selectMenu(PAResourceItoN.MainMenuMgr_SETTINGS, "Settings"); // an (PAResourceItoN.MainMenuMgr_SETTINGS, Settings)
+dismissMenu(PAResourceItoN.MainMenuMgr_FLOW, "Flow"); // ai (PAResourceItoN.MainMenuMgr_FLOW, Flow)
+selectMenu(PAResourceItoN.MainMenuMgr_TOOLS, "Tools"); // ai (PAResourceItoN.MainMenuMgr_TOOLS, Tools)
+selectMenu(RDIResourceCommand.RDICommands_CUSTOM_COMMANDS, "Custom Commands"); // an (RDIResourceCommand.RDICommands_CUSTOM_COMMANDS, Custom Commands)
+dismissMenu(PAResourceItoN.MainMenuMgr_TOOLS, "Tools"); // ai (PAResourceItoN.MainMenuMgr_TOOLS, Tools)
+selectCodeEditor("matrix_cstr.xdc", 421, 250); // ae (matrix_cstr.xdc)
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Synthesis, Run Synthesis]", 16, false); // g (PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, Flow Navigator Tree)
+// Run Command: PAResourceCommand.PACommandNames_RUN_SYNTHESIS
+selectButton(RDIResource.BaseDialog_OK, "OK", "Launch Runs"); // a (RDIResource.BaseDialog_OK)
+dismissDialog("Launch Runs"); // g (dialog6)
+// Tcl Message: launch_runs synth_1 -jobs 8 
+// TclEventType: RUN_LAUNCH
+// TclEventType: RUN_MODIFY
+// TclEventType: RUN_STATUS_CHANGE
+// Tcl Message: [Sun May 25 17:17:54 2025] Launched synth_1... Run output will be captured here: /home/gorruy/Desktop/diploma--2-/vivado/zynq_test.tmp/matrix_ip.runs/synth_1/runme.log 
+// 'i' command handler elapsed time: 3 seconds
+dismissDialog("Starting Design Runs"); // bh (Starting Design Runs Progress)
+// TclEventType: RUN_STATUS_CHANGE
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Synthesis, Run Synthesis]", 16, false); // g (PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, Flow Navigator Tree)
+// Run Command: PAResourceCommand.PACommandNames_RUN_SYNTHESIS
+selectButton("OptionPane.button", "Cancel", "Run Synthesis"); // JButton (OptionPane.button)
+// HMemoryUtils.trashcanNow. Engine heap size: 2,278 MB. GUI used memory: 102 MB. Current time: 5/25/25, 5:18:03 PM MSK
+// Elapsed time: 289 seconds
+selectMoreButton(PAResourceQtoS.SrcFilePropPanels_TYPE, (String) null); // s (PAResourceQtoS.SrcFilePropPanels_TYPE)
+selectButton(RDIResource.BaseDialog_CANCEL, "Cancel", "Set Type"); // a (RDIResource.BaseDialog_CANCEL)
+dismissDialog("Set Type"); // X (dialog7)
+// WARNING: HSwingWorker (Refresh Filesets Swing Worker) is taking 3094 ms. Increasing delay to 9282 ms.
+// WARNING: HSwingWorker (Refresh Filesets Swing Worker) is taking 1517 ms. Increasing delay to 4551 ms.
+// WARNING: HTimer (FileMgr Design Graph Update Timer) is taking 23967ms to process. Increasing delay to 3000 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  12673 ms.
+// WARNING: HSwingWorker (Refresh Filesets Swing Worker) is taking 42307 ms. Increasing delay to 126921 ms.
+// WARNING: HSwingWorker (Monitor File Timestamp Swing Worker) is taking 7569 ms to process. Increasing delay to 2000 ms.
+// WARNING: HSwingWorker (Monitor File Timestamp Swing Worker) is taking 6099 ms to process. Increasing delay to 2000 ms.
+// WARNING: HSwingWorker (Monitor File Timestamp Swing Worker) is taking 8960 ms to process. Increasing delay to 2000 ms.
+// WARNING: HSwingWorker (Monitor File Timestamp Swing Worker) is taking 6099 ms to process. Increasing delay to 2000 ms.
+// WARNING: HSwingWorker (Monitor File Timestamp Swing Worker) is taking 1085 ms to process. Increasing delay to 3000 ms.
+// WARNING: HSwingWorker (Refresh Filesets Swing Worker) is taking 48073 ms. Increasing delay to 144219 ms.
+// WARNING: HSwingWorker (Update Runs Swing Worker) is taking 56142 ms. Increasing delay to 3000 ms.
+// WARNING: HSwingWorker (Update Runs Swing Worker) is taking 56292 ms. Increasing delay to 3000 ms.
+// WARNING: HSwingWorker (Update Runs Swing Worker) is taking 5648 ms. Increasing delay to 4000 ms.
+// WARNING: HSwingWorker (Update Runs Swing Worker) is taking 1775 ms. Increasing delay to 4000 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  8524 ms.
+// WARNING: HTimer (ActiveMsgMonitor Process Messages Timer) is taking 976ms to process. Increasing delay to 2000 ms.
+// WARNING: HTimer (FileMgr Design Graph Update Timer) is taking 596ms to process. Increasing delay to 3000 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  1596 ms.
+// WARNING: HSwingWorker (Monitor File Timestamp Swing Worker) is taking 1797 ms to process. Increasing delay to 4000 ms.
+// WARNING: HSwingWorker (Update Runs Swing Worker) is taking 26648 ms. Increasing delay to 5000 ms.
+// WARNING: HSwingWorker (Monitor File Timestamp Swing Worker) is taking 2687 ms to process. Increasing delay to 3000 ms.
+// WARNING: HSwingWorker (Update Runs Swing Worker) is taking 48751 ms. Increasing delay to 5000 ms.
+// WARNING: HSwingWorker (Update Runs Swing Worker) is taking 7838 ms. Increasing delay to 6000 ms.
+// WARNING: HSwingWorker (Update Runs Swing Worker) is taking 33924 ms. Increasing delay to 6000 ms.
+// Elapsed time: 240 seconds
+selectCodeEditor("matrix_cstr.xdc", 81, 11, false, false, false, true, false); // ae (matrix_cstr.xdc) - Popup Trigger
+// WARNING: HEventQueue.dispatchEvent() is taking  37592 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  5607 ms.
+// WARNING: HTimer (ActiveMsgMonitor Process Messages Timer) is taking 464ms to process. Increasing delay to 3000 ms.
+// WARNING: HTimer (ActiveMsgMonitor Process Messages Timer) is taking 220ms to process. Increasing delay to 2000 ms.
+// WARNING: HSwingWorker (Update Runs Swing Worker) is taking 4048 ms. Increasing delay to 7000 ms.
+// WARNING: HSwingWorker (Update Runs Swing Worker) is taking 4455 ms. Increasing delay to 7000 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  10987 ms.
+// Elapsed time: 20 seconds
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Constraints, constrs_1, matrix_cstr.xdc]", 5, false, false, false, false, true, false); // E (PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE) - Popup Trigger
+// WARNING: HEventQueue.dispatchEvent() is taking  4579 ms.
+// WARNING: HTimer (ActiveMsgMonitor Process Messages Timer) is taking 763ms to process. Increasing delay to 3000 ms.
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Constraints, constrs_1, matrix_cstr.xdc]", 5, false); // E (PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE)
+// WARNING: HSwingWorker (Monitor File Timestamp Swing Worker) is taking 2909 ms to process. Increasing delay to 4000 ms.
+// TclEventType: PACKAGER_MESSAGE_UPDATE
+// WARNING: HSwingWorker (Update Runs Swing Worker) is taking 46127 ms. Increasing delay to 8000 ms.
+// WARNING: HSwingWorker (Update Runs Swing Worker) is taking 46052 ms. Increasing delay to 8000 ms.
+// PAPropertyPanels.initPanels (acc_top.sv) elapsed time: 0.3s
+// Elapsed time: 55 seconds
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, acc_top (acc_top.sv)]", 1, true); // E (PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE) - Node
+// WARNING: HEventQueue.dispatchEvent() is taking  56711 ms.
+// WARNING: updateGUI() is taking  1158 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  1158 ms.
+// TclEventType: PACKAGER_MESSAGE_UPDATE
+// TclEventType: FILE_SET_CHANGE
+// WARNING: HEventQueue.dispatchEvent() is taking  8154 ms.
+// Elapsed time: 12 seconds
+maximizeFrame(PAResourceOtoP.PAViews_SOURCES, "Sources"); // R (PAResourceOtoP.PAViews_SOURCES, Sources)
+// WARNING: HEventQueue.dispatchEvent() is taking  1200 ms.
+// TclEventType: FILE_SET_CHANGE
+// WARNING: HSwingWorker (Refresh Filesets Swing Worker) is taking 64555 ms. Increasing delay to 193665 ms.
+selectCodeEditor("matrix_cstr.xdc", 85, 29); // ae (matrix_cstr.xdc)
+selectCodeEditor("matrix_cstr.xdc", 49, 7); // ae (matrix_cstr.xdc)
+selectCodeEditor("matrix_cstr.xdc", 48, 6); // ae (matrix_cstr.xdc)
+selectCodeEditor("matrix_cstr.xdc", 17, 8, false, true, false, false, false); // ae (matrix_cstr.xdc) - Control Key
+selectCodeEditor("matrix_cstr.xdc", 424, 255); // ae (matrix_cstr.xdc)
+// WARNING: HEventQueue.dispatchEvent() is taking  1212 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  2647 ms.
+maximizeView(PAResourceOtoP.PAViews_BASE_WORKSPACE, "BaseWorkspace"); // L (PAResourceOtoP.PAViews_BASE_WORKSPACE, PlanAheadTabBaseWorkspace)
+// HMemoryUtils.trashcanNow. Engine heap size: 2,310 MB. GUI used memory: 103 MB. Current time: 5/25/25, 5:28:38 PM MSK
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Synthesis, Run Synthesis]", 16, false); // g (PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, Flow Navigator Tree)
+// Run Command: PAResourceCommand.PACommandNames_RUN_SYNTHESIS
+selectButton("OptionPane.button", "OK", "Run Synthesis"); // JButton (OptionPane.button)
+// Tcl Message: reset_run synth_1 
+// TclEventType: RUN_MODIFY
+// PAPropertyPanels.initPanels (acc_top.sv) elapsed time: 0.2s
+// [Engine Memory]: 2,310 MB (+11802kb) [00:52:25]
+// WARNING: HEventQueue.dispatchEvent() is taking  1217 ms.
+// TclEventType: RUN_RESET
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_RESET
+// TclEventType: RUN_MODIFY
+// Elapsed time: 36 seconds
+selectButton(RDIResource.BaseDialog_OK, "OK", "Launch Runs"); // a (RDIResource.BaseDialog_OK)
+dismissDialog("Launch Runs"); // g (dialog8)
+// TclEventType: PACKAGER_MESSAGE_UPDATE
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: launch_runs synth_1 -jobs 8 
+// TclEventType: RUN_LAUNCH
+// TclEventType: RUN_MODIFY
+// TclEventType: RUN_STATUS_CHANGE
+// Tcl Message: [Sun May 25 17:29:22 2025] Launched synth_1... Run output will be captured here: /home/gorruy/Desktop/diploma--2-/vivado/zynq_test.tmp/matrix_ip.runs/synth_1/runme.log 
+// 'i' command handler elapsed time: 44 seconds
+dismissDialog("Starting Design Runs"); // bh (Starting Design Runs Progress)
+// TclEventType: RUN_STATUS_CHANGE
+// WARNING: HSwingWorker (Refresh Filesets Swing Worker) is taking 9 ms. Decreasing delay to 2009 ms.
+// Elapsed time: 90 seconds
+selectCodeEditor("acc_top.sv", 1342, 385); // ae (acc_top.sv)
+// WARNING: HSwingWorker (Refresh Filesets Swing Worker) is taking 1 ms. Decreasing delay to 2001 ms.

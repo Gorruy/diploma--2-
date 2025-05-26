@@ -1,0 +1,1455 @@
+# //  Questa Intel Starter FPGA Edition-64
+# //  Version 2024.3 linux_x86_64 Sep 10 2024
+# //
+# // Unpublished work. Copyright 2024 Siemens
+# //
+# // This material contains trade secrets or otherwise confidential information
+# // owned by Siemens Industry Software Inc. or its affiliates (collectively,
+# // "SISW"), or its licensors. Access to and use of this information is strictly
+# // limited as set forth in the Customer's applicable agreements with SISW.
+# //
+# // This material may not be copied, distributed, or otherwise disclosed outside
+# // of the Customer's facilities without the express written permission of SISW,
+# // and may not be used in any way not expressly authorized by SISW.
+# //
+# do make_top.do
+# Questa Intel Starter FPGA Edition-64 vlog 2024.3 Compiler 2024.09 Sep 10 2024
+# Start time: 01:16:45 on May 25,2025
+# vlog -reportprogress 300 -sv ../src/matrix_block_mul.sv vlog -sv ../src/s_axi_slv.sv vlog -sv ../src/matrix_ip.sv vlog -sv ../src/acc_top.sv vlog -sv acc_top_tb.sv 
+# -- Compiling module matrix_block_mul
+# ** Error: (vlog-7) Failed to open design unit file "vlog" in read mode.
+# No such file or directory. (errno = ENOENT)
+# ** Error: (vlog-7) Failed to open design unit file "../src/s_axi_slv.sv" in read mode.
+# No such file or directory. (errno = ENOENT)
+# End time: 01:16:45 on May 25,2025, Elapsed time: 0:00:00
+# Errors: 2, Warnings: 0
+# ** Error: /home/gorruy/altera/24.1std/questa_fse/linux_x86_64/vlog failed.
+# Error in macro ./make_top.do line 1
+# /home/gorruy/altera/24.1std/questa_fse/linux_x86_64/vlog failed.
+#     while executing
+# "vlog -sv ../src/matrix_block_mul.sv vlog -sv ../src/s_axi_slv.sv vlog -sv ../src/matrix_ip.sv vlog -sv ../src/acc_top.sv vlog -sv acc_top_tb.sv"
+do make_top.do
+# Questa Intel Starter FPGA Edition-64 vlog 2024.3 Compiler 2024.09 Sep 10 2024
+# Start time: 01:17:33 on May 25,2025
+# vlog -reportprogress 300 -sv ../src/matrix_block_mul.sv 
+# -- Compiling module matrix_block_mul
+# 
+# Top level modules:
+# 	matrix_block_mul
+# End time: 01:17:33 on May 25,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Questa Intel Starter FPGA Edition-64 vlog 2024.3 Compiler 2024.09 Sep 10 2024
+# Start time: 01:17:33 on May 25,2025
+# vlog -reportprogress 300 -sv ../src/s_axi_slv.sv 
+# ** Error: (vlog-7) Failed to open design unit file "../src/s_axi_slv.sv" in read mode.
+# No such file or directory. (errno = ENOENT)
+# End time: 01:17:33 on May 25,2025, Elapsed time: 0:00:00
+# Errors: 1, Warnings: 0
+# ** Error: /home/gorruy/altera/24.1std/questa_fse/linux_x86_64/vlog failed.
+# Error in macro ./make_top.do line 2
+# /home/gorruy/altera/24.1std/questa_fse/linux_x86_64/vlog failed.
+#     while executing
+# "vlog -sv ../src/s_axi_slv.sv "
+do make_top.do
+# Questa Intel Starter FPGA Edition-64 vlog 2024.3 Compiler 2024.09 Sep 10 2024
+# Start time: 01:17:53 on May 25,2025
+# vlog -reportprogress 300 -sv ../src/matrix_block_mul.sv 
+# -- Compiling module matrix_block_mul
+# 
+# Top level modules:
+# 	matrix_block_mul
+# End time: 01:17:53 on May 25,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Questa Intel Starter FPGA Edition-64 vlog 2024.3 Compiler 2024.09 Sep 10 2024
+# Start time: 01:17:53 on May 25,2025
+# vlog -reportprogress 300 -v ../src/s_axi_slv.v 
+#     The vlog command compiles Verilog source code and SystemVerilog extensions
+#     into a specified working library (or to the work library by default).
+#     Compressed SystemVerilog source files (those compressed with zlib) are
+#     accepted.
+#     
+#     The vlog command may be invoked from within Questa SIM or from the
+#     operating system command prompt. It may also be invoked during simulation.
+#     Compiled libraries are major-version dependent. When moving between major
+#     version, you have to refresh compiled libraries using the -refresh argument
+#     to vlog. This is not true for minor versions (letter releases).
+#     
+#     All arguments to the vlog command are case sensitive. For example, -WORK
+#     and -work are not equivalent.
+#     
+#     SystemVerilog requires that the default behavior of the vlog command is to
+#     treat each Verilog design file listed on the command line as a separate
+#     compilation unit. To treat multiple files listed within a single command
+#     line as a single compilation unit, use either the vlog -mfcu argument or
+#     the MultiFileCompilationUnit in the User's Manual
+#     
+#     Try the following to get help on specific options or categories: 
+# 
+#     vlog -help all            : List all categories and options
+#     vlog -help category       : List all categories
+#     vlog -help <option>       : Help on an option
+#     vlog -help <command-line> : Help on all options in a command-line
+#     vlog -help <category>     : List all options in a category
+# 
+#     Category:       The list of categories in vlog tool.
+# 
+#     General         List most common general options
+#     Analog          List options supporting analog mixed-signal (AMS)
+#     Coverage        List options for Coverage
+#     Cpp             List options supporting SystemC module
+#     Debug           List options for debug, and assertion
+#     GLS             List options for Gate Level Simulation
+#     Language        List all options supported by hardware language Verilog/VHDL
+#     Library         List options for design, work library
+#     Messages        List all warn, error, note, fatal messages options
+#     Optimize        List options for optimization
+#     Report          List options for reporting log file, statistics, capstats
+#     RNM             List options for the RNM flow
+# ** Error: /home/gorruy/altera/24.1std/questa_fse/linux_x86_64/vlog failed.
+# Error in macro ./make_top.do line 2
+# /home/gorruy/altera/24.1std/questa_fse/linux_x86_64/vlog failed.
+#     while executing
+# "vlog -v ../src/s_axi_slv.v "
+do make_top.do
+# Questa Intel Starter FPGA Edition-64 vlog 2024.3 Compiler 2024.09 Sep 10 2024
+# Start time: 01:18:07 on May 25,2025
+# vlog -reportprogress 300 -sv ../src/matrix_block_mul.sv 
+# -- Compiling module matrix_block_mul
+# 
+# Top level modules:
+# 	matrix_block_mul
+# End time: 01:18:07 on May 25,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Questa Intel Starter FPGA Edition-64 vlog 2024.3 Compiler 2024.09 Sep 10 2024
+# Start time: 01:18:07 on May 25,2025
+# vlog -reportprogress 300 ../src/s_axi_slv.v 
+# -- Compiling module s_axi_slv
+# 
+# Top level modules:
+# 	s_axi_slv
+# End time: 01:18:07 on May 25,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Questa Intel Starter FPGA Edition-64 vlog 2024.3 Compiler 2024.09 Sep 10 2024
+# Start time: 01:18:07 on May 25,2025
+# vlog -reportprogress 300 -sv ../src/matrix_ip.sv 
+# -- Compiling module matrix_ip
+# ** Error: (vlog-13069) ../src/matrix_ip.sv(2): near "parameter": syntax error, unexpected parameter, expecting ')'.
+# End time: 01:18:07 on May 25,2025, Elapsed time: 0:00:00
+# Errors: 1, Warnings: 0
+# ** Error: /home/gorruy/altera/24.1std/questa_fse/linux_x86_64/vlog failed.
+# Error in macro ./make_top.do line 3
+# /home/gorruy/altera/24.1std/questa_fse/linux_x86_64/vlog failed.
+#     while executing
+# "vlog -sv ../src/matrix_ip.sv "
+do make_top.do
+# Questa Intel Starter FPGA Edition-64 vlog 2024.3 Compiler 2024.09 Sep 10 2024
+# Start time: 01:18:38 on May 25,2025
+# vlog -reportprogress 300 -sv ../src/matrix_block_mul.sv 
+# -- Compiling module matrix_block_mul
+# 
+# Top level modules:
+# 	matrix_block_mul
+# End time: 01:18:38 on May 25,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Questa Intel Starter FPGA Edition-64 vlog 2024.3 Compiler 2024.09 Sep 10 2024
+# Start time: 01:18:38 on May 25,2025
+# vlog -reportprogress 300 ../src/s_axi_slv.v 
+# -- Compiling module s_axi_slv
+# 
+# Top level modules:
+# 	s_axi_slv
+# End time: 01:18:38 on May 25,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Questa Intel Starter FPGA Edition-64 vlog 2024.3 Compiler 2024.09 Sep 10 2024
+# Start time: 01:18:38 on May 25,2025
+# vlog -reportprogress 300 -sv ../src/matrix_ip.sv 
+# -- Compiling module matrix_ip
+# ** Error: ../src/matrix_ip.sv(12): (vlog-2730) Undefined variable: 'DIG_MAX'.
+# ** Error (suppressible): ../src/matrix_ip.sv(12): (vlog-2388) 'data_in' already declared in this scope (matrix_ip) at ../src/matrix_ip.sv(12).
+# ** Error: (vlog-13069) ../src/matrix_ip.sv(17): near "=": syntax error, unexpected '=', expecting ';'.
+# ** Error: ../src/matrix_ip.sv(19): (vlog-13282) 'DIG_MAX' already declared in this scope.
+# ** Error: (vlog-13069) ../src/matrix_ip.sv(89): near "case": syntax error, unexpected case, expecting ';'.
+# ** Error (suppressible): ../src/matrix_ip.sv(97): (vlog-2720) A generate begin/end pair has been found outside of generate construct.
+# ** Error: ../src/matrix_ip.sv(97): 'LOAD_A' already exists; must not be redefined as a generate block
+# ** Error: (vlog-13069) ../src/matrix_ip.sv(98): near "=": syntax error, unexpected '='.
+# ** Error: ../src/matrix_ip.sv(98): (vlog-13205) Syntax error found in the scope following 'next_state'. Is there a missing '::'?
+# End time: 01:18:38 on May 25,2025, Elapsed time: 0:00:00
+# Errors: 9, Warnings: 0
+# ** Error: /home/gorruy/altera/24.1std/questa_fse/linux_x86_64/vlog failed.
+# Error in macro ./make_top.do line 3
+# /home/gorruy/altera/24.1std/questa_fse/linux_x86_64/vlog failed.
+#     while executing
+# "vlog -sv ../src/matrix_ip.sv "
+do make_top.do
+# Questa Intel Starter FPGA Edition-64 vlog 2024.3 Compiler 2024.09 Sep 10 2024
+# Start time: 01:18:53 on May 25,2025
+# vlog -reportprogress 300 -sv ../src/matrix_block_mul.sv 
+# -- Compiling module matrix_block_mul
+# 
+# Top level modules:
+# 	matrix_block_mul
+# End time: 01:18:54 on May 25,2025, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+# Questa Intel Starter FPGA Edition-64 vlog 2024.3 Compiler 2024.09 Sep 10 2024
+# Start time: 01:18:54 on May 25,2025
+# vlog -reportprogress 300 ../src/s_axi_slv.v 
+# -- Compiling module s_axi_slv
+# 
+# Top level modules:
+# 	s_axi_slv
+# End time: 01:18:54 on May 25,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Questa Intel Starter FPGA Edition-64 vlog 2024.3 Compiler 2024.09 Sep 10 2024
+# Start time: 01:18:54 on May 25,2025
+# vlog -reportprogress 300 -sv ../src/matrix_ip.sv 
+# -- Compiling module matrix_ip
+# ** Error: (vlog-13069) ../src/matrix_ip.sv(18): near "=": syntax error, unexpected '=', expecting ';'.
+# ** Error: ../src/matrix_ip.sv(20): (vlog-13282) 'DIG_MAX' already declared in this scope.
+# ** Error: (vlog-13069) ../src/matrix_ip.sv(90): near "case": syntax error, unexpected case, expecting ';'.
+# ** Error (suppressible): ../src/matrix_ip.sv(98): (vlog-2720) A generate begin/end pair has been found outside of generate construct.
+# ** Error: ../src/matrix_ip.sv(98): 'LOAD_A' already exists; must not be redefined as a generate block
+# ** Error: (vlog-13069) ../src/matrix_ip.sv(99): near "=": syntax error, unexpected '='.
+# ** Error: ../src/matrix_ip.sv(99): (vlog-13205) Syntax error found in the scope following 'next_state'. Is there a missing '::'?
+# End time: 01:18:54 on May 25,2025, Elapsed time: 0:00:00
+# Errors: 7, Warnings: 0
+# ** Error: /home/gorruy/altera/24.1std/questa_fse/linux_x86_64/vlog failed.
+# Error in macro ./make_top.do line 3
+# /home/gorruy/altera/24.1std/questa_fse/linux_x86_64/vlog failed.
+#     while executing
+# "vlog -sv ../src/matrix_ip.sv "
+do make_top.do
+# Questa Intel Starter FPGA Edition-64 vlog 2024.3 Compiler 2024.09 Sep 10 2024
+# Start time: 01:19:08 on May 25,2025
+# vlog -reportprogress 300 -sv ../src/matrix_block_mul.sv 
+# -- Compiling module matrix_block_mul
+# 
+# Top level modules:
+# 	matrix_block_mul
+# End time: 01:19:08 on May 25,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Questa Intel Starter FPGA Edition-64 vlog 2024.3 Compiler 2024.09 Sep 10 2024
+# Start time: 01:19:08 on May 25,2025
+# vlog -reportprogress 300 ../src/s_axi_slv.v 
+# -- Compiling module s_axi_slv
+# 
+# Top level modules:
+# 	s_axi_slv
+# End time: 01:19:08 on May 25,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Questa Intel Starter FPGA Edition-64 vlog 2024.3 Compiler 2024.09 Sep 10 2024
+# Start time: 01:19:09 on May 25,2025
+# vlog -reportprogress 300 -sv ../src/matrix_ip.sv 
+# -- Compiling module matrix_ip
+# ** Error: ../src/matrix_ip.sv(20): (vlog-13282) 'DIG_MAX' already declared in this scope.
+# ** Error: (vlog-13069) ../src/matrix_ip.sv(90): near "case": syntax error, unexpected case, expecting ';'.
+# ** Error (suppressible): ../src/matrix_ip.sv(98): (vlog-2720) A generate begin/end pair has been found outside of generate construct.
+# ** Error: ../src/matrix_ip.sv(98): 'LOAD_A' already exists; must not be redefined as a generate block
+# ** Error: (vlog-13069) ../src/matrix_ip.sv(99): near "=": syntax error, unexpected '='.
+# ** Error: ../src/matrix_ip.sv(99): (vlog-13205) Syntax error found in the scope following 'next_state'. Is there a missing '::'?
+# End time: 01:19:09 on May 25,2025, Elapsed time: 0:00:00
+# Errors: 6, Warnings: 0
+# ** Error: /home/gorruy/altera/24.1std/questa_fse/linux_x86_64/vlog failed.
+# Error in macro ./make_top.do line 3
+# /home/gorruy/altera/24.1std/questa_fse/linux_x86_64/vlog failed.
+#     while executing
+# "vlog -sv ../src/matrix_ip.sv "
+do make_top.do
+# Questa Intel Starter FPGA Edition-64 vlog 2024.3 Compiler 2024.09 Sep 10 2024
+# Start time: 01:19:25 on May 25,2025
+# vlog -reportprogress 300 -sv ../src/matrix_block_mul.sv 
+# -- Compiling module matrix_block_mul
+# 
+# Top level modules:
+# 	matrix_block_mul
+# End time: 01:19:25 on May 25,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Questa Intel Starter FPGA Edition-64 vlog 2024.3 Compiler 2024.09 Sep 10 2024
+# Start time: 01:19:25 on May 25,2025
+# vlog -reportprogress 300 ../src/s_axi_slv.v 
+# -- Compiling module s_axi_slv
+# 
+# Top level modules:
+# 	s_axi_slv
+# End time: 01:19:25 on May 25,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Questa Intel Starter FPGA Edition-64 vlog 2024.3 Compiler 2024.09 Sep 10 2024
+# Start time: 01:19:25 on May 25,2025
+# vlog -reportprogress 300 -sv ../src/matrix_ip.sv 
+# -- Compiling module matrix_ip
+# ** Error: (vlog-13069) ../src/matrix_ip.sv(89): near "case": syntax error, unexpected case, expecting ';'.
+# ** Error (suppressible): ../src/matrix_ip.sv(97): (vlog-2720) A generate begin/end pair has been found outside of generate construct.
+# ** Error: ../src/matrix_ip.sv(97): 'LOAD_A' already exists; must not be redefined as a generate block
+# ** Error: (vlog-13069) ../src/matrix_ip.sv(98): near "=": syntax error, unexpected '='.
+# ** Error: ../src/matrix_ip.sv(98): (vlog-13205) Syntax error found in the scope following 'next_state'. Is there a missing '::'?
+# End time: 01:19:25 on May 25,2025, Elapsed time: 0:00:00
+# Errors: 5, Warnings: 0
+# ** Error: /home/gorruy/altera/24.1std/questa_fse/linux_x86_64/vlog failed.
+# Error in macro ./make_top.do line 3
+# /home/gorruy/altera/24.1std/questa_fse/linux_x86_64/vlog failed.
+#     while executing
+# "vlog -sv ../src/matrix_ip.sv "
+do make_top.do
+# Questa Intel Starter FPGA Edition-64 vlog 2024.3 Compiler 2024.09 Sep 10 2024
+# Start time: 01:19:37 on May 25,2025
+# vlog -reportprogress 300 -sv ../src/matrix_block_mul.sv 
+# -- Compiling module matrix_block_mul
+# 
+# Top level modules:
+# 	matrix_block_mul
+# End time: 01:19:37 on May 25,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Questa Intel Starter FPGA Edition-64 vlog 2024.3 Compiler 2024.09 Sep 10 2024
+# Start time: 01:19:37 on May 25,2025
+# vlog -reportprogress 300 ../src/s_axi_slv.v 
+# -- Compiling module s_axi_slv
+# 
+# Top level modules:
+# 	s_axi_slv
+# End time: 01:19:37 on May 25,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Questa Intel Starter FPGA Edition-64 vlog 2024.3 Compiler 2024.09 Sep 10 2024
+# Start time: 01:19:37 on May 25,2025
+# vlog -reportprogress 300 -sv ../src/matrix_ip.sv 
+# -- Compiling module matrix_ip
+# ** Error: (vlog-13069) ../src/matrix_ip.sv(169): near "end": syntax error, unexpected end, expecting ';'.
+# ** Error: (vlog-13069) ../src/matrix_ip.sv(184): near "else": syntax error, unexpected else.
+# ** Error: ../src/matrix_ip.sv(189): (vlog-13205) Syntax error found in the scope following 'column_load'. Is there a missing '::'?
+# End time: 01:19:38 on May 25,2025, Elapsed time: 0:00:01
+# Errors: 3, Warnings: 0
+# ** Error: /home/gorruy/altera/24.1std/questa_fse/linux_x86_64/vlog failed.
+# Error in macro ./make_top.do line 3
+# /home/gorruy/altera/24.1std/questa_fse/linux_x86_64/vlog failed.
+#     while executing
+# "vlog -sv ../src/matrix_ip.sv "
+do make_top.do
+# Questa Intel Starter FPGA Edition-64 vlog 2024.3 Compiler 2024.09 Sep 10 2024
+# Start time: 01:19:49 on May 25,2025
+# vlog -reportprogress 300 -sv ../src/matrix_block_mul.sv 
+# -- Compiling module matrix_block_mul
+# 
+# Top level modules:
+# 	matrix_block_mul
+# End time: 01:19:49 on May 25,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Questa Intel Starter FPGA Edition-64 vlog 2024.3 Compiler 2024.09 Sep 10 2024
+# Start time: 01:19:49 on May 25,2025
+# vlog -reportprogress 300 ../src/s_axi_slv.v 
+# -- Compiling module s_axi_slv
+# 
+# Top level modules:
+# 	s_axi_slv
+# End time: 01:19:49 on May 25,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Questa Intel Starter FPGA Edition-64 vlog 2024.3 Compiler 2024.09 Sep 10 2024
+# Start time: 01:19:49 on May 25,2025
+# vlog -reportprogress 300 -sv ../src/matrix_ip.sv 
+# -- Compiling module matrix_ip
+# ** Error: (vlog-13069) ../src/matrix_ip.sv(175): near "end": syntax error, unexpected end, expecting ';'.
+# ** Error: (vlog-13069) ../src/matrix_ip.sv(184): near "else": syntax error, unexpected else.
+# ** Error: ../src/matrix_ip.sv(189): (vlog-13205) Syntax error found in the scope following 'column_load'. Is there a missing '::'?
+# End time: 01:19:49 on May 25,2025, Elapsed time: 0:00:00
+# Errors: 3, Warnings: 0
+# ** Error: /home/gorruy/altera/24.1std/questa_fse/linux_x86_64/vlog failed.
+# Error in macro ./make_top.do line 3
+# /home/gorruy/altera/24.1std/questa_fse/linux_x86_64/vlog failed.
+#     while executing
+# "vlog -sv ../src/matrix_ip.sv "
+do make_top.do
+# Questa Intel Starter FPGA Edition-64 vlog 2024.3 Compiler 2024.09 Sep 10 2024
+# Start time: 01:19:58 on May 25,2025
+# vlog -reportprogress 300 -sv ../src/matrix_block_mul.sv 
+# -- Compiling module matrix_block_mul
+# 
+# Top level modules:
+# 	matrix_block_mul
+# End time: 01:19:58 on May 25,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Questa Intel Starter FPGA Edition-64 vlog 2024.3 Compiler 2024.09 Sep 10 2024
+# Start time: 01:19:58 on May 25,2025
+# vlog -reportprogress 300 ../src/s_axi_slv.v 
+# -- Compiling module s_axi_slv
+# 
+# Top level modules:
+# 	s_axi_slv
+# End time: 01:19:58 on May 25,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Questa Intel Starter FPGA Edition-64 vlog 2024.3 Compiler 2024.09 Sep 10 2024
+# Start time: 01:19:58 on May 25,2025
+# vlog -reportprogress 300 -sv ../src/matrix_ip.sv 
+# -- Compiling module matrix_ip
+# ** Error: (vlog-13069) ../src/matrix_ip.sv(231): near "[": syntax error, unexpected '[', expecting ';'.
+# ** Error: (vlog-13069) ../src/matrix_ip.sv(232): near "[": syntax error, unexpected '[', expecting ';'.
+# ** Error: (vlog-13069) ../src/matrix_ip.sv(240): near "[": syntax error, unexpected '['.
+# End time: 01:19:58 on May 25,2025, Elapsed time: 0:00:00
+# Errors: 3, Warnings: 0
+# ** Error: /home/gorruy/altera/24.1std/questa_fse/linux_x86_64/vlog failed.
+# Error in macro ./make_top.do line 3
+# /home/gorruy/altera/24.1std/questa_fse/linux_x86_64/vlog failed.
+#     while executing
+# "vlog -sv ../src/matrix_ip.sv "
+do make_top.do
+# Questa Intel Starter FPGA Edition-64 vlog 2024.3 Compiler 2024.09 Sep 10 2024
+# Start time: 01:24:04 on May 25,2025
+# vlog -reportprogress 300 -sv ../src/matrix_block_mul.sv 
+# -- Compiling module matrix_block_mul
+# 
+# Top level modules:
+# 	matrix_block_mul
+# End time: 01:24:04 on May 25,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Questa Intel Starter FPGA Edition-64 vlog 2024.3 Compiler 2024.09 Sep 10 2024
+# Start time: 01:24:04 on May 25,2025
+# vlog -reportprogress 300 ../src/s_axi_slv.v 
+# -- Compiling module s_axi_slv
+# 
+# Top level modules:
+# 	s_axi_slv
+# End time: 01:24:04 on May 25,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Questa Intel Starter FPGA Edition-64 vlog 2024.3 Compiler 2024.09 Sep 10 2024
+# Start time: 01:24:04 on May 25,2025
+# vlog -reportprogress 300 -sv ../src/matrix_ip.sv 
+# -- Compiling module matrix_ip
+# ** Error: (vlog-13069) ../src/matrix_ip.sv(231): near "[": syntax error, unexpected '[', expecting ';'.
+# ** Error: (vlog-13069) ../src/matrix_ip.sv(232): near "[": syntax error, unexpected '[', expecting ';'.
+# ** Error: (vlog-13069) ../src/matrix_ip.sv(240): near "[": syntax error, unexpected '['.
+# End time: 01:24:04 on May 25,2025, Elapsed time: 0:00:00
+# Errors: 3, Warnings: 0
+# ** Error: /home/gorruy/altera/24.1std/questa_fse/linux_x86_64/vlog failed.
+# Error in macro ./make_top.do line 3
+# /home/gorruy/altera/24.1std/questa_fse/linux_x86_64/vlog failed.
+#     while executing
+# "vlog -sv ../src/matrix_ip.sv "
+do make_top.do
+# Questa Intel Starter FPGA Edition-64 vlog 2024.3 Compiler 2024.09 Sep 10 2024
+# Start time: 01:26:37 on May 25,2025
+# vlog -reportprogress 300 -sv ../src/matrix_block_mul.sv 
+# -- Compiling module matrix_block_mul
+# 
+# Top level modules:
+# 	matrix_block_mul
+# End time: 01:26:37 on May 25,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Questa Intel Starter FPGA Edition-64 vlog 2024.3 Compiler 2024.09 Sep 10 2024
+# Start time: 01:26:37 on May 25,2025
+# vlog -reportprogress 300 ../src/s_axi_slv.v 
+# -- Compiling module s_axi_slv
+# 
+# Top level modules:
+# 	s_axi_slv
+# End time: 01:26:37 on May 25,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Questa Intel Starter FPGA Edition-64 vlog 2024.3 Compiler 2024.09 Sep 10 2024
+# Start time: 01:26:37 on May 25,2025
+# vlog -reportprogress 300 -sv ../src/matrix_ip.sv 
+# -- Compiling module matrix_ip
+# ** Error: (vlog-13069) ../src/matrix_ip.sv(231): near "[": syntax error, unexpected '[', expecting ';'.
+# ** Error: (vlog-13069) ../src/matrix_ip.sv(232): near "[": syntax error, unexpected '[', expecting ';'.
+# ** Error: (vlog-13069) ../src/matrix_ip.sv(240): near "[": syntax error, unexpected '['.
+# End time: 01:26:37 on May 25,2025, Elapsed time: 0:00:00
+# Errors: 3, Warnings: 0
+# ** Error: /home/gorruy/altera/24.1std/questa_fse/linux_x86_64/vlog failed.
+# Error in macro ./make_top.do line 3
+# /home/gorruy/altera/24.1std/questa_fse/linux_x86_64/vlog failed.
+#     while executing
+# "vlog -sv ../src/matrix_ip.sv "
+do make_top.do
+# Questa Intel Starter FPGA Edition-64 vlog 2024.3 Compiler 2024.09 Sep 10 2024
+# Start time: 01:29:18 on May 25,2025
+# vlog -reportprogress 300 -sv ../src/matrix_block_mul.sv 
+# -- Compiling module matrix_block_mul
+# 
+# Top level modules:
+# 	matrix_block_mul
+# End time: 01:29:18 on May 25,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Questa Intel Starter FPGA Edition-64 vlog 2024.3 Compiler 2024.09 Sep 10 2024
+# Start time: 01:29:18 on May 25,2025
+# vlog -reportprogress 300 ../src/s_axi_slv.v 
+# -- Compiling module s_axi_slv
+# 
+# Top level modules:
+# 	s_axi_slv
+# End time: 01:29:18 on May 25,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Questa Intel Starter FPGA Edition-64 vlog 2024.3 Compiler 2024.09 Sep 10 2024
+# Start time: 01:29:18 on May 25,2025
+# vlog -reportprogress 300 -sv ../src/matrix_ip.sv 
+# -- Compiling module matrix_ip
+# ** Error: (vlog-13069) ../src/matrix_ip.sv(231): near "[": syntax error, unexpected '[', expecting ';'.
+# ** Error: (vlog-13069) ../src/matrix_ip.sv(232): near "[": syntax error, unexpected '[', expecting ';'.
+# ** Error: (vlog-13069) ../src/matrix_ip.sv(240): near "[": syntax error, unexpected '['.
+# End time: 01:29:18 on May 25,2025, Elapsed time: 0:00:00
+# Errors: 3, Warnings: 0
+# ** Error: /home/gorruy/altera/24.1std/questa_fse/linux_x86_64/vlog failed.
+# Error in macro ./make_top.do line 3
+# /home/gorruy/altera/24.1std/questa_fse/linux_x86_64/vlog failed.
+#     while executing
+# "vlog -sv ../src/matrix_ip.sv "
+do make_top.do
+# Questa Intel Starter FPGA Edition-64 vlog 2024.3 Compiler 2024.09 Sep 10 2024
+# Start time: 01:31:34 on May 25,2025
+# vlog -reportprogress 300 -sv ../src/matrix_block_mul.sv 
+# -- Compiling module matrix_block_mul
+# 
+# Top level modules:
+# 	matrix_block_mul
+# End time: 01:31:35 on May 25,2025, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+# Questa Intel Starter FPGA Edition-64 vlog 2024.3 Compiler 2024.09 Sep 10 2024
+# Start time: 01:31:35 on May 25,2025
+# vlog -reportprogress 300 ../src/s_axi_slv.v 
+# -- Compiling module s_axi_slv
+# 
+# Top level modules:
+# 	s_axi_slv
+# End time: 01:31:35 on May 25,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Questa Intel Starter FPGA Edition-64 vlog 2024.3 Compiler 2024.09 Sep 10 2024
+# Start time: 01:31:35 on May 25,2025
+# vlog -reportprogress 300 -sv ../src/matrix_ip.sv 
+# -- Compiling module matrix_ip
+# ** Error: (vlog-13069) ../src/matrix_ip.sv(231): near "[": syntax error, unexpected '[', expecting ';'.
+# ** Error: (vlog-13069) ../src/matrix_ip.sv(232): near "[": syntax error, unexpected '[', expecting ';'.
+# ** Error: (vlog-13069) ../src/matrix_ip.sv(240): near "[": syntax error, unexpected '['.
+# End time: 01:31:35 on May 25,2025, Elapsed time: 0:00:00
+# Errors: 3, Warnings: 0
+# ** Error: /home/gorruy/altera/24.1std/questa_fse/linux_x86_64/vlog failed.
+# Error in macro ./make_top.do line 3
+# /home/gorruy/altera/24.1std/questa_fse/linux_x86_64/vlog failed.
+#     while executing
+# "vlog -sv ../src/matrix_ip.sv "
+do make_top.do
+# Questa Intel Starter FPGA Edition-64 vlog 2024.3 Compiler 2024.09 Sep 10 2024
+# Start time: 01:37:25 on May 25,2025
+# vlog -reportprogress 300 -sv ../src/matrix_block_mul.sv 
+# -- Compiling module matrix_block_mul
+# 
+# Top level modules:
+# 	matrix_block_mul
+# End time: 01:37:25 on May 25,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Questa Intel Starter FPGA Edition-64 vlog 2024.3 Compiler 2024.09 Sep 10 2024
+# Start time: 01:37:25 on May 25,2025
+# vlog -reportprogress 300 ../src/s_axi_slv.v 
+# -- Compiling module s_axi_slv
+# 
+# Top level modules:
+# 	s_axi_slv
+# End time: 01:37:25 on May 25,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Questa Intel Starter FPGA Edition-64 vlog 2024.3 Compiler 2024.09 Sep 10 2024
+# Start time: 01:37:25 on May 25,2025
+# vlog -reportprogress 300 -sv ../src/matrix_ip.sv 
+# -- Compiling module matrix_ip
+# ** Error: (vlog-13069) ../src/matrix_ip.sv(68): near "[": syntax error, unexpected '[', expecting ')'.
+# ** Error: (vlog-13069) ../src/matrix_ip.sv(231): near "[": syntax error, unexpected '['.
+# End time: 01:37:26 on May 25,2025, Elapsed time: 0:00:01
+# Errors: 2, Warnings: 0
+# ** Error: /home/gorruy/altera/24.1std/questa_fse/linux_x86_64/vlog failed.
+# Error in macro ./make_top.do line 3
+# /home/gorruy/altera/24.1std/questa_fse/linux_x86_64/vlog failed.
+#     while executing
+# "vlog -sv ../src/matrix_ip.sv "
+do make_top.do
+# Questa Intel Starter FPGA Edition-64 vlog 2024.3 Compiler 2024.09 Sep 10 2024
+# Start time: 01:38:19 on May 25,2025
+# vlog -reportprogress 300 -sv ../src/matrix_block_mul.sv 
+# -- Compiling module matrix_block_mul
+# 
+# Top level modules:
+# 	matrix_block_mul
+# End time: 01:38:19 on May 25,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Questa Intel Starter FPGA Edition-64 vlog 2024.3 Compiler 2024.09 Sep 10 2024
+# Start time: 01:38:19 on May 25,2025
+# vlog -reportprogress 300 ../src/s_axi_slv.v 
+# -- Compiling module s_axi_slv
+# 
+# Top level modules:
+# 	s_axi_slv
+# End time: 01:38:19 on May 25,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Questa Intel Starter FPGA Edition-64 vlog 2024.3 Compiler 2024.09 Sep 10 2024
+# Start time: 01:38:19 on May 25,2025
+# vlog -reportprogress 300 -sv ../src/matrix_ip.sv 
+# -- Compiling module matrix_ip
+# ** Error: (vlog-13069) ../src/matrix_ip.sv(68): near "[": syntax error, unexpected '[', expecting ')'.
+# ** Error: (vlog-13069) ../src/matrix_ip.sv(231): near "[": syntax error, unexpected '['.
+# End time: 01:38:19 on May 25,2025, Elapsed time: 0:00:00
+# Errors: 2, Warnings: 0
+# ** Error: /home/gorruy/altera/24.1std/questa_fse/linux_x86_64/vlog failed.
+# Error in macro ./make_top.do line 3
+# /home/gorruy/altera/24.1std/questa_fse/linux_x86_64/vlog failed.
+#     while executing
+# "vlog -sv ../src/matrix_ip.sv "
+do make_top.do
+# Questa Intel Starter FPGA Edition-64 vlog 2024.3 Compiler 2024.09 Sep 10 2024
+# Start time: 01:47:22 on May 25,2025
+# vlog -reportprogress 300 -sv ../src/matrix_block_mul.sv 
+# -- Compiling module matrix_block_mul
+# 
+# Top level modules:
+# 	matrix_block_mul
+# End time: 01:47:23 on May 25,2025, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+# Questa Intel Starter FPGA Edition-64 vlog 2024.3 Compiler 2024.09 Sep 10 2024
+# Start time: 01:47:23 on May 25,2025
+# vlog -reportprogress 300 ../src/s_axi_slv.v 
+# -- Compiling module s_axi_slv
+# 
+# Top level modules:
+# 	s_axi_slv
+# End time: 01:47:23 on May 25,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Questa Intel Starter FPGA Edition-64 vlog 2024.3 Compiler 2024.09 Sep 10 2024
+# Start time: 01:47:23 on May 25,2025
+# vlog -reportprogress 300 -sv ../src/matrix_ip.sv 
+# -- Compiling module matrix_ip
+# ** Error: ../src/matrix_ip.sv(235): (vlog-2730) Undefined variable: 'kshift'.
+# ** Error: ../src/matrix_ip.sv(248): (vlog-2730) Undefined variable: '\ '.
+# ** Error: (vlog-13069) ../src/matrix_ip.sv(249): near "res_matrix": syntax error, unexpected IDENTIFIER, expecting ';'.
+# End time: 01:47:23 on May 25,2025, Elapsed time: 0:00:00
+# Errors: 3, Warnings: 0
+# ** Error: /home/gorruy/altera/24.1std/questa_fse/linux_x86_64/vlog failed.
+# Error in macro ./make_top.do line 3
+# /home/gorruy/altera/24.1std/questa_fse/linux_x86_64/vlog failed.
+#     while executing
+# "vlog -sv ../src/matrix_ip.sv "
+do make_top.do
+# Questa Intel Starter FPGA Edition-64 vlog 2024.3 Compiler 2024.09 Sep 10 2024
+# Start time: 01:50:55 on May 25,2025
+# vlog -reportprogress 300 -sv ../src/matrix_block_mul.sv 
+# -- Compiling module matrix_block_mul
+# 
+# Top level modules:
+# 	matrix_block_mul
+# End time: 01:50:55 on May 25,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Questa Intel Starter FPGA Edition-64 vlog 2024.3 Compiler 2024.09 Sep 10 2024
+# Start time: 01:50:56 on May 25,2025
+# vlog -reportprogress 300 ../src/s_axi_slv.v 
+# -- Compiling module s_axi_slv
+# 
+# Top level modules:
+# 	s_axi_slv
+# End time: 01:50:56 on May 25,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Questa Intel Starter FPGA Edition-64 vlog 2024.3 Compiler 2024.09 Sep 10 2024
+# Start time: 01:50:56 on May 25,2025
+# vlog -reportprogress 300 -sv ../src/matrix_ip.sv 
+# -- Compiling module matrix_ip
+# ** Error: ../src/matrix_ip.sv(246): (vlog-2730) Undefined variable: '\ '.
+# ** Error: (vlog-13069) ../src/matrix_ip.sv(247): near "res_matrix": syntax error, unexpected IDENTIFIER, expecting ';'.
+# End time: 01:50:56 on May 25,2025, Elapsed time: 0:00:00
+# Errors: 2, Warnings: 0
+# ** Error: /home/gorruy/altera/24.1std/questa_fse/linux_x86_64/vlog failed.
+# Error in macro ./make_top.do line 3
+# /home/gorruy/altera/24.1std/questa_fse/linux_x86_64/vlog failed.
+#     while executing
+# "vlog -sv ../src/matrix_ip.sv "
+do make_top.do
+# Questa Intel Starter FPGA Edition-64 vlog 2024.3 Compiler 2024.09 Sep 10 2024
+# Start time: 01:51:21 on May 25,2025
+# vlog -reportprogress 300 -sv ../src/matrix_block_mul.sv 
+# -- Compiling module matrix_block_mul
+# 
+# Top level modules:
+# 	matrix_block_mul
+# End time: 01:51:22 on May 25,2025, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+# Questa Intel Starter FPGA Edition-64 vlog 2024.3 Compiler 2024.09 Sep 10 2024
+# Start time: 01:51:22 on May 25,2025
+# vlog -reportprogress 300 ../src/s_axi_slv.v 
+# -- Compiling module s_axi_slv
+# 
+# Top level modules:
+# 	s_axi_slv
+# End time: 01:51:22 on May 25,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Questa Intel Starter FPGA Edition-64 vlog 2024.3 Compiler 2024.09 Sep 10 2024
+# Start time: 01:51:22 on May 25,2025
+# vlog -reportprogress 300 -sv ../src/matrix_ip.sv 
+# -- Compiling module matrix_ip
+# ** Error: ../src/matrix_ip.sv(246): (vlog-2730) Undefined variable: '\ '.
+# ** Error: (vlog-13069) ../src/matrix_ip.sv(247): near "res_matrix": syntax error, unexpected IDENTIFIER, expecting ';'.
+# End time: 01:51:22 on May 25,2025, Elapsed time: 0:00:00
+# Errors: 2, Warnings: 0
+# ** Error: /home/gorruy/altera/24.1std/questa_fse/linux_x86_64/vlog failed.
+# Error in macro ./make_top.do line 3
+# /home/gorruy/altera/24.1std/questa_fse/linux_x86_64/vlog failed.
+#     while executing
+# "vlog -sv ../src/matrix_ip.sv "
+do make_top.do
+# Questa Intel Starter FPGA Edition-64 vlog 2024.3 Compiler 2024.09 Sep 10 2024
+# Start time: 01:51:30 on May 25,2025
+# vlog -reportprogress 300 -sv ../src/matrix_block_mul.sv 
+# -- Compiling module matrix_block_mul
+# 
+# Top level modules:
+# 	matrix_block_mul
+# End time: 01:51:30 on May 25,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Questa Intel Starter FPGA Edition-64 vlog 2024.3 Compiler 2024.09 Sep 10 2024
+# Start time: 01:51:30 on May 25,2025
+# vlog -reportprogress 300 ../src/s_axi_slv.v 
+# -- Compiling module s_axi_slv
+# 
+# Top level modules:
+# 	s_axi_slv
+# End time: 01:51:30 on May 25,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Questa Intel Starter FPGA Edition-64 vlog 2024.3 Compiler 2024.09 Sep 10 2024
+# Start time: 01:51:30 on May 25,2025
+# vlog -reportprogress 300 -sv ../src/matrix_ip.sv 
+# -- Compiling module matrix_ip
+# 
+# Top level modules:
+# 	matrix_ip
+# End time: 01:51:30 on May 25,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Questa Intel Starter FPGA Edition-64 vlog 2024.3 Compiler 2024.09 Sep 10 2024
+# Start time: 01:51:31 on May 25,2025
+# vlog -reportprogress 300 -sv ../src/acc_top.sv 
+# -- Compiling module acc_top
+# ** Error: ../src/acc_top.sv(69): (vlog-2730) Undefined variable: 'm00_axis_tready'.
+# End time: 01:51:31 on May 25,2025, Elapsed time: 0:00:00
+# Errors: 1, Warnings: 0
+# ** Error: /home/gorruy/altera/24.1std/questa_fse/linux_x86_64/vlog failed.
+# Error in macro ./make_top.do line 4
+# /home/gorruy/altera/24.1std/questa_fse/linux_x86_64/vlog failed.
+#     while executing
+# "vlog -sv ../src/acc_top.sv "
+do make_top.do
+# Questa Intel Starter FPGA Edition-64 vlog 2024.3 Compiler 2024.09 Sep 10 2024
+# Start time: 01:55:15 on May 25,2025
+# vlog -reportprogress 300 -sv ../src/matrix_block_mul.sv 
+# -- Compiling module matrix_block_mul
+# 
+# Top level modules:
+# 	matrix_block_mul
+# End time: 01:55:15 on May 25,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Questa Intel Starter FPGA Edition-64 vlog 2024.3 Compiler 2024.09 Sep 10 2024
+# Start time: 01:55:15 on May 25,2025
+# vlog -reportprogress 300 ../src/s_axi_slv.v 
+# -- Compiling module s_axi_slv
+# 
+# Top level modules:
+# 	s_axi_slv
+# End time: 01:55:15 on May 25,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Questa Intel Starter FPGA Edition-64 vlog 2024.3 Compiler 2024.09 Sep 10 2024
+# Start time: 01:55:15 on May 25,2025
+# vlog -reportprogress 300 -sv ../src/matrix_ip.sv 
+# -- Compiling module matrix_ip
+# 
+# Top level modules:
+# 	matrix_ip
+# End time: 01:55:15 on May 25,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Questa Intel Starter FPGA Edition-64 vlog 2024.3 Compiler 2024.09 Sep 10 2024
+# Start time: 01:55:16 on May 25,2025
+# vlog -reportprogress 300 -sv ../src/acc_top.sv 
+# -- Compiling module acc_top
+# ** Error: (vlog-13069) ../src/acc_top.sv(14): near "output": syntax error, unexpected output, expecting ')'.
+# End time: 01:55:16 on May 25,2025, Elapsed time: 0:00:00
+# Errors: 1, Warnings: 0
+# ** Error: /home/gorruy/altera/24.1std/questa_fse/linux_x86_64/vlog failed.
+# Error in macro ./make_top.do line 4
+# /home/gorruy/altera/24.1std/questa_fse/linux_x86_64/vlog failed.
+#     while executing
+# "vlog -sv ../src/acc_top.sv "
+do make_top.do
+# Questa Intel Starter FPGA Edition-64 vlog 2024.3 Compiler 2024.09 Sep 10 2024
+# Start time: 01:55:58 on May 25,2025
+# vlog -reportprogress 300 -sv ../src/matrix_block_mul.sv 
+# -- Compiling module matrix_block_mul
+# 
+# Top level modules:
+# 	matrix_block_mul
+# End time: 01:55:58 on May 25,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Questa Intel Starter FPGA Edition-64 vlog 2024.3 Compiler 2024.09 Sep 10 2024
+# Start time: 01:55:58 on May 25,2025
+# vlog -reportprogress 300 ../src/s_axi_slv.v 
+# -- Compiling module s_axi_slv
+# 
+# Top level modules:
+# 	s_axi_slv
+# End time: 01:55:58 on May 25,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Questa Intel Starter FPGA Edition-64 vlog 2024.3 Compiler 2024.09 Sep 10 2024
+# Start time: 01:55:58 on May 25,2025
+# vlog -reportprogress 300 -sv ../src/matrix_ip.sv 
+# -- Compiling module matrix_ip
+# 
+# Top level modules:
+# 	matrix_ip
+# End time: 01:55:58 on May 25,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Questa Intel Starter FPGA Edition-64 vlog 2024.3 Compiler 2024.09 Sep 10 2024
+# Start time: 01:55:58 on May 25,2025
+# vlog -reportprogress 300 -sv ../src/acc_top.sv 
+# -- Compiling module acc_top
+# ** Error: (vlog-13069) ../src/acc_top.sv(14): near "output": syntax error, unexpected output, expecting ')'.
+# End time: 01:55:58 on May 25,2025, Elapsed time: 0:00:00
+# Errors: 1, Warnings: 0
+# ** Error: /home/gorruy/altera/24.1std/questa_fse/linux_x86_64/vlog failed.
+# Error in macro ./make_top.do line 4
+# /home/gorruy/altera/24.1std/questa_fse/linux_x86_64/vlog failed.
+#     while executing
+# "vlog -sv ../src/acc_top.sv "
+do make_top.do
+# Questa Intel Starter FPGA Edition-64 vlog 2024.3 Compiler 2024.09 Sep 10 2024
+# Start time: 01:56:10 on May 25,2025
+# vlog -reportprogress 300 -sv ../src/matrix_block_mul.sv 
+# -- Compiling module matrix_block_mul
+# 
+# Top level modules:
+# 	matrix_block_mul
+# End time: 01:56:10 on May 25,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Questa Intel Starter FPGA Edition-64 vlog 2024.3 Compiler 2024.09 Sep 10 2024
+# Start time: 01:56:10 on May 25,2025
+# vlog -reportprogress 300 ../src/s_axi_slv.v 
+# -- Compiling module s_axi_slv
+# 
+# Top level modules:
+# 	s_axi_slv
+# End time: 01:56:10 on May 25,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Questa Intel Starter FPGA Edition-64 vlog 2024.3 Compiler 2024.09 Sep 10 2024
+# Start time: 01:56:10 on May 25,2025
+# vlog -reportprogress 300 -sv ../src/matrix_ip.sv 
+# -- Compiling module matrix_ip
+# 
+# Top level modules:
+# 	matrix_ip
+# End time: 01:56:11 on May 25,2025, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+# Questa Intel Starter FPGA Edition-64 vlog 2024.3 Compiler 2024.09 Sep 10 2024
+# Start time: 01:56:11 on May 25,2025
+# vlog -reportprogress 300 -sv ../src/acc_top.sv 
+# -- Compiling module acc_top
+# ** Error: ../src/acc_top.sv(16): (vlog-2730) Undefined variable: 'DIG_MAX'.
+# ** Error (suppressible): ../src/acc_top.sv(16): (vlog-2388) 'm00_axis_tdata' already declared in this scope (acc_top) at ../src/acc_top.sv(16).
+# ** Error (suppressible): ../src/acc_top.sv(49): (vlog-2388) 'm00_axis_tvalid' already declared in this scope (acc_top) at ../src/acc_top.sv(14).
+# ** Error (suppressible): ../src/acc_top.sv(50): (vlog-2388) 'm00_axis_tdata' already declared in this scope (acc_top) at ../src/acc_top.sv(16).
+# ** Error (suppressible): ../src/acc_top.sv(52): (vlog-2388) 'm00_axis_tlast' already declared in this scope (acc_top) at ../src/acc_top.sv(17).
+# ** Error: ../src/acc_top.sv(16): (vlog-13294) Identifier must be declared with a port mode: m00_axis_tdata.
+# End time: 01:56:11 on May 25,2025, Elapsed time: 0:00:00
+# Errors: 6, Warnings: 0
+# ** Error: /home/gorruy/altera/24.1std/questa_fse/linux_x86_64/vlog failed.
+# Error in macro ./make_top.do line 4
+# /home/gorruy/altera/24.1std/questa_fse/linux_x86_64/vlog failed.
+#     while executing
+# "vlog -sv ../src/acc_top.sv "
+do make_top.do
+# Questa Intel Starter FPGA Edition-64 vlog 2024.3 Compiler 2024.09 Sep 10 2024
+# Start time: 01:57:16 on May 25,2025
+# vlog -reportprogress 300 -sv ../src/matrix_block_mul.sv 
+# -- Compiling module matrix_block_mul
+# 
+# Top level modules:
+# 	matrix_block_mul
+# End time: 01:57:16 on May 25,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Questa Intel Starter FPGA Edition-64 vlog 2024.3 Compiler 2024.09 Sep 10 2024
+# Start time: 01:57:16 on May 25,2025
+# vlog -reportprogress 300 ../src/s_axi_slv.v 
+# -- Compiling module s_axi_slv
+# 
+# Top level modules:
+# 	s_axi_slv
+# End time: 01:57:16 on May 25,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Questa Intel Starter FPGA Edition-64 vlog 2024.3 Compiler 2024.09 Sep 10 2024
+# Start time: 01:57:16 on May 25,2025
+# vlog -reportprogress 300 -sv ../src/matrix_ip.sv 
+# -- Compiling module matrix_ip
+# 
+# Top level modules:
+# 	matrix_ip
+# End time: 01:57:16 on May 25,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Questa Intel Starter FPGA Edition-64 vlog 2024.3 Compiler 2024.09 Sep 10 2024
+# Start time: 01:57:16 on May 25,2025
+# vlog -reportprogress 300 -sv ../src/acc_top.sv 
+# -- Compiling module acc_top
+# ** Error (suppressible): ../src/acc_top.sv(55): (vlog-2388) 'm00_axis_tvalid' already declared in this scope (acc_top) at ../src/acc_top.sv(20).
+# ** Error (suppressible): ../src/acc_top.sv(56): (vlog-2388) 'm00_axis_tdata' already declared in this scope (acc_top) at ../src/acc_top.sv(22).
+# ** Error (suppressible): ../src/acc_top.sv(58): (vlog-2388) 'm00_axis_tlast' already declared in this scope (acc_top) at ../src/acc_top.sv(23).
+# End time: 01:57:16 on May 25,2025, Elapsed time: 0:00:00
+# Errors: 3, Warnings: 0
+# ** Error: /home/gorruy/altera/24.1std/questa_fse/linux_x86_64/vlog failed.
+# Error in macro ./make_top.do line 4
+# /home/gorruy/altera/24.1std/questa_fse/linux_x86_64/vlog failed.
+#     while executing
+# "vlog -sv ../src/acc_top.sv "
+do make_top.do
+# Questa Intel Starter FPGA Edition-64 vlog 2024.3 Compiler 2024.09 Sep 10 2024
+# Start time: 02:03:14 on May 25,2025
+# vlog -reportprogress 300 -sv ../src/matrix_block_mul.sv 
+# -- Compiling module matrix_block_mul
+# 
+# Top level modules:
+# 	matrix_block_mul
+# End time: 02:03:14 on May 25,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Questa Intel Starter FPGA Edition-64 vlog 2024.3 Compiler 2024.09 Sep 10 2024
+# Start time: 02:03:14 on May 25,2025
+# vlog -reportprogress 300 ../src/s_axi_slv.v 
+# -- Compiling module s_axi_slv
+# 
+# Top level modules:
+# 	s_axi_slv
+# End time: 02:03:14 on May 25,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Questa Intel Starter FPGA Edition-64 vlog 2024.3 Compiler 2024.09 Sep 10 2024
+# Start time: 02:03:14 on May 25,2025
+# vlog -reportprogress 300 -sv ../src/matrix_ip.sv 
+# -- Compiling module matrix_ip
+# 
+# Top level modules:
+# 	matrix_ip
+# End time: 02:03:14 on May 25,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Questa Intel Starter FPGA Edition-64 vlog 2024.3 Compiler 2024.09 Sep 10 2024
+# Start time: 02:03:14 on May 25,2025
+# vlog -reportprogress 300 -sv ../src/acc_top.sv 
+# -- Compiling module acc_top
+# ** Error (suppressible): ../src/acc_top.sv(63): (vlog-2388) 'm00_axis_tvalid' already declared in this scope (acc_top) at ../src/acc_top.sv(19).
+# ** Error (suppressible): ../src/acc_top.sv(64): (vlog-2388) 'm00_axis_tdata' already declared in this scope (acc_top) at ../src/acc_top.sv(21).
+# ** Error (suppressible): ../src/acc_top.sv(65): (vlog-2388) 'm00_axis_tstrb' already declared in this scope (acc_top) at ../src/acc_top.sv(22).
+# ** Error (suppressible): ../src/acc_top.sv(66): (vlog-2388) 'm00_axis_tlast' already declared in this scope (acc_top) at ../src/acc_top.sv(23).
+# End time: 02:03:14 on May 25,2025, Elapsed time: 0:00:00
+# Errors: 4, Warnings: 0
+# ** Error: /home/gorruy/altera/24.1std/questa_fse/linux_x86_64/vlog failed.
+# Error in macro ./make_top.do line 4
+# /home/gorruy/altera/24.1std/questa_fse/linux_x86_64/vlog failed.
+#     while executing
+# "vlog -sv ../src/acc_top.sv "
+do make_top.do
+# Questa Intel Starter FPGA Edition-64 vlog 2024.3 Compiler 2024.09 Sep 10 2024
+# Start time: 02:04:59 on May 25,2025
+# vlog -reportprogress 300 -sv ../src/matrix_block_mul.sv 
+# -- Compiling module matrix_block_mul
+# 
+# Top level modules:
+# 	matrix_block_mul
+# End time: 02:04:59 on May 25,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Questa Intel Starter FPGA Edition-64 vlog 2024.3 Compiler 2024.09 Sep 10 2024
+# Start time: 02:04:59 on May 25,2025
+# vlog -reportprogress 300 ../src/s_axi_slv.v 
+# -- Compiling module s_axi_slv
+# 
+# Top level modules:
+# 	s_axi_slv
+# End time: 02:05:00 on May 25,2025, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+# Questa Intel Starter FPGA Edition-64 vlog 2024.3 Compiler 2024.09 Sep 10 2024
+# Start time: 02:05:00 on May 25,2025
+# vlog -reportprogress 300 -sv ../src/matrix_ip.sv 
+# -- Compiling module matrix_ip
+# 
+# Top level modules:
+# 	matrix_ip
+# End time: 02:05:00 on May 25,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Questa Intel Starter FPGA Edition-64 vlog 2024.3 Compiler 2024.09 Sep 10 2024
+# Start time: 02:05:00 on May 25,2025
+# vlog -reportprogress 300 -sv ../src/acc_top.sv 
+# -- Compiling module acc_top
+# ** Error: ../src/acc_top.sv(68): (vlog-2110) Illegal reference to net "m00_axis_tvalid".
+# ** Error: ../src/acc_top.sv(69): (vlog-2110) Illegal reference to net "m00_axis_tdata".
+# ** Error: ../src/acc_top.sv(70): (vlog-2110) Illegal reference to net "m00_axis_tstrb".
+# ** Error: ../src/acc_top.sv(71): (vlog-2110) Illegal reference to net "m00_axis_tlast".
+# ** Error: ../src/acc_top.sv(76): (vlog-2110) Illegal reference to net "m00_axis_tvalid".
+# ** Error: ../src/acc_top.sv(77): (vlog-2110) Illegal reference to net "m00_axis_tstrb".
+# ** Error: ../src/acc_top.sv(78): (vlog-2110) Illegal reference to net "m00_axis_tdata".
+# ** Error: ../src/acc_top.sv(80): (vlog-2110) Illegal reference to net "m00_axis_tdata".
+# ** Error: ../src/acc_top.sv(89): (vlog-2110) Illegal reference to net "m00_axis_tlast".
+# ** Error: ../src/acc_top.sv(91): (vlog-2110) Illegal reference to net "m00_axis_tvalid".
+# ** Error: ../src/acc_top.sv(92): (vlog-2110) Illegal reference to net "m00_axis_tstrb".
+# ** Error: ../src/acc_top.sv(93): (vlog-2110) Illegal reference to net "m00_axis_tlast".
+# End time: 02:05:00 on May 25,2025, Elapsed time: 0:00:00
+# Errors: 12, Warnings: 0
+# ** Error: /home/gorruy/altera/24.1std/questa_fse/linux_x86_64/vlog failed.
+# Error in macro ./make_top.do line 4
+# /home/gorruy/altera/24.1std/questa_fse/linux_x86_64/vlog failed.
+#     while executing
+# "vlog -sv ../src/acc_top.sv "
+do make_top.do
+# Questa Intel Starter FPGA Edition-64 vlog 2024.3 Compiler 2024.09 Sep 10 2024
+# Start time: 02:06:15 on May 25,2025
+# vlog -reportprogress 300 -sv ../src/matrix_block_mul.sv 
+# -- Compiling module matrix_block_mul
+# 
+# Top level modules:
+# 	matrix_block_mul
+# End time: 02:06:15 on May 25,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Questa Intel Starter FPGA Edition-64 vlog 2024.3 Compiler 2024.09 Sep 10 2024
+# Start time: 02:06:15 on May 25,2025
+# vlog -reportprogress 300 ../src/s_axi_slv.v 
+# -- Compiling module s_axi_slv
+# 
+# Top level modules:
+# 	s_axi_slv
+# End time: 02:06:15 on May 25,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Questa Intel Starter FPGA Edition-64 vlog 2024.3 Compiler 2024.09 Sep 10 2024
+# Start time: 02:06:15 on May 25,2025
+# vlog -reportprogress 300 -sv ../src/matrix_ip.sv 
+# -- Compiling module matrix_ip
+# 
+# Top level modules:
+# 	matrix_ip
+# End time: 02:06:15 on May 25,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Questa Intel Starter FPGA Edition-64 vlog 2024.3 Compiler 2024.09 Sep 10 2024
+# Start time: 02:06:15 on May 25,2025
+# vlog -reportprogress 300 -sv ../src/acc_top.sv 
+# -- Compiling module acc_top
+# 
+# Top level modules:
+# 	acc_top
+# End time: 02:06:16 on May 25,2025, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+# Questa Intel Starter FPGA Edition-64 vlog 2024.3 Compiler 2024.09 Sep 10 2024
+# Start time: 02:06:16 on May 25,2025
+# vlog -reportprogress 300 -sv acc_top_tb.sv 
+# ** Error: (vlog-7) Failed to open design unit file "acc_top_tb.sv" in read mode.
+# No such file or directory. (errno = ENOENT)
+# End time: 02:06:16 on May 25,2025, Elapsed time: 0:00:00
+# Errors: 1, Warnings: 0
+# ** Error: /home/gorruy/altera/24.1std/questa_fse/linux_x86_64/vlog failed.
+# Error in macro ./make_top.do line 5
+# /home/gorruy/altera/24.1std/questa_fse/linux_x86_64/vlog failed.
+#     while executing
+# "vlog -sv acc_top_tb.sv"
+do make_top.do
+# Questa Intel Starter FPGA Edition-64 vlog 2024.3 Compiler 2024.09 Sep 10 2024
+# Start time: 02:07:03 on May 25,2025
+# vlog -reportprogress 300 -sv ../src/matrix_block_mul.sv 
+# -- Compiling module matrix_block_mul
+# 
+# Top level modules:
+# 	matrix_block_mul
+# End time: 02:07:03 on May 25,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Questa Intel Starter FPGA Edition-64 vlog 2024.3 Compiler 2024.09 Sep 10 2024
+# Start time: 02:07:03 on May 25,2025
+# vlog -reportprogress 300 ../src/s_axi_slv.v 
+# -- Compiling module s_axi_slv
+# 
+# Top level modules:
+# 	s_axi_slv
+# End time: 02:07:04 on May 25,2025, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+# Questa Intel Starter FPGA Edition-64 vlog 2024.3 Compiler 2024.09 Sep 10 2024
+# Start time: 02:07:04 on May 25,2025
+# vlog -reportprogress 300 -sv ../src/matrix_ip.sv 
+# -- Compiling module matrix_ip
+# 
+# Top level modules:
+# 	matrix_ip
+# End time: 02:07:04 on May 25,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Questa Intel Starter FPGA Edition-64 vlog 2024.3 Compiler 2024.09 Sep 10 2024
+# Start time: 02:07:04 on May 25,2025
+# vlog -reportprogress 300 -sv ../src/acc_top.sv 
+# -- Compiling module acc_top
+# 
+# Top level modules:
+# 	acc_top
+# End time: 02:07:04 on May 25,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Questa Intel Starter FPGA Edition-64 vlog 2024.3 Compiler 2024.09 Sep 10 2024
+# Start time: 02:07:04 on May 25,2025
+# vlog -reportprogress 300 -sv top_tb.sv 
+# -- Compiling module top_tb
+# 
+# Top level modules:
+# 	top_tb
+# End time: 02:07:04 on May 25,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vsim -voptargs=""+acc"" work.top_tb 
+# Start time: 02:07:04 on May 25,2025
+# ** Note: (vsim-3812) Design is being optimized...
+# ** Warning: (vopt-10908) Some optimizations are turned off because the +acc switch is in effect.
+# ** Error (suppressible): ../src/matrix_ip.sv(65): (vopt-2912) Port 'res_matrix' not found in module 'matrix_block_mul' (5th connection).
+# Optimization failed
+# ** Note: (vsim-12126) Error and warning message counts have been restored: Errors=1, Warnings=1.
+# Error loading design
+# Error: Error loading design
+#        Pausing macro execution
+# MACRO ./make_top.do PAUSED at line 7
+do make_top.do
+# Questa Intel Starter FPGA Edition-64 vlog 2024.3 Compiler 2024.09 Sep 10 2024
+# Start time: 02:25:19 on May 25,2025
+# vlog -reportprogress 300 -sv ../src/matrix_block_mul.sv 
+# -- Compiling module matrix_block_mul
+# 
+# Top level modules:
+# 	matrix_block_mul
+# End time: 02:25:19 on May 25,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Questa Intel Starter FPGA Edition-64 vlog 2024.3 Compiler 2024.09 Sep 10 2024
+# Start time: 02:25:19 on May 25,2025
+# vlog -reportprogress 300 ../src/s_axi_slv.v 
+# -- Compiling module s_axi_slv
+# 
+# Top level modules:
+# 	s_axi_slv
+# End time: 02:25:19 on May 25,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Questa Intel Starter FPGA Edition-64 vlog 2024.3 Compiler 2024.09 Sep 10 2024
+# Start time: 02:25:19 on May 25,2025
+# vlog -reportprogress 300 -sv ../src/matrix_ip.sv 
+# -- Compiling module matrix_ip
+# 
+# Top level modules:
+# 	matrix_ip
+# End time: 02:25:19 on May 25,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Questa Intel Starter FPGA Edition-64 vlog 2024.3 Compiler 2024.09 Sep 10 2024
+# Start time: 02:25:19 on May 25,2025
+# vlog -reportprogress 300 -sv ../src/acc_top.sv 
+# -- Compiling module acc_top
+# 
+# Top level modules:
+# 	acc_top
+# End time: 02:25:20 on May 25,2025, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+# Questa Intel Starter FPGA Edition-64 vlog 2024.3 Compiler 2024.09 Sep 10 2024
+# Start time: 02:25:20 on May 25,2025
+# vlog -reportprogress 300 -sv top_tb.sv 
+# -- Compiling module top_tb
+# 
+# Top level modules:
+# 	top_tb
+# End time: 02:25:20 on May 25,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vsim -voptargs=""+acc"" work.top_tb 
+# Start time: 02:07:04 on May 25,2025
+# ** Note: (vsim-3812) Design is being optimized...
+# ** Warning: (vopt-10908) Some optimizations are turned off because the +acc switch is in effect.
+# ** Error (suppressible): ../src/matrix_ip.sv(126): (vopt-12003) Variable 'done_o' written by continuous and procedural assignments. See ../src/matrix_ip.sv(52). 
+# ** Error (suppressible): ../src/matrix_ip.sv(132): (vopt-12003) Variable 'done_o' written by continuous and procedural assignments. See ../src/matrix_ip.sv(52). 
+# ** Error (suppressible): ../src/matrix_ip.sv(137): (vopt-12003) Variable 'done_o' written by continuous and procedural assignments. See ../src/matrix_ip.sv(52). 
+# ** Error (suppressible): ../src/matrix_ip.sv(142): (vopt-12003) Variable 'done_o' written by continuous and procedural assignments. See ../src/matrix_ip.sv(52). 
+# ** Error (suppressible): ../src/matrix_ip.sv(147): (vopt-12003) Variable 'done_o' written by continuous and procedural assignments. See ../src/matrix_ip.sv(52). 
+# ** Error (suppressible): ../src/matrix_ip.sv(152): (vopt-12003) Variable 'done_o' written by continuous and procedural assignments. See ../src/matrix_ip.sv(52). 
+# ** Error (suppressible): ../src/matrix_ip.sv(157): (vopt-12003) Variable 'done_o' written by continuous and procedural assignments. See ../src/matrix_ip.sv(52). 
+# Optimization failed
+# ** Error: (vopt-2064) Compiler back-end code generation process terminated with code 12.
+# ** Note: (vsim-12126) Error and warning message counts have been restored: Errors=9, Warnings=2.
+# Error loading design
+# Error: Error loading design
+#        Pausing macro execution
+# MACRO ./make_top.do PAUSED at line 7
+do make_top.do
+# Questa Intel Starter FPGA Edition-64 vlog 2024.3 Compiler 2024.09 Sep 10 2024
+# Start time: 02:26:05 on May 25,2025
+# vlog -reportprogress 300 -sv ../src/matrix_block_mul.sv 
+# -- Compiling module matrix_block_mul
+# 
+# Top level modules:
+# 	matrix_block_mul
+# End time: 02:26:05 on May 25,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Questa Intel Starter FPGA Edition-64 vlog 2024.3 Compiler 2024.09 Sep 10 2024
+# Start time: 02:26:05 on May 25,2025
+# vlog -reportprogress 300 ../src/s_axi_slv.v 
+# -- Compiling module s_axi_slv
+# 
+# Top level modules:
+# 	s_axi_slv
+# End time: 02:26:05 on May 25,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Questa Intel Starter FPGA Edition-64 vlog 2024.3 Compiler 2024.09 Sep 10 2024
+# Start time: 02:26:05 on May 25,2025
+# vlog -reportprogress 300 -sv ../src/matrix_ip.sv 
+# -- Compiling module matrix_ip
+# 
+# Top level modules:
+# 	matrix_ip
+# End time: 02:26:05 on May 25,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Questa Intel Starter FPGA Edition-64 vlog 2024.3 Compiler 2024.09 Sep 10 2024
+# Start time: 02:26:05 on May 25,2025
+# vlog -reportprogress 300 -sv ../src/acc_top.sv 
+# -- Compiling module acc_top
+# 
+# Top level modules:
+# 	acc_top
+# End time: 02:26:05 on May 25,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Questa Intel Starter FPGA Edition-64 vlog 2024.3 Compiler 2024.09 Sep 10 2024
+# Start time: 02:26:05 on May 25,2025
+# vlog -reportprogress 300 -sv top_tb.sv 
+# -- Compiling module top_tb
+# 
+# Top level modules:
+# 	top_tb
+# End time: 02:26:05 on May 25,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vsim -voptargs=""+acc"" work.top_tb 
+# Start time: 02:07:04 on May 25,2025
+# ** Note: (vsim-3812) Design is being optimized...
+# ** Warning: (vopt-10908) Some optimizations are turned off because the +acc switch is in effect.
+# ** Note: (vopt-143) Recognized 1 FSM in module "matrix_ip(fast)".
+# ** Note: (vopt-143) Recognized 1 FSM in module "matrix_block_mul(fast)".
+# ** Note: (vsim-12126) Error and warning message counts have been restored: Errors=9, Warnings=3.
+# Loading sv_std.std
+# Loading work.top_tb(fast)
+# Loading work.acc_top(fast)
+# Loading work.s_axi_slv(fast)
+# Loading work.matrix_ip(fast)
+# Loading work.matrix_block_mul(fast)
+# ** Error: wrong # args.  Usage: insert index itemname ?args?
+# Error in macro ./make_top.do line 9
+# wrong # args.  Usage: insert index itemname ?args?
+#     while executing
+# "add wave -noupdate "
+do make_top.do
+# Questa Intel Starter FPGA Edition-64 vlog 2024.3 Compiler 2024.09 Sep 10 2024
+# Start time: 02:26:42 on May 25,2025
+# vlog -reportprogress 300 -sv ../src/matrix_block_mul.sv 
+# -- Compiling module matrix_block_mul
+# 
+# Top level modules:
+# 	matrix_block_mul
+# End time: 02:26:42 on May 25,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Questa Intel Starter FPGA Edition-64 vlog 2024.3 Compiler 2024.09 Sep 10 2024
+# Start time: 02:26:42 on May 25,2025
+# vlog -reportprogress 300 ../src/s_axi_slv.v 
+# -- Compiling module s_axi_slv
+# 
+# Top level modules:
+# 	s_axi_slv
+# End time: 02:26:42 on May 25,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Questa Intel Starter FPGA Edition-64 vlog 2024.3 Compiler 2024.09 Sep 10 2024
+# Start time: 02:26:42 on May 25,2025
+# vlog -reportprogress 300 -sv ../src/matrix_ip.sv 
+# -- Compiling module matrix_ip
+# 
+# Top level modules:
+# 	matrix_ip
+# End time: 02:26:42 on May 25,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Questa Intel Starter FPGA Edition-64 vlog 2024.3 Compiler 2024.09 Sep 10 2024
+# Start time: 02:26:42 on May 25,2025
+# vlog -reportprogress 300 -sv ../src/acc_top.sv 
+# -- Compiling module acc_top
+# 
+# Top level modules:
+# 	acc_top
+# End time: 02:26:42 on May 25,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Questa Intel Starter FPGA Edition-64 vlog 2024.3 Compiler 2024.09 Sep 10 2024
+# Start time: 02:26:42 on May 25,2025
+# vlog -reportprogress 300 -sv top_tb.sv 
+# -- Compiling module top_tb
+# 
+# Top level modules:
+# 	top_tb
+# End time: 02:26:42 on May 25,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# End time: 02:26:43 on May 25,2025, Elapsed time: 0:19:39
+# Errors: 10, Warnings: 3
+# vsim work.top_tb 
+# Start time: 02:26:43 on May 25,2025
+# ** Note: (vsim-3812) Design is being optimized...
+# Loading sv_std.std
+# Loading work.top_tb(fast)
+# ** Error: wrong # args.  Usage: insert index itemname ?args?
+# Error in macro ./make_top.do line 9
+# wrong # args.  Usage: insert index itemname ?args?
+#     while executing
+# "add wave -noupdate "
+do make_top.do
+# Questa Intel Starter FPGA Edition-64 vlog 2024.3 Compiler 2024.09 Sep 10 2024
+# Start time: 02:28:05 on May 25,2025
+# vlog -reportprogress 300 -sv ../src/matrix_block_mul.sv 
+# -- Compiling module matrix_block_mul
+# 
+# Top level modules:
+# 	matrix_block_mul
+# End time: 02:28:05 on May 25,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Questa Intel Starter FPGA Edition-64 vlog 2024.3 Compiler 2024.09 Sep 10 2024
+# Start time: 02:28:05 on May 25,2025
+# vlog -reportprogress 300 ../src/s_axi_slv.v 
+# -- Compiling module s_axi_slv
+# 
+# Top level modules:
+# 	s_axi_slv
+# End time: 02:28:05 on May 25,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Questa Intel Starter FPGA Edition-64 vlog 2024.3 Compiler 2024.09 Sep 10 2024
+# Start time: 02:28:05 on May 25,2025
+# vlog -reportprogress 300 -sv ../src/matrix_ip.sv 
+# -- Compiling module matrix_ip
+# 
+# Top level modules:
+# 	matrix_ip
+# End time: 02:28:05 on May 25,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Questa Intel Starter FPGA Edition-64 vlog 2024.3 Compiler 2024.09 Sep 10 2024
+# Start time: 02:28:05 on May 25,2025
+# vlog -reportprogress 300 -sv ../src/acc_top.sv 
+# -- Compiling module acc_top
+# 
+# Top level modules:
+# 	acc_top
+# End time: 02:28:05 on May 25,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Questa Intel Starter FPGA Edition-64 vlog 2024.3 Compiler 2024.09 Sep 10 2024
+# Start time: 02:28:05 on May 25,2025
+# vlog -reportprogress 300 -sv top_tb.sv 
+# -- Compiling module top_tb
+# 
+# Top level modules:
+# 	top_tb
+# End time: 02:28:05 on May 25,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# End time: 02:28:06 on May 25,2025, Elapsed time: 0:01:23
+# Errors: 1, Warnings: 0
+# vsim work.top_tb 
+# Start time: 02:28:06 on May 25,2025
+# ** Note: (vsim-8009) Loading existing optimized design _opt2
+# Loading sv_std.std
+# Loading work.top_tb(fast)
+# ** UI-Msg (Warning): (vish-4014) No objects found matching '/acc_top_tb/s00_axis_aclk'.
+# ** UI-Msg (Warning): (vish-4014) No objects found matching '/acc_top_tb/s00_axis_aresetn'.
+# ** UI-Msg (Warning): (vish-4014) No objects found matching '/acc_top_tb/s00_axis_tvalid'.
+# ** UI-Msg (Warning): (vish-4014) No objects found matching '/acc_top_tb/s00_axis_tready'.
+# ** UI-Msg (Warning): (vish-4014) No objects found matching '/acc_top_tb/s00_axis_tdata'.
+# ** UI-Msg (Warning): (vish-4014) No objects found matching '/acc_top_tb/s00_axis_tstrb'.
+# ** UI-Msg (Warning): (vish-4014) No objects found matching '/acc_top_tb/s00_axis_tlast'.
+# ** UI-Msg (Warning): (vish-4014) No objects found matching '/acc_top_tb/m00_axis_tvalid'.
+# ** UI-Msg (Warning): (vish-4014) No objects found matching '/acc_top_tb/m00_axis_tready'.
+# ** UI-Msg (Warning): (vish-4014) No objects found matching '/acc_top_tb/m00_axis_tdata'.
+# ** UI-Msg (Warning): (vish-4014) No objects found matching '/acc_top_tb/m00_axis_tstrb'.
+# ** UI-Msg (Warning): (vish-4014) No objects found matching '/acc_top_tb/m00_axis_tlast'.
+# ** UI-Msg (Warning): (vish-4014) No objects found matching '/acc_top_tb/DUT/matrix_ip_inst/state'.
+# ** UI-Msg (Warning): (vish-4014) No objects found matching ' '.
+# Error in macro ./make_top.do line 22
+# ** UI-Msg (Warning): (vish-4014) No objects found matching '/acc_top_tb/s00_axis_aclk'.
+# ** UI-Msg (Warning): (vish-4014) No objects found matching '/acc_top_tb/s00_axis_aresetn'.
+# ** UI-Msg (Warning): (vish-4014) No objects found matching '/acc_top_tb/s00_axis_tvalid'.
+# ** UI-Msg (Warning): (vish-4014) No objects found matching '/acc_top_tb/s00_axis_tready'.
+# ** UI-Msg (Warning): (vish-4014) No objects found matching '/acc_top_tb/s00_axis_tdata'.
+# ** UI-Msg (Warning): (vish-4014) No objects found matching '/acc_top_tb/s00_axis_tstrb'.
+# ** UI-Msg (Warning): (vish-4014) No objects found matching '/acc_top_tb/s00_axis_tlast'.
+# ** UI-Msg (Warning): (vish-4014) No objects found matching '/acc_top_tb/m00_axis_tvalid'.
+# ** UI-Msg (Warning): (vish-4014) No objects found matching '/acc_top_tb/m00_axis_tready'.
+# ** UI-Msg (Warning): (vish-4014) No objects found matching '/acc_top_tb/m00_axis_tdata'.
+# ** UI-Msg (Warning): (vish-4014) No objects found matching '/acc_top_tb/m00_axis_tstrb'.
+# ** UI-Msg (Warning): (vish-4014) No objects found matching '/acc_top_tb/m00_axis_tlast'.
+# ** UI-Msg (Warning): (vish-4014) No objects found matching '/acc_top_tb/DUT/matrix_ip_inst/state'.
+# ** UI-Msg (Warning): (vish-4014) No objects found matching ' '.
+#     while executing
+# "add wave -noupdate \
+# sim:/acc_top_tb/s00_axis_aclk \
+# sim:/acc_top_tb/s00_axis_aresetn \
+# sim:/acc_top_tb/s00_axis_tvalid \
+# sim:/acc_top_tb/s00_axis_tre..."
+do make_top.do
+# Questa Intel Starter FPGA Edition-64 vlog 2024.3 Compiler 2024.09 Sep 10 2024
+# Start time: 02:28:29 on May 25,2025
+# vlog -reportprogress 300 -sv ../src/matrix_block_mul.sv 
+# -- Compiling module matrix_block_mul
+# 
+# Top level modules:
+# 	matrix_block_mul
+# End time: 02:28:29 on May 25,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Questa Intel Starter FPGA Edition-64 vlog 2024.3 Compiler 2024.09 Sep 10 2024
+# Start time: 02:28:29 on May 25,2025
+# vlog -reportprogress 300 ../src/s_axi_slv.v 
+# -- Compiling module s_axi_slv
+# 
+# Top level modules:
+# 	s_axi_slv
+# End time: 02:28:29 on May 25,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Questa Intel Starter FPGA Edition-64 vlog 2024.3 Compiler 2024.09 Sep 10 2024
+# Start time: 02:28:29 on May 25,2025
+# vlog -reportprogress 300 -sv ../src/matrix_ip.sv 
+# -- Compiling module matrix_ip
+# 
+# Top level modules:
+# 	matrix_ip
+# End time: 02:28:29 on May 25,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Questa Intel Starter FPGA Edition-64 vlog 2024.3 Compiler 2024.09 Sep 10 2024
+# Start time: 02:28:29 on May 25,2025
+# vlog -reportprogress 300 -sv ../src/acc_top.sv 
+# -- Compiling module acc_top
+# 
+# Top level modules:
+# 	acc_top
+# End time: 02:28:29 on May 25,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Questa Intel Starter FPGA Edition-64 vlog 2024.3 Compiler 2024.09 Sep 10 2024
+# Start time: 02:28:29 on May 25,2025
+# vlog -reportprogress 300 -sv top_tb.sv 
+# -- Compiling module top_tb
+# 
+# Top level modules:
+# 	top_tb
+# End time: 02:28:29 on May 25,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# End time: 02:28:30 on May 25,2025, Elapsed time: 0:00:24
+# Errors: 0, Warnings: 0
+# vsim work.top_tb 
+# Start time: 02:28:30 on May 25,2025
+# ** Note: (vsim-8009) Loading existing optimized design _opt2
+# Loading sv_std.std
+# Loading work.top_tb(fast)
+# ** UI-Msg (Warning): (vish-4014) No objects found matching '/top_tb/s00_axis_aclk'.
+# ** UI-Msg (Warning): (vish-4014) No objects found matching '/top_tb/s00_axis_aresetn'.
+# ** UI-Msg (Warning): (vish-4014) No objects found matching '/top_tb/s00_axis_tvalid'.
+# ** UI-Msg (Warning): (vish-4014) No objects found matching '/top_tb/s00_axis_tready'.
+# ** UI-Msg (Warning): (vish-4014) No objects found matching '/top_tb/s00_axis_tdata'.
+# ** UI-Msg (Warning): (vish-4014) No objects found matching '/top_tb/s00_axis_tstrb'.
+# ** UI-Msg (Warning): (vish-4014) No objects found matching '/top_tb/s00_axis_tlast'.
+# ** UI-Msg (Warning): (vish-4014) No objects found matching '/top_tb/m00_axis_tvalid'.
+# ** UI-Msg (Warning): (vish-4014) No objects found matching '/top_tb/m00_axis_tready'.
+# ** UI-Msg (Warning): (vish-4014) No objects found matching '/top_tb/m00_axis_tdata'.
+# ** UI-Msg (Warning): (vish-4014) No objects found matching '/top_tb/m00_axis_tstrb'.
+# ** UI-Msg (Warning): (vish-4014) No objects found matching '/top_tb/m00_axis_tlast'.
+# ** UI-Msg (Warning): (vish-4014) No objects found matching '/top_tb/DUT/matrix_ip_inst/state'.
+# ** UI-Msg (Warning): (vish-4014) No objects found matching ' '.
+# Error in macro ./make_top.do line 22
+# ** UI-Msg (Warning): (vish-4014) No objects found matching '/top_tb/s00_axis_aclk'.
+# ** UI-Msg (Warning): (vish-4014) No objects found matching '/top_tb/s00_axis_aresetn'.
+# ** UI-Msg (Warning): (vish-4014) No objects found matching '/top_tb/s00_axis_tvalid'.
+# ** UI-Msg (Warning): (vish-4014) No objects found matching '/top_tb/s00_axis_tready'.
+# ** UI-Msg (Warning): (vish-4014) No objects found matching '/top_tb/s00_axis_tdata'.
+# ** UI-Msg (Warning): (vish-4014) No objects found matching '/top_tb/s00_axis_tstrb'.
+# ** UI-Msg (Warning): (vish-4014) No objects found matching '/top_tb/s00_axis_tlast'.
+# ** UI-Msg (Warning): (vish-4014) No objects found matching '/top_tb/m00_axis_tvalid'.
+# ** UI-Msg (Warning): (vish-4014) No objects found matching '/top_tb/m00_axis_tready'.
+# ** UI-Msg (Warning): (vish-4014) No objects found matching '/top_tb/m00_axis_tdata'.
+# ** UI-Msg (Warning): (vish-4014) No objects found matching '/top_tb/m00_axis_tstrb'.
+# ** UI-Msg (Warning): (vish-4014) No objects found matching '/top_tb/m00_axis_tlast'.
+# ** UI-Msg (Warning): (vish-4014) No objects found matching '/top_tb/DUT/matrix_ip_inst/state'.
+# ** UI-Msg (Warning): (vish-4014) No objects found matching ' '.
+#     while executing
+# "add wave -noupdate \
+# sim:/top_tb/s00_axis_aclk \
+# sim:/top_tb/s00_axis_aresetn \
+# sim:/top_tb/s00_axis_tvalid \
+# sim:/top_tb/s00_axis_tready \
+# sim:/top_t..."
+# Break key hit
+# End time: 02:34:32 on May 25,2025, Elapsed time: 0:06:02
+# Errors: 0, Warnings: 0

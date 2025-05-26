@@ -1,0 +1,39 @@
+#-----------------------------------------------------------
+# Vivado v2024.2.2 (64-bit)
+# SW Build 6060944 on Thu Mar 06 19:10:09 MST 2025
+# IP Build 6050500 on Thu Mar  6 23:33:39 MST 2025
+# SharedData Build 6060542 on Thu Mar 06 10:31:07 MST 2025
+# Start of session at: Sun May 25 16:35:47 2025
+# Process ID         : 4419
+# Current directory  : /home/gorruy/Desktop/diploma--2-/vivado
+# Command line       : vivado zynq_test.xpr
+# Log file           : /home/gorruy/Desktop/diploma--2-/vivado/vivado.log
+# Journal file       : /home/gorruy/Desktop/diploma--2-/vivado/vivado.jou
+# Running On         : gorruy-TUF-Gaming-FX705DY-FX705DY
+# Platform           : Ubuntu
+# Operating System   : Ubuntu 22.04.5 LTS
+# Processor Detail   : AMD Ryzen 5 3550H with Radeon Vega Mobile Gfx
+# CPU Frequency      : 3593.335 MHz
+# CPU Physical cores : 4
+# CPU Logical cores  : 8
+# Host memory        : 8124 MB
+# Swap memory        : 2147 MB
+# Total Virtual      : 10271 MB
+# Available Virtual  : 4733 MB
+#-----------------------------------------------------------
+start_gui
+open_project zynq_test.xpr
+update_compile_order -fileset sources_1
+open_bd_design {/home/gorruy/Desktop/diploma--2-/vivado/zynq_test.srcs/sources_1/bd/system/system.bd}
+ipx::infer_core -vendor user.org -library user -taxonomy /UserIP /home/gorruy/Desktop/diploma--2-/src
+ipx::edit_ip_in_project -upgrade true -name matrix_ip -directory /home/gorruy/Desktop/diploma--2-/vivado/zynq_test.tmp /home/gorruy/Desktop/diploma--2-/src/component.xml
+ipx::current_core /home/gorruy/Desktop/diploma--2-/src/component.xml
+update_compile_order -fileset sources_1
+file mkdir /home/gorruy/Desktop/diploma--2-/vivado/zynq_test.tmp/matrix_ip.srcs/constrs_1
+close [ open /home/gorruy/Desktop/diploma--2-/src/matrix_cstr.xdc w ]
+add_files -fileset constrs_1 /home/gorruy/Desktop/diploma--2-/src/matrix_cstr.xdc
+launch_runs synth_1 -jobs 8
+wait_on_run synth_1
+reset_run synth_1
+launch_runs synth_1 -jobs 8
+wait_on_run synth_1

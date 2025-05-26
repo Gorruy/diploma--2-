@@ -1,0 +1,43 @@
+#-----------------------------------------------------------
+# Vivado v2024.2.2 (64-bit)
+# SW Build 6060944 on Thu Mar 06 19:10:09 MST 2025
+# IP Build 6050500 on Thu Mar  6 23:33:39 MST 2025
+# SharedData Build 6060542 on Thu Mar 06 10:31:07 MST 2025
+# Start of session at: Mon May 26 02:49:00 2025
+# Process ID         : 4082
+# Current directory  : /home/gorruy/Desktop/diploma--2-/vivado/zynq_test.runs/system_axi_dma_0_0_synth_1
+# Command line       : vivado -log system_axi_dma_0_0.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source system_axi_dma_0_0.tcl
+# Log file           : /home/gorruy/Desktop/diploma--2-/vivado/zynq_test.runs/system_axi_dma_0_0_synth_1/system_axi_dma_0_0.vds
+# Journal file       : /home/gorruy/Desktop/diploma--2-/vivado/zynq_test.runs/system_axi_dma_0_0_synth_1/vivado.jou
+# Running On         : gorruy-TUF-Gaming-FX705DY-FX705DY
+# Platform           : Ubuntu
+# Operating System   : Ubuntu 22.04.5 LTS
+# Processor Detail   : AMD Ryzen 5 3550H with Radeon Vega Mobile Gfx
+# CPU Frequency      : 3293.708 MHz
+# CPU Physical cores : 4
+# CPU Logical cores  : 8
+# Host memory        : 8124 MB
+# Swap memory        : 2147 MB
+# Total Virtual      : 10271 MB
+# Available Virtual  : 6662 MB
+#-----------------------------------------------------------
+source system_axi_dma_0_0.tcl -notrace
+create_project: Time (s): cpu = 00:00:18 ; elapsed = 00:00:27 . Memory (MB): peak = 1484.473 ; gain = 126.836 ; free physical = 116 ; free virtual = 3071
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+WARNING: [IP_Flow 19-3685] Ignored loading user repository '/home/gorruy/Desktop/diploma--2-/src'. The path is contained within another repository.
+WARNING: [IP_Flow 19-3685] Ignored loading user repository '/home/gorruy/Desktop/diploma--2-/src/xgui'. The path is contained within another repository.
+WARNING: [IP_Flow 19-3685] Ignored loading user repository '/home/gorruy/Desktop/diploma--2-/ip_repo/matrix_mul_1_0'. The path is contained within another repository.
+WARNING: [IP_Flow 19-3685] Ignored loading user repository '/home/gorruy/Desktop/diploma--2-/ip/matrix_slave_1_0'. The path is contained within another repository.
+INFO: [IP_Flow 19-1700] Loaded user IP repository '/home/gorruy/Desktop/diploma--2-'.
+WARNING: [IP_Flow 19-3656] If you move the project, the path for repository '/home/gorruy/Desktop/diploma--2-' may become invalid. A better location for the repository would be in a path adjacent to the project. (Current project location is '/home/gorruy/Desktop/diploma--2-/vivado/zynq_test.runs/system_axi_dma_0_0_synth_1'.)
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository '/mnt/big_chungus/vivado_/Vivado/2024.2/data/ip'.
+update_ip_catalog: Time (s): cpu = 00:00:00.75 ; elapsed = 00:00:20 . Memory (MB): peak = 1490.410 ; gain = 5.938 ; free physical = 132 ; free virtual = 2992
+INFO: [IP_Flow 19-6924] IPCACHE: Running cache check for IP inst: system_axi_dma_0_0
+Command: synth_design -top system_axi_dma_0_0 -part xc7z010clg400-1 -incremental_mode off -mode out_of_context
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7z010'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7z010'
+INFO: [Device 21-403] Loading part xc7z010clg400-1
+INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 7 processes.
+INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
+INFO: [Synth 8-7075] Helper process launched with PID 4383

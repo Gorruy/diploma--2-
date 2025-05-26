@@ -1,0 +1,24 @@
+#-----------------------------------------------------------
+# Vivado v2024.2.2 (64-bit)
+# SW Build 6060944 on Thu Mar 06 19:10:09 MST 2025
+# IP Build 6050500 on Thu Mar  6 23:33:39 MST 2025
+# SharedData Build 6060542 on Thu Mar 06 10:31:07 MST 2025
+# Start of session at: Mon May 26 02:49:00 2025
+# Process ID         : 4088
+# Current directory  : /home/gorruy/Desktop/diploma--2-/vivado/zynq_test.runs/system_axi_mem_intercon_imp_auto_us_2_synth_1
+# Command line       : vivado -log system_axi_mem_intercon_imp_auto_us_2.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source system_axi_mem_intercon_imp_auto_us_2.tcl
+# Log file           : /home/gorruy/Desktop/diploma--2-/vivado/zynq_test.runs/system_axi_mem_intercon_imp_auto_us_2_synth_1/system_axi_mem_intercon_imp_auto_us_2.vds
+# Journal file       : /home/gorruy/Desktop/diploma--2-/vivado/zynq_test.runs/system_axi_mem_intercon_imp_auto_us_2_synth_1/vivado.jou
+# Running On         : gorruy-TUF-Gaming-FX705DY-FX705DY
+# Platform           : Ubuntu
+# Operating System   : Ubuntu 22.04.5 LTS
+# Processor Detail   : AMD Ryzen 5 3550H with Radeon Vega Mobile Gfx
+# CPU Frequency      : 3195.012 MHz
+# CPU Physical cores : 4
+# CPU Logical cores  : 8
+# Host memory        : 8124 MB
+# Swap memory        : 2147 MB
+# Total Virtual      : 10271 MB
+# Available Virtual  : 6679 MB
+#-----------------------------------------------------------
+source system_axi_mem_intercon_imp_auto_us_2.tcl -notrace

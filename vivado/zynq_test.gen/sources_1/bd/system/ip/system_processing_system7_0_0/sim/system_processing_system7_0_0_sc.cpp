@@ -1,5 +1,5 @@
 // (c) Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
-// (c) Copyright 2022-2024 Advanced Micro Devices, Inc. All rights reserved.
+// (c) Copyright 2022-2025 Advanced Micro Devices, Inc. All rights reserved.
 // 
 // This file contains confidential and proprietary information
 // of AMD and is protected under U.S. and international copyright
@@ -103,7 +103,7 @@ system_processing_system7_0_0_sc::system_processing_system7_0_0_sc(const sc_core
     model_param_props.addLong("C_USE_M_AXI_GP1", "0");
     model_param_props.addLong("C_USE_S_AXI_GP0", "0");
     model_param_props.addLong("C_USE_S_AXI_GP1", "0");
-    model_param_props.addLong("C_USE_S_AXI_HP0", "0");
+    model_param_props.addLong("C_USE_S_AXI_HP0", "1");
     model_param_props.addLong("C_USE_S_AXI_HP1", "0");
     model_param_props.addLong("C_USE_S_AXI_HP2", "0");
     model_param_props.addLong("C_USE_S_AXI_HP3", "0");
@@ -124,6 +124,8 @@ system_processing_system7_0_0_sc::system_processing_system7_0_0_sc(const sc_core
   // initialize AXI sockets
   M_AXI_GP0_rd_socket = mp_impl->M_AXI_GP0_rd_socket;
   M_AXI_GP0_wr_socket = mp_impl->M_AXI_GP0_wr_socket;
+  S_AXI_HP0_rd_socket = mp_impl->S_AXI_HP0_rd_socket;
+  S_AXI_HP0_wr_socket = mp_impl->S_AXI_HP0_wr_socket;
 }
 
 system_processing_system7_0_0_sc::~system_processing_system7_0_0_sc()

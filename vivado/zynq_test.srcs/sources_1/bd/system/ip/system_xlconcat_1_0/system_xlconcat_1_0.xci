@@ -293,7 +293,7 @@
         "OUTPUTDIR": [ { "value": "../../../../../../zynq_test.gen/sources_1/bd/system/ip/system_xlconcat_1_0" } ],
         "SELECTEDSIMMODEL": [ { "value": "" } ],
         "SHAREDDIR": [ { "value": "../../ipshared" } ],
-        "SWVERSION": [ { "value": "2024.1" } ],
+        "SWVERSION": [ { "value": "2024.2.2" } ],
         "SYNTHESISFLOW": [ { "value": "GLOBAL" } ]
       }
     },

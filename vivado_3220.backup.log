@@ -1,0 +1,351 @@
+#-----------------------------------------------------------
+# Vivado v2024.2.2 (64-bit)
+# SW Build 6060944 on Thu Mar 06 19:10:09 MST 2025
+# IP Build 6050500 on Thu Mar  6 23:33:39 MST 2025
+# SharedData Build 6060542 on Thu Mar 06 10:31:07 MST 2025
+# Start of session at: Sun May 25 20:03:20 2025
+# Process ID         : 3220
+# Current directory  : /home/gorruy/Desktop/diploma--2-
+# Command line       : vivado src/xgui/acc_top_v1_0.tcl
+# Log file           : /home/gorruy/Desktop/diploma--2-/vivado.log
+# Journal file       : /home/gorruy/Desktop/diploma--2-/vivado.jou
+# Running On         : gorruy-TUF-Gaming-FX705DY-FX705DY
+# Platform           : Ubuntu
+# Operating System   : Ubuntu 22.04.5 LTS
+# Processor Detail   : AMD Ryzen 5 3550H with Radeon Vega Mobile Gfx
+# CPU Frequency      : 1299.998 MHz
+# CPU Physical cores : 4
+# CPU Logical cores  : 8
+# Host memory        : 8124 MB
+# Swap memory        : 2147 MB
+# Total Virtual      : 10271 MB
+# Available Virtual  : 8770 MB
+#-----------------------------------------------------------
+start_gui
+open_project /home/gorruy/Desktop/diploma--2-/vivado/zynq_test.xpr
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu208ld:part0:2.0 available at /mnt/big_chungus/vivado_/Vivado/2024.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu208ld/production/2.0/board.xml as part xczu58dr-fsvg1517-2-i specified in board_part file is either invalid or not available
+WARNING: [filemgmt 56-3] IP Repository Path: Could not find the directory '/home/gorruy/Desktop/diploma--2-/ip_repo/matrix_mul_1_0'.
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu216ld:part0:2.0 available at /mnt/big_chungus/vivado_/Vivado/2024.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu216ld/production/2.0/board.xml as part xczu59dr-ffvf1760-2-i specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu670ld:part0:1.0 available at /mnt/big_chungus/vivado_/Vivado/2024.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu670ld/1.0/board.xml as part xczu57dr-fsve1156-2-i specified in board_part file is either invalid or not available
+WARNING: [filemgmt 56-3] IP Repository Path: Could not find the directory '/home/gorruy/Desktop/diploma--2-/ip/matrix_slave_1_0'.
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+WARNING: [IP_Flow 19-2248] Failed to load user IP repository '/home/gorruy/Desktop/diploma--2-/ip_repo/matrix_mul_1_0'; Can't find the specified path.
+If this directory should no longer be in your list of user repositories, go to the IP Settings dialog and remove it.
+WARNING: [IP_Flow 19-2248] Failed to load user IP repository '/home/gorruy/Desktop/diploma--2-/ip/matrix_slave_1_0'; Can't find the specified path.
+If this directory should no longer be in your list of user repositories, go to the IP Settings dialog and remove it.
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository '/mnt/big_chungus/vivado_/Vivado/2024.2/data/ip'.
+INFO: [Project 1-5579] Found utility IPs instantiated in one or more block designs which have equivalent inline hdl with improved performance and reduced diskspace. It is recommended to migrate these utility IPs to inline hdl using the command upgrade_project -migrate_to_inline_hdl. The utility IPs may be deprecated in future releases. More information on inline hdl is available in UG994.
+open_project: Time (s): cpu = 00:00:35 ; elapsed = 00:00:43 . Memory (MB): peak = 8070.109 ; gain = 474.156 ; free physical = 1220 ; free virtual = 7230
+update_compile_order -fileset sources_1
+open_bd_design {/home/gorruy/Desktop/diploma--2-/vivado/zynq_test.srcs/sources_1/bd/system/system.bd}
+Reading block design file </home/gorruy/Desktop/diploma--2-/vivado/zynq_test.srcs/sources_1/bd/system/system.bd>...
+Adding component instance block -- xilinx.com:ip:processing_system7:5.5 - processing_system7_0
+Adding component instance block -- xilinx.com:ip:xlconcat:2.1 - xlconcat_0
+Adding component instance block -- xilinx.com:ip:xlconcat:2.1 - xlconcat_1
+Adding component instance block -- xilinx.com:ip:axi_dma:7.1 - axi_dma_0
+Adding component instance block -- xilinx.com:ip:smartconnect:1.0 - axi_smc
+Adding component instance block -- xilinx.com:ip:proc_sys_reset:5.0 - rst_ps7_0_200M
+Adding component instance block -- xilinx.com:ip:axi_interconnect:2.1 - axi_mem_intercon
+Successfully read diagram <system> from block design file </home/gorruy/Desktop/diploma--2-/vivado/zynq_test.srcs/sources_1/bd/system/system.bd>
+open_bd_design: Time (s): cpu = 00:00:07 ; elapsed = 00:00:15 . Memory (MB): peak = 8202.371 ; gain = 0.000 ; free physical = 1129 ; free virtual = 7204
+ipx::infer_core -vendor user.org -library user -taxonomy /UserIP /home/gorruy/Desktop/diploma--2-/src
+WARNING: [IP_Flow 19-5101] Packaging a component with a SystemVerilog top file is not fully supported. Please refer to UG1118 'Creating and Packaging Custom IP'.
+INFO: [IP_Flow 19-5107] Inferred bus interface 'm00_axis' of definition 'xilinx.com:interface:axis:1.0' (from Xilinx Repository).
+INFO: [IP_Flow 19-5107] Inferred bus interface 's00_axis' of definition 'xilinx.com:interface:axis:1.0' (from Xilinx Repository).
+INFO: [IP_Flow 19-5107] Inferred bus interface 's00_axis_aresetn' of definition 'xilinx.com:signal:reset:1.0' (from Xilinx Repository).
+INFO: [IP_Flow 19-5107] Inferred bus interface 's00_axis_aclk' of definition 'xilinx.com:signal:clock:1.0' (from Xilinx Repository).
+INFO: [IP_Flow 19-4728] Bus Interface 's00_axis_aresetn': Added interface parameter 'POLARITY' with value 'ACTIVE_LOW'.
+INFO: [IP_Flow 19-4728] Bus Interface 's00_axis_aclk': Added interface parameter 'ASSOCIATED_BUSIF' with value 's00_axis'.
+INFO: [IP_Flow 19-4728] Bus Interface 's00_axis_aclk': Added interface parameter 'ASSOCIATED_RESET' with value 's00_axis_aresetn'.
+WARNING: [IP_Flow 19-11888] Component Definition 'user.org:user:acc_top:1.0 (acc_top_v1_0)': IP description "acc_top_v1_0" is not meaningful: same as name or display name
+WARNING: [IP_Flow 19-3158] Bus Interface 'm00_axis': FREQ_HZ bus parameter missing from AXI interface when interface is not associated to a clock.
+WARNING: [IP_Flow 19-11770] Clock interface 's00_axis_aclk' has no FREQ_HZ parameter.
+INFO: [IP_Flow 19-2181] Payment is not required for this core.
+WARNING: [IP_Flow 19-2187] The Product Guide file is missing.
+WARNING: [IP_Flow 19-11888] Component Definition 'user.org:user:acc_top:1.0 (acc_top_v1_0)': IP description "acc_top_v1_0" is not meaningful: same as name or display name
+WARNING: [IP_Flow 19-3158] Bus Interface 'm00_axis': FREQ_HZ bus parameter missing from AXI interface when interface is not associated to a clock.
+WARNING: [IP_Flow 19-11770] Clock interface 's00_axis_aclk' has no FREQ_HZ parameter.
+INFO: [IP_Flow 19-2181] Payment is not required for this core.
+WARNING: [IP_Flow 19-2187] The Product Guide file is missing.
+ipx::infer_core: Time (s): cpu = 00:00:07 ; elapsed = 00:00:06 . Memory (MB): peak = 8202.371 ; gain = 0.000 ; free physical = 1024 ; free virtual = 7113
+ipx::edit_ip_in_project -upgrade true -name matrix_ip -directory /home/gorruy/Desktop/diploma--2-/vivado/zynq_test.tmp /home/gorruy/Desktop/diploma--2-/src/component.xml
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository '/mnt/big_chungus/vivado_/Vivado/2024.2/data/ip'.
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu208ld:part0:2.0 available at /mnt/big_chungus/vivado_/Vivado/2024.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu208ld/production/2.0/board.xml as part xczu58dr-fsvg1517-2-i specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu216ld:part0:2.0 available at /mnt/big_chungus/vivado_/Vivado/2024.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu216ld/production/2.0/board.xml as part xczu59dr-ffvf1760-2-i specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu670ld:part0:1.0 available at /mnt/big_chungus/vivado_/Vivado/2024.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu670ld/1.0/board.xml as part xczu57dr-fsve1156-2-i specified in board_part file is either invalid or not available
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+WARNING: [IP_Flow 19-2248] Failed to load user IP repository '/home/gorruy/Desktop/diploma--2-/ip_repo/matrix_mul_1_0'; Can't find the specified path.
+If this directory should no longer be in your list of user repositories, go to the IP Settings dialog and remove it.
+WARNING: [IP_Flow 19-2248] Failed to load user IP repository '/home/gorruy/Desktop/diploma--2-/ip/matrix_slave_1_0'; Can't find the specified path.
+If this directory should no longer be in your list of user repositories, go to the IP Settings dialog and remove it.
+INFO: [IP_Flow 19-795] Syncing license key meta-data
+ipx::current_core /home/gorruy/Desktop/diploma--2-/src/component.xml
+update_compile_order -fileset sources_1
+set_property ipi_drc {ignore_freq_hz false} [ipx::current_core]
+set_property ipi_drc {} [ipx::current_core]
+set_property supported_families {zynq Beta} [ipx::current_core]
+set_property is_include true [ipx::get_files matrix_cstr.xdc -of_objects [ipx::get_file_groups xilinx_anylanguagesynthesis -of_objects [ipx::current_core]]]
+set_property is_include true [ipx::get_files s_axi_slv.v -of_objects [ipx::get_file_groups xilinx_anylanguagesynthesis -of_objects [ipx::current_core]]]
+set_property is_include true [ipx::get_files matrix_block_mul.sv -of_objects [ipx::get_file_groups xilinx_anylanguagesynthesis -of_objects [ipx::current_core]]]
+set_property is_include true [ipx::get_files matrix_ip.sv -of_objects [ipx::get_file_groups xilinx_anylanguagesynthesis -of_objects [ipx::current_core]]]
+set_property is_include true [ipx::get_files acc_top.sv -of_objects [ipx::get_file_groups xilinx_anylanguagesynthesis -of_objects [ipx::current_core]]]
+set_property core_revision 2 [ipx::current_core]
+ipx::update_source_project_archive -component [ipx::current_core]
+ipx::create_xgui_files [ipx::current_core]
+ipx::update_checksums [ipx::current_core]
+ipx::check_integrity [ipx::current_core]
+WARNING: [IP_Flow 19-11888] Component Definition 'user.org:user:acc_top:1.0 (acc_top_v1_0)': IP description "acc_top_v1_0" is not meaningful: same as name or display name
+CRITICAL WARNING: [IP_Flow 19-4296] File 'matrix_cstr.xdc': Unsupported include file should not have the 'isIncludeFile' property set to true.
+WARNING: [IP_Flow 19-3158] Bus Interface 'm00_axis': FREQ_HZ bus parameter missing from AXI interface when interface is not associated to a clock.
+WARNING: [IP_Flow 19-11770] Clock interface 's00_axis_aclk' has no FREQ_HZ parameter.
+INFO: [IP_Flow 19-2181] Payment is not required for this core.
+WARNING: [IP_Flow 19-2187] The Product Guide file is missing.
+INFO: [Ipptcl 7-1486] check_integrity: Integrity check passed.
+ipx::save_core [ipx::current_core]
+ipx::move_temp_component_back -component [ipx::current_core]
+close_project -delete
+set_property  ip_repo_paths  {/home/gorruy/Desktop/diploma--2-/src /home/gorruy/Desktop/diploma--2-/ip_repo/matrix_mul_1_0 /home/gorruy/Desktop/diploma--2-/ip/matrix_slave_1_0} [current_project]
+update_ip_catalog
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository '/home/gorruy/Desktop/diploma--2-/src'.
+WARNING: [IP_Flow 19-2248] Failed to load user IP repository '/home/gorruy/Desktop/diploma--2-/ip_repo/matrix_mul_1_0'; Can't find the specified path.
+If this directory should no longer be in your list of user repositories, go to the IP Settings dialog and remove it.
+WARNING: [IP_Flow 19-2248] Failed to load user IP repository '/home/gorruy/Desktop/diploma--2-/ip/matrix_slave_1_0'; Can't find the specified path.
+If this directory should no longer be in your list of user repositories, go to the IP Settings dialog and remove it.
+ipx::infer_core -vendor user.org -library user -taxonomy /UserIP /home/gorruy/Desktop/diploma--2-/src
+WARNING: [IP_Flow 19-5101] Packaging a component with a SystemVerilog top file is not fully supported. Please refer to UG1118 'Creating and Packaging Custom IP'.
+INFO: [IP_Flow 19-5107] Inferred bus interface 'm00_axis' of definition 'xilinx.com:interface:axis:1.0' (from Xilinx Repository).
+INFO: [IP_Flow 19-5107] Inferred bus interface 's00_axis' of definition 'xilinx.com:interface:axis:1.0' (from Xilinx Repository).
+INFO: [IP_Flow 19-5107] Inferred bus interface 's00_axis_aresetn' of definition 'xilinx.com:signal:reset:1.0' (from Xilinx Repository).
+INFO: [IP_Flow 19-5107] Inferred bus interface 's00_axis_aclk' of definition 'xilinx.com:signal:clock:1.0' (from Xilinx Repository).
+INFO: [IP_Flow 19-4728] Bus Interface 's00_axis_aresetn': Added interface parameter 'POLARITY' with value 'ACTIVE_LOW'.
+INFO: [IP_Flow 19-4728] Bus Interface 's00_axis_aclk': Added interface parameter 'ASSOCIATED_BUSIF' with value 's00_axis'.
+INFO: [IP_Flow 19-4728] Bus Interface 's00_axis_aclk': Added interface parameter 'ASSOCIATED_RESET' with value 's00_axis_aresetn'.
+WARNING: [IP_Flow 19-11888] Component Definition 'user.org:user:acc_top:1.0 (acc_top_v1_0)': IP description "acc_top_v1_0" is not meaningful: same as name or display name
+WARNING: [IP_Flow 19-3158] Bus Interface 'm00_axis': FREQ_HZ bus parameter missing from AXI interface when interface is not associated to a clock.
+WARNING: [IP_Flow 19-11770] Clock interface 's00_axis_aclk' has no FREQ_HZ parameter.
+INFO: [IP_Flow 19-2181] Payment is not required for this core.
+WARNING: [IP_Flow 19-2187] The Product Guide file is missing.
+WARNING: [IP_Flow 19-11888] Component Definition 'user.org:user:acc_top:1.0 (acc_top_v1_0)': IP description "acc_top_v1_0" is not meaningful: same as name or display name
+WARNING: [IP_Flow 19-3158] Bus Interface 'm00_axis': FREQ_HZ bus parameter missing from AXI interface when interface is not associated to a clock.
+WARNING: [IP_Flow 19-11770] Clock interface 's00_axis_aclk' has no FREQ_HZ parameter.
+INFO: [IP_Flow 19-2181] Payment is not required for this core.
+WARNING: [IP_Flow 19-2187] The Product Guide file is missing.
+ipx::infer_core: Time (s): cpu = 00:00:06 ; elapsed = 00:00:06 . Memory (MB): peak = 8334.223 ; gain = 0.000 ; free physical = 891 ; free virtual = 7029
+ipx::edit_ip_in_project -upgrade true -name matrix_ip -directory /home/gorruy/Desktop/diploma--2-/vivado/zynq_test.tmp /home/gorruy/Desktop/diploma--2-/src/component.xml
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository '/mnt/big_chungus/vivado_/Vivado/2024.2/data/ip'.
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu208ld:part0:2.0 available at /mnt/big_chungus/vivado_/Vivado/2024.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu208ld/production/2.0/board.xml as part xczu58dr-fsvg1517-2-i specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu216ld:part0:2.0 available at /mnt/big_chungus/vivado_/Vivado/2024.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu216ld/production/2.0/board.xml as part xczu59dr-ffvf1760-2-i specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu670ld:part0:1.0 available at /mnt/big_chungus/vivado_/Vivado/2024.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu670ld/1.0/board.xml as part xczu57dr-fsve1156-2-i specified in board_part file is either invalid or not available
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository '/home/gorruy/Desktop/diploma--2-/src'.
+WARNING: [IP_Flow 19-2248] Failed to load user IP repository '/home/gorruy/Desktop/diploma--2-/ip_repo/matrix_mul_1_0'; Can't find the specified path.
+If this directory should no longer be in your list of user repositories, go to the IP Settings dialog and remove it.
+WARNING: [IP_Flow 19-2248] Failed to load user IP repository '/home/gorruy/Desktop/diploma--2-/ip/matrix_slave_1_0'; Can't find the specified path.
+If this directory should no longer be in your list of user repositories, go to the IP Settings dialog and remove it.
+INFO: [IP_Flow 19-795] Syncing license key meta-data
+ipx::current_core /home/gorruy/Desktop/diploma--2-/src/component.xml
+update_compile_order -fileset sources_1
+set_property core_revision 2 [ipx::current_core]
+ipx::update_source_project_archive -component [ipx::current_core]
+ipx::create_xgui_files [ipx::current_core]
+ipx::update_checksums [ipx::current_core]
+ipx::check_integrity [ipx::current_core]
+WARNING: [IP_Flow 19-11888] Component Definition 'user.org:user:acc_top:1.0 (acc_top_v1_0)': IP description "acc_top_v1_0" is not meaningful: same as name or display name
+WARNING: [IP_Flow 19-3158] Bus Interface 'm00_axis': FREQ_HZ bus parameter missing from AXI interface when interface is not associated to a clock.
+WARNING: [IP_Flow 19-11770] Clock interface 's00_axis_aclk' has no FREQ_HZ parameter.
+INFO: [IP_Flow 19-2181] Payment is not required for this core.
+WARNING: [IP_Flow 19-2187] The Product Guide file is missing.
+INFO: [Ipptcl 7-1486] check_integrity: Integrity check passed.
+ipx::save_core [ipx::current_core]
+ipx::move_temp_component_back -component [ipx::current_core]
+close_project -delete
+update_ip_catalog -rebuild -repo_path /home/gorruy/Desktop/diploma--2-/src
+INFO: [IP_Flow 19-725] Reloaded user IP repository '/home/gorruy/Desktop/diploma--2-/src'
+startgroup
+apply_bd_automation -rule xilinx.com:bd_rule:axi4 -config { Clk_master {Auto} Clk_slave {/processing_system7_0/FCLK_CLK0 (200 MHz)} Clk_xbar {/processing_system7_0/FCLK_CLK0 (200 MHz)} Master {/axi_dma_0/M_AXI_S2MM} Slave {/processing_system7_0/S_AXI_HP0} ddr_seg {Auto} intc_ip {/axi_mem_intercon} master_apm {0}}  [get_bd_intf_pins axi_dma_0/M_AXI_S2MM]
+INFO: [BD 41-3093] Triggering Legacy Auto Assign Algorithm
+Slave segment '/processing_system7_0/S_AXI_HP0/HP0_DDR_LOWOCM' is being assigned into address space '/axi_dma_0/Data_S2MM' at <0x0000_0000 [ 512M ]>.
+apply_bd_automation -rule xilinx.com:bd_rule:axi4 -config { Clk_master {Auto} Clk_slave {/processing_system7_0/FCLK_CLK0 (200 MHz)} Clk_xbar {/processing_system7_0/FCLK_CLK0 (200 MHz)} Master {/axi_dma_0/M_AXI_SG} Slave {/processing_system7_0/S_AXI_HP0} ddr_seg {Auto} intc_ip {/axi_mem_intercon} master_apm {0}}  [get_bd_intf_pins axi_dma_0/M_AXI_SG]
+INFO: [BD 41-3093] Triggering Legacy Auto Assign Algorithm
+Slave segment '/processing_system7_0/S_AXI_HP0/HP0_DDR_LOWOCM' is being assigned into address space '/axi_dma_0/Data_SG' at <0x0000_0000 [ 512M ]>.
+endgroup
+update_ip_catalog -rebuild
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository '/home/gorruy/Desktop/diploma--2-/src'.
+WARNING: [IP_Flow 19-2248] Failed to load user IP repository '/home/gorruy/Desktop/diploma--2-/ip_repo/matrix_mul_1_0'; Can't find the specified path.
+If this directory should no longer be in your list of user repositories, go to the IP Settings dialog and remove it.
+WARNING: [IP_Flow 19-2248] Failed to load user IP repository '/home/gorruy/Desktop/diploma--2-/ip/matrix_slave_1_0'; Can't find the specified path.
+If this directory should no longer be in your list of user repositories, go to the IP Settings dialog and remove it.
+set_property  ip_repo_paths  {/home/gorruy/Desktop/diploma--2-/src /home/gorruy/Desktop/diploma--2-/src/xgui /home/gorruy/Desktop/diploma--2-/ip_repo/matrix_mul_1_0 /home/gorruy/Desktop/diploma--2-/ip/matrix_slave_1_0} [current_project]
+update_ip_catalog
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository '/home/gorruy/Desktop/diploma--2-/src'.
+WARNING: [IP_Flow 19-3685] Ignored loading user repository '/home/gorruy/Desktop/diploma--2-/src/xgui'. The path is contained within another repository.
+WARNING: [IP_Flow 19-2248] Failed to load user IP repository '/home/gorruy/Desktop/diploma--2-/ip_repo/matrix_mul_1_0'; Can't find the specified path.
+If this directory should no longer be in your list of user repositories, go to the IP Settings dialog and remove it.
+WARNING: [IP_Flow 19-2248] Failed to load user IP repository '/home/gorruy/Desktop/diploma--2-/ip/matrix_slave_1_0'; Can't find the specified path.
+If this directory should no longer be in your list of user repositories, go to the IP Settings dialog and remove it.
+set_property  ip_repo_paths  {/home/gorruy/Desktop/diploma--2-/src /home/gorruy/Desktop/diploma--2-/src/xgui /home/gorruy/Desktop/diploma--2-/ip_repo/matrix_mul_1_0 /home/gorruy/Desktop/diploma--2-/ip/matrix_slave_1_0 /home/gorruy/Desktop/diploma--2-} [current_project]
+update_ip_catalog
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+WARNING: [IP_Flow 19-3685] Ignored loading user repository '/home/gorruy/Desktop/diploma--2-/src'. The path is contained within another repository.
+WARNING: [IP_Flow 19-3685] Ignored loading user repository '/home/gorruy/Desktop/diploma--2-/src/xgui'. The path is contained within another repository.
+WARNING: [IP_Flow 19-3685] Ignored loading user repository '/home/gorruy/Desktop/diploma--2-/ip_repo/matrix_mul_1_0'. The path is contained within another repository.
+WARNING: [IP_Flow 19-3685] Ignored loading user repository '/home/gorruy/Desktop/diploma--2-/ip/matrix_slave_1_0'. The path is contained within another repository.
+INFO: [IP_Flow 19-1700] Loaded user IP repository '/home/gorruy/Desktop/diploma--2-'.
+WARNING: [IP_Flow 19-3656] If you move the project, the path for repository '/home/gorruy/Desktop/diploma--2-' may become invalid. A better location for the repository would be in a path adjacent to the project. (Current project location is '/home/gorruy/Desktop/diploma--2-/vivado'.)
+open_bd_design {/home/gorruy/Desktop/diploma--2-/vivado/zynq_test.srcs/sources_1/bd/system/system.bd}
+open_bd_design {/home/gorruy/Desktop/diploma--2-/vivado/zynq_test.srcs/sources_1/bd/system/system.bd}
+open_bd_design {/home/gorruy/Desktop/diploma--2-/vivado/zynq_test.srcs/sources_1/bd/system/system.bd}
+open_bd_design {/home/gorruy/Desktop/diploma--2-/vivado/zynq_test.srcs/sources_1/bd/system/system.bd}
+startgroup
+create_bd_cell -type ip -vlnv user.org:user:acc_top:1.0 acc_top_0
+endgroup
+set_property location {2 307 760} [get_bd_cells acc_top_0]
+connect_bd_net [get_bd_pins acc_top_0/s00_axis_tdata] [get_bd_pins axi_dma_0/m_axis_mm2s_tdata]
+WARNING: [BD 41-1306] The connection to interface pin </acc_top_0/s00_axis_tdata> is being overridden by the user with net <axi_dma_0_m_axis_mm2s_tdata>. This pin will not be connected as a part of interface connection <s00_axis>, and might not recreate the connectivity as expected using the writ_bd_tcl command.
+WARNING: [BD 41-1306] The connection to interface pin </axi_dma_0/m_axis_mm2s_tdata> is being overridden by the user with net <axi_dma_0_m_axis_mm2s_tdata>. This pin will not be connected as a part of interface connection <M_AXIS_MM2S>, and might not recreate the connectivity as expected using the writ_bd_tcl command.
+connect_bd_net [get_bd_pins acc_top_0/s00_axis_tstrb] [get_bd_pins axi_dma_0/m_axis_mm2s_tkeep]
+WARNING: [BD 41-1306] The connection to interface pin </acc_top_0/s00_axis_tstrb> is being overridden by the user with net <axi_dma_0_m_axis_mm2s_tkeep>. This pin will not be connected as a part of interface connection <s00_axis>, and might not recreate the connectivity as expected using the writ_bd_tcl command.
+WARNING: [BD 41-1306] The connection to interface pin </axi_dma_0/m_axis_mm2s_tkeep> is being overridden by the user with net <axi_dma_0_m_axis_mm2s_tkeep>. This pin will not be connected as a part of interface connection <M_AXIS_MM2S>, and might not recreate the connectivity as expected using the writ_bd_tcl command.
+connect_bd_net [get_bd_pins acc_top_0/s00_axis_tlast] [get_bd_pins axi_dma_0/m_axis_mm2s_tlast]
+WARNING: [BD 41-1306] The connection to interface pin </acc_top_0/s00_axis_tlast> is being overridden by the user with net <axi_dma_0_m_axis_mm2s_tlast>. This pin will not be connected as a part of interface connection <s00_axis>, and might not recreate the connectivity as expected using the writ_bd_tcl command.
+WARNING: [BD 41-1306] The connection to interface pin </axi_dma_0/m_axis_mm2s_tlast> is being overridden by the user with net <axi_dma_0_m_axis_mm2s_tlast>. This pin will not be connected as a part of interface connection <M_AXIS_MM2S>, and might not recreate the connectivity as expected using the writ_bd_tcl command.
+connect_bd_net [get_bd_pins acc_top_0/s00_axis_tvalid] [get_bd_pins axi_dma_0/m_axis_mm2s_tvalid]
+WARNING: [BD 41-1306] The connection to interface pin </acc_top_0/s00_axis_tvalid> is being overridden by the user with net <axi_dma_0_m_axis_mm2s_tvalid>. This pin will not be connected as a part of interface connection <s00_axis>, and might not recreate the connectivity as expected using the writ_bd_tcl command.
+WARNING: [BD 41-1306] The connection to interface pin </axi_dma_0/m_axis_mm2s_tvalid> is being overridden by the user with net <axi_dma_0_m_axis_mm2s_tvalid>. This pin will not be connected as a part of interface connection <M_AXIS_MM2S>, and might not recreate the connectivity as expected using the writ_bd_tcl command.
+connect_bd_net [get_bd_pins acc_top_0/s00_axis_tready] [get_bd_pins axi_dma_0/m_axis_mm2s_tready]
+WARNING: [BD 41-1306] The connection to interface pin </acc_top_0/s00_axis_tready> is being overridden by the user with net <acc_top_0_s00_axis_tready>. This pin will not be connected as a part of interface connection <s00_axis>, and might not recreate the connectivity as expected using the writ_bd_tcl command.
+WARNING: [BD 41-1306] The connection to interface pin </axi_dma_0/m_axis_mm2s_tready> is being overridden by the user with net <acc_top_0_s00_axis_tready>. This pin will not be connected as a part of interface connection <M_AXIS_MM2S>, and might not recreate the connectivity as expected using the writ_bd_tcl command.
+connect_bd_net [get_bd_pins acc_top_0/m00_axis_tdata] [get_bd_pins axi_dma_0/s_axis_s2mm_tdata]
+WARNING: [BD 41-1306] The connection to interface pin </acc_top_0/m00_axis_tdata> is being overridden by the user with net <acc_top_0_m00_axis_tdata>. This pin will not be connected as a part of interface connection <m00_axis>, and might not recreate the connectivity as expected using the writ_bd_tcl command.
+WARNING: [BD 41-1306] The connection to interface pin </axi_dma_0/s_axis_s2mm_tdata> is being overridden by the user with net <acc_top_0_m00_axis_tdata>. This pin will not be connected as a part of interface connection <S_AXIS_S2MM>, and might not recreate the connectivity as expected using the writ_bd_tcl command.
+connect_bd_net [get_bd_pins acc_top_0/m00_axis_tstrb] [get_bd_pins axi_dma_0/s_axis_s2mm_tkeep]
+WARNING: [BD 41-1306] The connection to interface pin </acc_top_0/m00_axis_tstrb> is being overridden by the user with net <acc_top_0_m00_axis_tstrb>. This pin will not be connected as a part of interface connection <m00_axis>, and might not recreate the connectivity as expected using the writ_bd_tcl command.
+WARNING: [BD 41-1306] The connection to interface pin </axi_dma_0/s_axis_s2mm_tkeep> is being overridden by the user with net <acc_top_0_m00_axis_tstrb>. This pin will not be connected as a part of interface connection <S_AXIS_S2MM>, and might not recreate the connectivity as expected using the writ_bd_tcl command.
+connect_bd_net [get_bd_pins acc_top_0/m00_axis_tlast] [get_bd_pins axi_dma_0/s_axis_s2mm_tlast]
+WARNING: [BD 41-1306] The connection to interface pin </acc_top_0/m00_axis_tlast> is being overridden by the user with net <acc_top_0_m00_axis_tlast>. This pin will not be connected as a part of interface connection <m00_axis>, and might not recreate the connectivity as expected using the writ_bd_tcl command.
+WARNING: [BD 41-1306] The connection to interface pin </axi_dma_0/s_axis_s2mm_tlast> is being overridden by the user with net <acc_top_0_m00_axis_tlast>. This pin will not be connected as a part of interface connection <S_AXIS_S2MM>, and might not recreate the connectivity as expected using the writ_bd_tcl command.
+connect_bd_net [get_bd_pins acc_top_0/m00_axis_tvalid] [get_bd_pins axi_dma_0/s_axis_s2mm_tvalid]
+WARNING: [BD 41-1306] The connection to interface pin </acc_top_0/m00_axis_tvalid> is being overridden by the user with net <acc_top_0_m00_axis_tvalid>. This pin will not be connected as a part of interface connection <m00_axis>, and might not recreate the connectivity as expected using the writ_bd_tcl command.
+WARNING: [BD 41-1306] The connection to interface pin </axi_dma_0/s_axis_s2mm_tvalid> is being overridden by the user with net <acc_top_0_m00_axis_tvalid>. This pin will not be connected as a part of interface connection <S_AXIS_S2MM>, and might not recreate the connectivity as expected using the writ_bd_tcl command.
+connect_bd_net [get_bd_pins acc_top_0/m00_axis_tready] [get_bd_pins axi_dma_0/s_axis_s2mm_tready]
+WARNING: [BD 41-1306] The connection to interface pin </acc_top_0/m00_axis_tready> is being overridden by the user with net <axi_dma_0_s_axis_s2mm_tready>. This pin will not be connected as a part of interface connection <m00_axis>, and might not recreate the connectivity as expected using the writ_bd_tcl command.
+WARNING: [BD 41-1306] The connection to interface pin </axi_dma_0/s_axis_s2mm_tready> is being overridden by the user with net <axi_dma_0_s_axis_s2mm_tready>. This pin will not be connected as a part of interface connection <S_AXIS_S2MM>, and might not recreate the connectivity as expected using the writ_bd_tcl command.
+save_bd_design
+Wrote  : </home/gorruy/Desktop/diploma--2-/vivado/zynq_test.srcs/sources_1/bd/system/system.bd> 
+Wrote  : </home/gorruy/Desktop/diploma--2-/vivado/zynq_test.srcs/sources_1/bd/system/ui/bd_c954508f.ui> 
+launch_runs synth_1 -jobs 8
+ERROR: [BD 41-758] The following clock pins are not connected to a valid clock source: 
+/acc_top_0/s00_axis_aclk
+
+ERROR: [BD 41-1031] Hdl Generation failed for the IP Integrator design /home/gorruy/Desktop/diploma--2-/vivado/zynq_test.srcs/sources_1/bd/system/system.bd 
+INFO: [IP_Flow 19-6930] IPCACHE: runCacheChecks() number of threads = 8
+INFO: [IP_Flow 19-6921] IPCACHE: Adding cache check func to thread queue for IP system_acc_top_0_0
+INFO: [IP_Flow 19-6921] IPCACHE: Adding cache check func to thread queue for IP system_axi_dma_0_0
+INFO: [IP_Flow 19-6921] IPCACHE: Adding cache check func to thread queue for IP system_axi_mem_intercon_imp_xbar_0
+INFO: [IP_Flow 19-6921] IPCACHE: Adding cache check func to thread queue for IP system_axi_smc_1
+INFO: [IP_Flow 19-6921] IPCACHE: Adding cache check func to thread queue for IP system_rst_ps7_0_200M_1
+INFO: [IP_Flow 19-8020] IPCACHE: runCacheChecks() calling threadPool finishWork()
+INFO: [IP_Flow 19-6924] IPCACHE: Running cache check for IP inst: system_acc_top_0_0
+INFO: [IP_Flow 19-6924] IPCACHE: Running cache check for IP inst: system_axi_dma_0_0
+INFO: [IP_Flow 19-6924] IPCACHE: Running cache check for IP inst: system_axi_mem_intercon_imp_xbar_0
+INFO: [IP_Flow 19-6924] IPCACHE: Running cache check for IP inst: system_axi_smc_1
+INFO: [IP_Flow 19-6924] IPCACHE: Running cache check for IP inst: system_rst_ps7_0_200M_1
+ERROR: [Vivado 12-4756] Launch of runs aborted due to earlier errors while preparing sub-designs for run execution.
+connect_bd_net [get_bd_pins acc_top_0/s00_axis_aclk] [get_bd_pins processing_system7_0/FCLK_CLK0]
+connect_bd_net [get_bd_pins acc_top_0/s00_axis_aresetn] [get_bd_pins rst_ps7_0_200M/peripheral_aresetn]
+save_bd_design
+Wrote  : </home/gorruy/Desktop/diploma--2-/vivado/zynq_test.srcs/sources_1/bd/system/system.bd> 
+Wrote  : </home/gorruy/Desktop/diploma--2-/vivado/zynq_test.srcs/sources_1/bd/system/ui/bd_c954508f.ui> 
+launch_runs synth_1 -jobs 8
+WARNING: [BD 41-702] Propagation TCL tries to overwrite USER strength parameter In0_width(4) on '/xlconcat_0' with propagated value(8). Command ignored
+INFO: [BD 5-943] Reserving offset range <0x4040_0000 [ 64K ]> from slave interface '/axi_smc/S00_AXI' to master interface '/axi_smc/M00_AXI'. This will be used by smartconnect on path for routing.
+INFO: [xilinx.com:ip:smartconnect:1.0-1] system_axi_smc_1: SmartConnect system_axi_smc_1 is in Low-Area Mode.
+WARNING: [xilinx.com:ip:smartconnect:1.0-1] system_axi_smc_1: IP system_axi_smc_1 is configured in Low-area mode as all propagated traffic is low-bandwidth (AXI4LITE). SI S00_AXI has property HAS_BURST == 1. WRAP bursts are not supported in Low-area mode and will result in DECERR if received.
+WARNING: [xilinx.com:ip:smartconnect:1.0-1] system_axi_smc_1: If WRAP transactions are required then turn off Low-area mode using ADVANCED_PROPERTIES. Execute following: set_property CONFIG.ADVANCED_PROPERTIES {__experimental_features__ {disable_low_area_mode 1}} [get_bd_cells /system_axi_smc_1]
+CRITICAL WARNING: [BD 41-967] AXI interface pin /acc_top_0/m00_axis is not associated to any clock pin. It may not work correctly.
+CRITICAL WARNING: [xilinx.com:ip:axi_dma:7.1-11] /axi_dma_0
+                   #################################### 
+                   S_AXIS_S2MM interface is unconnected
+                   ####################################
+Wrote  : </home/gorruy/Desktop/diploma--2-/vivado/zynq_test.srcs/sources_1/bd/system/system.bd> 
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/axi_mem_intercon/m00_couplers/auto_pc/m_axi_rid'(2) to pin: '/axi_mem_intercon/m00_couplers/M_AXI_rid'(6) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/axi_mem_intercon/m00_couplers/auto_pc/m_axi_bid'(2) to pin: '/axi_mem_intercon/m00_couplers/M_AXI_bid'(6) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/processing_system7_0/S_AXI_HP0_ARID'(6) to pin: '/axi_mem_intercon/M00_AXI_arid'(2) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/processing_system7_0/S_AXI_HP0_AWID'(6) to pin: '/axi_mem_intercon/M00_AXI_awid'(2) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/processing_system7_0/S_AXI_HP0_WID'(6) to pin: '/axi_mem_intercon/M00_AXI_wid'(2) - Only lower order bits will be connected.
+CRITICAL WARNING: [BD 41-2383] Width mismatch when connecting input pin '/xlconcat_0/In0'(4) to pin '/processing_system7_0/ENET0_GMII_TXD'(8) - Only lower order bits will be connected, and other input bits of this pin will be left unconnected.
+Verilog Output written to : /home/gorruy/Desktop/diploma--2-/vivado/zynq_test.gen/sources_1/bd/system/synth/system.v
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/axi_mem_intercon/m00_couplers/auto_pc/m_axi_rid'(2) to pin: '/axi_mem_intercon/m00_couplers/M_AXI_rid'(6) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/axi_mem_intercon/m00_couplers/auto_pc/m_axi_bid'(2) to pin: '/axi_mem_intercon/m00_couplers/M_AXI_bid'(6) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/processing_system7_0/S_AXI_HP0_ARID'(6) to pin: '/axi_mem_intercon/M00_AXI_arid'(2) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/processing_system7_0/S_AXI_HP0_AWID'(6) to pin: '/axi_mem_intercon/M00_AXI_awid'(2) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/processing_system7_0/S_AXI_HP0_WID'(6) to pin: '/axi_mem_intercon/M00_AXI_wid'(2) - Only lower order bits will be connected.
+CRITICAL WARNING: [BD 41-2383] Width mismatch when connecting input pin '/xlconcat_0/In0'(4) to pin '/processing_system7_0/ENET0_GMII_TXD'(8) - Only lower order bits will be connected, and other input bits of this pin will be left unconnected.
+Verilog Output written to : /home/gorruy/Desktop/diploma--2-/vivado/zynq_test.gen/sources_1/bd/system/sim/system.v
+Verilog Output written to : /home/gorruy/Desktop/diploma--2-/vivado/zynq_test.gen/sources_1/bd/system/hdl/system_wrapper.v
+INFO: [IP_Flow 19-5611] Unable to find an associated reset port for the interface 'M_AXI_GP0'. A default connection has been created.
+INFO: [IP_Flow 19-5611] Unable to find an associated reset port for the interface 'S_AXI_HP0'. A default connection has been created.
+INFO: [BD 41-1029] Generation completed for the IP Integrator block processing_system7_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block xlconcat_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block xlconcat_1 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block axi_dma_0 .
+Exporting to file /home/gorruy/Desktop/diploma--2-/vivado/zynq_test.gen/sources_1/bd/system/ip/system_axi_smc_1/bd_0/hw_handoff/system_axi_smc_1.hwh
+Generated Hardware Definition File /home/gorruy/Desktop/diploma--2-/vivado/zynq_test.gen/sources_1/bd/system/ip/system_axi_smc_1/bd_0/synth/system_axi_smc_1.hwdef
+INFO: [BD 41-1029] Generation completed for the IP Integrator block axi_smc .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block rst_ps7_0_200M .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block axi_mem_intercon/xbar .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block acc_top_0 .
+WARNING: [IP_Flow 19-4994] Overwriting existing constraint file '/home/gorruy/Desktop/diploma--2-/vivado/zynq_test.gen/sources_1/bd/system/ip/system_axi_mem_intercon_imp_auto_us_0/system_axi_mem_intercon_imp_auto_us_0_ooc.xdc'
+INFO: [BD 41-1029] Generation completed for the IP Integrator block axi_mem_intercon/s00_couplers/auto_us .
+WARNING: [IP_Flow 19-4994] Overwriting existing constraint file '/home/gorruy/Desktop/diploma--2-/vivado/zynq_test.gen/sources_1/bd/system/ip/system_axi_mem_intercon_imp_auto_us_1/system_axi_mem_intercon_imp_auto_us_1_ooc.xdc'
+INFO: [BD 41-1029] Generation completed for the IP Integrator block axi_mem_intercon/s01_couplers/auto_us .
+WARNING: [IP_Flow 19-4994] Overwriting existing constraint file '/home/gorruy/Desktop/diploma--2-/vivado/zynq_test.gen/sources_1/bd/system/ip/system_axi_mem_intercon_imp_auto_us_2/system_axi_mem_intercon_imp_auto_us_2_ooc.xdc'
+INFO: [BD 41-1029] Generation completed for the IP Integrator block axi_mem_intercon/s02_couplers/auto_us .
+WARNING: [IP_Flow 19-4994] Overwriting existing constraint file '/home/gorruy/Desktop/diploma--2-/vivado/zynq_test.gen/sources_1/bd/system/ip/system_axi_mem_intercon_imp_auto_pc_0/system_axi_mem_intercon_imp_auto_pc_0_ooc.xdc'
+INFO: [BD 41-1029] Generation completed for the IP Integrator block axi_mem_intercon/m00_couplers/auto_pc .
+Exporting to file /home/gorruy/Desktop/diploma--2-/vivado/zynq_test.gen/sources_1/bd/system/hw_handoff/system.hwh
+Generated Hardware Definition File /home/gorruy/Desktop/diploma--2-/vivado/zynq_test.gen/sources_1/bd/system/synth/system.hwdef
+INFO: [IP_Flow 19-6930] IPCACHE: runCacheChecks() number of threads = 8
+INFO: [IP_Flow 19-6921] IPCACHE: Adding cache check func to thread queue for IP system_acc_top_0_0
+INFO: [IP_Flow 19-6921] IPCACHE: Adding cache check func to thread queue for IP system_axi_dma_0_0
+INFO: [IP_Flow 19-6921] IPCACHE: Adding cache check func to thread queue for IP system_axi_mem_intercon_imp_auto_pc_0
+INFO: [IP_Flow 19-6921] IPCACHE: Adding cache check func to thread queue for IP system_axi_mem_intercon_imp_auto_us_0
+INFO: [IP_Flow 19-6921] IPCACHE: Adding cache check func to thread queue for IP system_axi_mem_intercon_imp_auto_us_1
+INFO: [IP_Flow 19-6921] IPCACHE: Adding cache check func to thread queue for IP system_axi_mem_intercon_imp_auto_us_2
+INFO: [IP_Flow 19-6921] IPCACHE: Adding cache check func to thread queue for IP system_axi_mem_intercon_imp_xbar_0
+INFO: [IP_Flow 19-6921] IPCACHE: Adding cache check func to thread queue for IP system_axi_smc_1
+INFO: [IP_Flow 19-6921] IPCACHE: Adding cache check func to thread queue for IP system_rst_ps7_0_200M_1
+INFO: [IP_Flow 19-8020] IPCACHE: runCacheChecks() calling threadPool finishWork()
+INFO: [IP_Flow 19-6924] IPCACHE: Running cache check for IP inst: system_acc_top_0_0
+INFO: [IP_Flow 19-6924] IPCACHE: Running cache check for IP inst: system_axi_dma_0_0
+INFO: [IP_Flow 19-6924] IPCACHE: Running cache check for IP inst: system_axi_mem_intercon_imp_auto_pc_0
+INFO: [IP_Flow 19-6924] IPCACHE: Running cache check for IP inst: system_axi_mem_intercon_imp_auto_us_0
+INFO: [IP_Flow 19-6924] IPCACHE: Running cache check for IP inst: system_axi_mem_intercon_imp_auto_us_1
+INFO: [IP_Flow 19-6924] IPCACHE: Running cache check for IP inst: system_axi_mem_intercon_imp_auto_us_2
+INFO: [IP_Flow 19-6924] IPCACHE: Running cache check for IP inst: system_axi_mem_intercon_imp_xbar_0
+INFO: [IP_Flow 19-6924] IPCACHE: Running cache check for IP inst: system_axi_smc_1
+INFO: [IP_Flow 19-6924] IPCACHE: Running cache check for IP inst: system_rst_ps7_0_200M_1
+[Sun May 25 22:06:04 2025] Launched system_processing_system7_0_0_synth_1, system_axi_smc_1_synth_1, system_rst_ps7_0_200M_1_synth_1, system_axi_dma_0_0_synth_1, system_axi_mem_intercon_imp_xbar_0_synth_1, system_acc_top_0_0_synth_1, system_axi_mem_intercon_imp_auto_pc_0_synth_1, system_axi_mem_intercon_imp_auto_us_2_synth_1, system_axi_mem_intercon_imp_auto_us_1_synth_1, system_axi_mem_intercon_imp_auto_us_0_synth_1...
+Run output will be captured here:
+system_processing_system7_0_0_synth_1: /home/gorruy/Desktop/diploma--2-/vivado/zynq_test.runs/system_processing_system7_0_0_synth_1/runme.log
+system_axi_smc_1_synth_1: /home/gorruy/Desktop/diploma--2-/vivado/zynq_test.runs/system_axi_smc_1_synth_1/runme.log
+system_rst_ps7_0_200M_1_synth_1: /home/gorruy/Desktop/diploma--2-/vivado/zynq_test.runs/system_rst_ps7_0_200M_1_synth_1/runme.log
+system_axi_dma_0_0_synth_1: /home/gorruy/Desktop/diploma--2-/vivado/zynq_test.runs/system_axi_dma_0_0_synth_1/runme.log
+system_axi_mem_intercon_imp_xbar_0_synth_1: /home/gorruy/Desktop/diploma--2-/vivado/zynq_test.runs/system_axi_mem_intercon_imp_xbar_0_synth_1/runme.log
+system_acc_top_0_0_synth_1: /home/gorruy/Desktop/diploma--2-/vivado/zynq_test.runs/system_acc_top_0_0_synth_1/runme.log
+system_axi_mem_intercon_imp_auto_pc_0_synth_1: /home/gorruy/Desktop/diploma--2-/vivado/zynq_test.runs/system_axi_mem_intercon_imp_auto_pc_0_synth_1/runme.log
+system_axi_mem_intercon_imp_auto_us_2_synth_1: /home/gorruy/Desktop/diploma--2-/vivado/zynq_test.runs/system_axi_mem_intercon_imp_auto_us_2_synth_1/runme.log
+system_axi_mem_intercon_imp_auto_us_1_synth_1: /home/gorruy/Desktop/diploma--2-/vivado/zynq_test.runs/system_axi_mem_intercon_imp_auto_us_1_synth_1/runme.log
+system_axi_mem_intercon_imp_auto_us_0_synth_1: /home/gorruy/Desktop/diploma--2-/vivado/zynq_test.runs/system_axi_mem_intercon_imp_auto_us_0_synth_1/runme.log
+[Sun May 25 22:06:04 2025] Launched synth_1...
+Run output will be captured here: /home/gorruy/Desktop/diploma--2-/vivado/zynq_test.runs/synth_1/runme.log
+launch_runs: Time (s): cpu = 00:00:48 ; elapsed = 00:01:08 . Memory (MB): peak = 8934.215 ; gain = 204.027 ; free physical = 325 ; free virtual = 4186

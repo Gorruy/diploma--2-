@@ -1,0 +1,147 @@
+#-----------------------------------------------------------
+# Vivado v2024.2.2 (64-bit)
+# SW Build 6060944 on Thu Mar 06 19:10:09 MST 2025
+# IP Build 6050500 on Thu Mar  6 23:33:39 MST 2025
+# SharedData Build 6060542 on Thu Mar 06 10:31:07 MST 2025
+# Start of session at: Mon May 26 02:42:33 2025
+# Process ID         : 3145
+# Current directory  : /home/gorruy/Desktop/diploma--2-
+# Command line       : vivado ./
+# Log file           : /home/gorruy/Desktop/diploma--2-/vivado.log
+# Journal file       : /home/gorruy/Desktop/diploma--2-/vivado.jou
+# Running On         : gorruy-TUF-Gaming-FX705DY-FX705DY
+# Platform           : Ubuntu
+# Operating System   : Ubuntu 22.04.5 LTS
+# Processor Detail   : AMD Ryzen 5 3550H with Radeon Vega Mobile Gfx
+# CPU Frequency      : 2989.798 MHz
+# CPU Physical cores : 4
+# CPU Logical cores  : 8
+# Host memory        : 8124 MB
+# Swap memory        : 2147 MB
+# Total Virtual      : 10271 MB
+# Available Virtual  : 8682 MB
+#-----------------------------------------------------------
+start_gui
+open_project /home/gorruy/Desktop/diploma--2-/vivado/zynq_test.xpr
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu208ld:part0:2.0 available at /mnt/big_chungus/vivado_/Vivado/2024.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu208ld/production/2.0/board.xml as part xczu58dr-fsvg1517-2-i specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu216ld:part0:2.0 available at /mnt/big_chungus/vivado_/Vivado/2024.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu216ld/production/2.0/board.xml as part xczu59dr-ffvf1760-2-i specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu670ld:part0:1.0 available at /mnt/big_chungus/vivado_/Vivado/2024.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu670ld/1.0/board.xml as part xczu57dr-fsve1156-2-i specified in board_part file is either invalid or not available
+WARNING: [filemgmt 56-3] IP Repository Path: Could not find the directory '/home/gorruy/Desktop/diploma--2-/ip_repo/matrix_mul_1_0'.
+WARNING: [filemgmt 56-3] IP Repository Path: Could not find the directory '/home/gorruy/Desktop/diploma--2-/ip/matrix_slave_1_0'.
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+WARNING: [IP_Flow 19-3685] Ignored loading user repository '/home/gorruy/Desktop/diploma--2-/src'. The path is contained within another repository.
+WARNING: [IP_Flow 19-3685] Ignored loading user repository '/home/gorruy/Desktop/diploma--2-/src/xgui'. The path is contained within another repository.
+WARNING: [IP_Flow 19-3685] Ignored loading user repository '/home/gorruy/Desktop/diploma--2-/ip_repo/matrix_mul_1_0'. The path is contained within another repository.
+WARNING: [IP_Flow 19-3685] Ignored loading user repository '/home/gorruy/Desktop/diploma--2-/ip/matrix_slave_1_0'. The path is contained within another repository.
+INFO: [IP_Flow 19-1700] Loaded user IP repository '/home/gorruy/Desktop/diploma--2-'.
+WARNING: [IP_Flow 19-3656] If you move the project, the path for repository '/home/gorruy/Desktop/diploma--2-' may become invalid. A better location for the repository would be in a path adjacent to the project. (Current project location is '/home/gorruy/Desktop/diploma--2-/vivado'.)
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository '/mnt/big_chungus/vivado_/Vivado/2024.2/data/ip'.
+WARNING: [IP_Flow 19-3664] IP 'system_processing_system7_0_0' generated file not found '/home/gorruy/Desktop/diploma--2-/vivado/zynq_test.gen/sources_1/bd/system/ip/system_processing_system7_0_0/system_processing_system7_0_0.dcp'. Please regenerate to continue.
+WARNING: [IP_Flow 19-3664] IP 'system_processing_system7_0_0' generated file not found '/home/gorruy/Desktop/diploma--2-/vivado/zynq_test.gen/sources_1/bd/system/ip/system_processing_system7_0_0/system_processing_system7_0_0_stub.v'. Please regenerate to continue.
+WARNING: [IP_Flow 19-3664] IP 'system_processing_system7_0_0' generated file not found '/home/gorruy/Desktop/diploma--2-/vivado/zynq_test.gen/sources_1/bd/system/ip/system_processing_system7_0_0/system_processing_system7_0_0_stub.vhdl'. Please regenerate to continue.
+WARNING: [IP_Flow 19-3664] IP 'system_processing_system7_0_0' generated file not found '/home/gorruy/Desktop/diploma--2-/vivado/zynq_test.gen/sources_1/bd/system/ip/system_processing_system7_0_0/system_processing_system7_0_0_sim_netlist.v'. Please regenerate to continue.
+WARNING: [IP_Flow 19-3664] IP 'system_processing_system7_0_0' generated file not found '/home/gorruy/Desktop/diploma--2-/vivado/zynq_test.gen/sources_1/bd/system/ip/system_processing_system7_0_0/system_processing_system7_0_0_sim_netlist.vhdl'. Please regenerate to continue.
+WARNING: [IP_Flow 19-3664] IP 'system_axi_dma_0_0' generated file not found '/home/gorruy/Desktop/diploma--2-/vivado/zynq_test.gen/sources_1/bd/system/ip/system_axi_dma_0_0/system_axi_dma_0_0.dcp'. Please regenerate to continue.
+WARNING: [IP_Flow 19-3664] IP 'system_axi_dma_0_0' generated file not found '/home/gorruy/Desktop/diploma--2-/vivado/zynq_test.gen/sources_1/bd/system/ip/system_axi_dma_0_0/system_axi_dma_0_0_stub.v'. Please regenerate to continue.
+WARNING: [IP_Flow 19-3664] IP 'system_axi_dma_0_0' generated file not found '/home/gorruy/Desktop/diploma--2-/vivado/zynq_test.gen/sources_1/bd/system/ip/system_axi_dma_0_0/system_axi_dma_0_0_stub.vhdl'. Please regenerate to continue.
+WARNING: [IP_Flow 19-3664] IP 'system_axi_dma_0_0' generated file not found '/home/gorruy/Desktop/diploma--2-/vivado/zynq_test.gen/sources_1/bd/system/ip/system_axi_dma_0_0/system_axi_dma_0_0_sim_netlist.v'. Please regenerate to continue.
+WARNING: [IP_Flow 19-3664] IP 'system_axi_dma_0_0' generated file not found '/home/gorruy/Desktop/diploma--2-/vivado/zynq_test.gen/sources_1/bd/system/ip/system_axi_dma_0_0/system_axi_dma_0_0_sim_netlist.vhdl'. Please regenerate to continue.
+WARNING: [IP_Flow 19-3664] IP 'system_axi_smc_1' generated file not found '/home/gorruy/Desktop/diploma--2-/vivado/zynq_test.gen/sources_1/bd/system/ip/system_axi_smc_1/system_axi_smc_1.dcp'. Please regenerate to continue.
+WARNING: [IP_Flow 19-3664] IP 'system_axi_smc_1' generated file not found '/home/gorruy/Desktop/diploma--2-/vivado/zynq_test.gen/sources_1/bd/system/ip/system_axi_smc_1/system_axi_smc_1_stub.v'. Please regenerate to continue.
+WARNING: [IP_Flow 19-3664] IP 'system_axi_smc_1' generated file not found '/home/gorruy/Desktop/diploma--2-/vivado/zynq_test.gen/sources_1/bd/system/ip/system_axi_smc_1/system_axi_smc_1_stub.vhdl'. Please regenerate to continue.
+WARNING: [IP_Flow 19-3664] IP 'system_axi_smc_1' generated file not found '/home/gorruy/Desktop/diploma--2-/vivado/zynq_test.gen/sources_1/bd/system/ip/system_axi_smc_1/system_axi_smc_1_sim_netlist.v'. Please regenerate to continue.
+WARNING: [IP_Flow 19-3664] IP 'system_axi_smc_1' generated file not found '/home/gorruy/Desktop/diploma--2-/vivado/zynq_test.gen/sources_1/bd/system/ip/system_axi_smc_1/system_axi_smc_1_sim_netlist.vhdl'. Please regenerate to continue.
+WARNING: [IP_Flow 19-3664] IP 'system_rst_ps7_0_200M_1' generated file not found '/home/gorruy/Desktop/diploma--2-/vivado/zynq_test.gen/sources_1/bd/system/ip/system_rst_ps7_0_200M_1/system_rst_ps7_0_200M_1.dcp'. Please regenerate to continue.
+WARNING: [IP_Flow 19-3664] IP 'system_rst_ps7_0_200M_1' generated file not found '/home/gorruy/Desktop/diploma--2-/vivado/zynq_test.gen/sources_1/bd/system/ip/system_rst_ps7_0_200M_1/system_rst_ps7_0_200M_1_stub.v'. Please regenerate to continue.
+WARNING: [IP_Flow 19-3664] IP 'system_rst_ps7_0_200M_1' generated file not found '/home/gorruy/Desktop/diploma--2-/vivado/zynq_test.gen/sources_1/bd/system/ip/system_rst_ps7_0_200M_1/system_rst_ps7_0_200M_1_stub.vhdl'. Please regenerate to continue.
+WARNING: [IP_Flow 19-3664] IP 'system_rst_ps7_0_200M_1' generated file not found '/home/gorruy/Desktop/diploma--2-/vivado/zynq_test.gen/sources_1/bd/system/ip/system_rst_ps7_0_200M_1/system_rst_ps7_0_200M_1_sim_netlist.v'. Please regenerate to continue.
+WARNING: [IP_Flow 19-3664] IP 'system_rst_ps7_0_200M_1' generated file not found '/home/gorruy/Desktop/diploma--2-/vivado/zynq_test.gen/sources_1/bd/system/ip/system_rst_ps7_0_200M_1/system_rst_ps7_0_200M_1_sim_netlist.vhdl'. Please regenerate to continue.
+WARNING: [IP_Flow 19-3664] IP 'system_axi_mem_intercon_imp_xbar_0' generated file not found '/home/gorruy/Desktop/diploma--2-/vivado/zynq_test.gen/sources_1/bd/system/ip/system_axi_mem_intercon_imp_xbar_0/system_axi_mem_intercon_imp_xbar_0.dcp'. Please regenerate to continue.
+WARNING: [IP_Flow 19-3664] IP 'system_axi_mem_intercon_imp_xbar_0' generated file not found '/home/gorruy/Desktop/diploma--2-/vivado/zynq_test.gen/sources_1/bd/system/ip/system_axi_mem_intercon_imp_xbar_0/system_axi_mem_intercon_imp_xbar_0_stub.v'. Please regenerate to continue.
+WARNING: [IP_Flow 19-3664] IP 'system_axi_mem_intercon_imp_xbar_0' generated file not found '/home/gorruy/Desktop/diploma--2-/vivado/zynq_test.gen/sources_1/bd/system/ip/system_axi_mem_intercon_imp_xbar_0/system_axi_mem_intercon_imp_xbar_0_stub.vhdl'. Please regenerate to continue.
+WARNING: [IP_Flow 19-3664] IP 'system_axi_mem_intercon_imp_xbar_0' generated file not found '/home/gorruy/Desktop/diploma--2-/vivado/zynq_test.gen/sources_1/bd/system/ip/system_axi_mem_intercon_imp_xbar_0/system_axi_mem_intercon_imp_xbar_0_sim_netlist.v'. Please regenerate to continue.
+WARNING: [IP_Flow 19-3664] IP 'system_axi_mem_intercon_imp_xbar_0' generated file not found '/home/gorruy/Desktop/diploma--2-/vivado/zynq_test.gen/sources_1/bd/system/ip/system_axi_mem_intercon_imp_xbar_0/system_axi_mem_intercon_imp_xbar_0_sim_netlist.vhdl'. Please regenerate to continue.
+WARNING: [IP_Flow 19-3664] IP 'system_axi_mem_intercon_imp_auto_us_0' generated file not found '/home/gorruy/Desktop/diploma--2-/vivado/zynq_test.gen/sources_1/bd/system/ip/system_axi_mem_intercon_imp_auto_us_0/system_axi_mem_intercon_imp_auto_us_0.dcp'. Please regenerate to continue.
+WARNING: [IP_Flow 19-3664] IP 'system_axi_mem_intercon_imp_auto_us_0' generated file not found '/home/gorruy/Desktop/diploma--2-/vivado/zynq_test.gen/sources_1/bd/system/ip/system_axi_mem_intercon_imp_auto_us_0/system_axi_mem_intercon_imp_auto_us_0_stub.v'. Please regenerate to continue.
+WARNING: [IP_Flow 19-3664] IP 'system_axi_mem_intercon_imp_auto_us_0' generated file not found '/home/gorruy/Desktop/diploma--2-/vivado/zynq_test.gen/sources_1/bd/system/ip/system_axi_mem_intercon_imp_auto_us_0/system_axi_mem_intercon_imp_auto_us_0_stub.vhdl'. Please regenerate to continue.
+WARNING: [IP_Flow 19-3664] IP 'system_axi_mem_intercon_imp_auto_us_0' generated file not found '/home/gorruy/Desktop/diploma--2-/vivado/zynq_test.gen/sources_1/bd/system/ip/system_axi_mem_intercon_imp_auto_us_0/system_axi_mem_intercon_imp_auto_us_0_sim_netlist.v'. Please regenerate to continue.
+WARNING: [IP_Flow 19-3664] IP 'system_axi_mem_intercon_imp_auto_us_0' generated file not found '/home/gorruy/Desktop/diploma--2-/vivado/zynq_test.gen/sources_1/bd/system/ip/system_axi_mem_intercon_imp_auto_us_0/system_axi_mem_intercon_imp_auto_us_0_sim_netlist.vhdl'. Please regenerate to continue.
+WARNING: [IP_Flow 19-3664] IP 'system_axi_mem_intercon_imp_auto_us_1' generated file not found '/home/gorruy/Desktop/diploma--2-/vivado/zynq_test.gen/sources_1/bd/system/ip/system_axi_mem_intercon_imp_auto_us_1/system_axi_mem_intercon_imp_auto_us_1.dcp'. Please regenerate to continue.
+WARNING: [IP_Flow 19-3664] IP 'system_axi_mem_intercon_imp_auto_us_1' generated file not found '/home/gorruy/Desktop/diploma--2-/vivado/zynq_test.gen/sources_1/bd/system/ip/system_axi_mem_intercon_imp_auto_us_1/system_axi_mem_intercon_imp_auto_us_1_stub.v'. Please regenerate to continue.
+WARNING: [IP_Flow 19-3664] IP 'system_axi_mem_intercon_imp_auto_us_1' generated file not found '/home/gorruy/Desktop/diploma--2-/vivado/zynq_test.gen/sources_1/bd/system/ip/system_axi_mem_intercon_imp_auto_us_1/system_axi_mem_intercon_imp_auto_us_1_stub.vhdl'. Please regenerate to continue.
+WARNING: [IP_Flow 19-3664] IP 'system_axi_mem_intercon_imp_auto_us_1' generated file not found '/home/gorruy/Desktop/diploma--2-/vivado/zynq_test.gen/sources_1/bd/system/ip/system_axi_mem_intercon_imp_auto_us_1/system_axi_mem_intercon_imp_auto_us_1_sim_netlist.v'. Please regenerate to continue.
+WARNING: [IP_Flow 19-3664] IP 'system_axi_mem_intercon_imp_auto_us_1' generated file not found '/home/gorruy/Desktop/diploma--2-/vivado/zynq_test.gen/sources_1/bd/system/ip/system_axi_mem_intercon_imp_auto_us_1/system_axi_mem_intercon_imp_auto_us_1_sim_netlist.vhdl'. Please regenerate to continue.
+WARNING: [IP_Flow 19-3664] IP 'system_axi_mem_intercon_imp_auto_us_2' generated file not found '/home/gorruy/Desktop/diploma--2-/vivado/zynq_test.gen/sources_1/bd/system/ip/system_axi_mem_intercon_imp_auto_us_2/system_axi_mem_intercon_imp_auto_us_2.dcp'. Please regenerate to continue.
+WARNING: [IP_Flow 19-3664] IP 'system_axi_mem_intercon_imp_auto_us_2' generated file not found '/home/gorruy/Desktop/diploma--2-/vivado/zynq_test.gen/sources_1/bd/system/ip/system_axi_mem_intercon_imp_auto_us_2/system_axi_mem_intercon_imp_auto_us_2_stub.v'. Please regenerate to continue.
+WARNING: [IP_Flow 19-3664] IP 'system_axi_mem_intercon_imp_auto_us_2' generated file not found '/home/gorruy/Desktop/diploma--2-/vivado/zynq_test.gen/sources_1/bd/system/ip/system_axi_mem_intercon_imp_auto_us_2/system_axi_mem_intercon_imp_auto_us_2_stub.vhdl'. Please regenerate to continue.
+WARNING: [IP_Flow 19-3664] IP 'system_axi_mem_intercon_imp_auto_us_2' generated file not found '/home/gorruy/Desktop/diploma--2-/vivado/zynq_test.gen/sources_1/bd/system/ip/system_axi_mem_intercon_imp_auto_us_2/system_axi_mem_intercon_imp_auto_us_2_sim_netlist.v'. Please regenerate to continue.
+WARNING: [IP_Flow 19-3664] IP 'system_axi_mem_intercon_imp_auto_us_2' generated file not found '/home/gorruy/Desktop/diploma--2-/vivado/zynq_test.gen/sources_1/bd/system/ip/system_axi_mem_intercon_imp_auto_us_2/system_axi_mem_intercon_imp_auto_us_2_sim_netlist.vhdl'. Please regenerate to continue.
+WARNING: [IP_Flow 19-3664] IP 'system_axi_mem_intercon_imp_auto_pc_0' generated file not found '/home/gorruy/Desktop/diploma--2-/vivado/zynq_test.gen/sources_1/bd/system/ip/system_axi_mem_intercon_imp_auto_pc_0/system_axi_mem_intercon_imp_auto_pc_0.dcp'. Please regenerate to continue.
+WARNING: [IP_Flow 19-3664] IP 'system_axi_mem_intercon_imp_auto_pc_0' generated file not found '/home/gorruy/Desktop/diploma--2-/vivado/zynq_test.gen/sources_1/bd/system/ip/system_axi_mem_intercon_imp_auto_pc_0/system_axi_mem_intercon_imp_auto_pc_0_stub.v'. Please regenerate to continue.
+WARNING: [IP_Flow 19-3664] IP 'system_axi_mem_intercon_imp_auto_pc_0' generated file not found '/home/gorruy/Desktop/diploma--2-/vivado/zynq_test.gen/sources_1/bd/system/ip/system_axi_mem_intercon_imp_auto_pc_0/system_axi_mem_intercon_imp_auto_pc_0_stub.vhdl'. Please regenerate to continue.
+WARNING: [IP_Flow 19-3664] IP 'system_axi_mem_intercon_imp_auto_pc_0' generated file not found '/home/gorruy/Desktop/diploma--2-/vivado/zynq_test.gen/sources_1/bd/system/ip/system_axi_mem_intercon_imp_auto_pc_0/system_axi_mem_intercon_imp_auto_pc_0_sim_netlist.v'. Please regenerate to continue.
+WARNING: [IP_Flow 19-3664] IP 'system_axi_mem_intercon_imp_auto_pc_0' generated file not found '/home/gorruy/Desktop/diploma--2-/vivado/zynq_test.gen/sources_1/bd/system/ip/system_axi_mem_intercon_imp_auto_pc_0/system_axi_mem_intercon_imp_auto_pc_0_sim_netlist.vhdl'. Please regenerate to continue.
+WARNING: [IP_Flow 19-3664] IP 'system_acc_top_0_0' generated file not found '/home/gorruy/Desktop/diploma--2-/vivado/zynq_test.gen/sources_1/bd/system/ip/system_acc_top_0_0/system_acc_top_0_0.dcp'. Please regenerate to continue.
+WARNING: [IP_Flow 19-3664] IP 'system_acc_top_0_0' generated file not found '/home/gorruy/Desktop/diploma--2-/vivado/zynq_test.gen/sources_1/bd/system/ip/system_acc_top_0_0/system_acc_top_0_0_stub.v'. Please regenerate to continue.
+WARNING: [IP_Flow 19-3664] IP 'system_acc_top_0_0' generated file not found '/home/gorruy/Desktop/diploma--2-/vivado/zynq_test.gen/sources_1/bd/system/ip/system_acc_top_0_0/system_acc_top_0_0_stub.vhdl'. Please regenerate to continue.
+WARNING: [IP_Flow 19-3664] IP 'system_acc_top_0_0' generated file not found '/home/gorruy/Desktop/diploma--2-/vivado/zynq_test.gen/sources_1/bd/system/ip/system_acc_top_0_0/system_acc_top_0_0_sim_netlist.v'. Please regenerate to continue.
+WARNING: [IP_Flow 19-3664] IP 'system_acc_top_0_0' generated file not found '/home/gorruy/Desktop/diploma--2-/vivado/zynq_test.gen/sources_1/bd/system/ip/system_acc_top_0_0/system_acc_top_0_0_sim_netlist.vhdl'. Please regenerate to continue.
+INFO: [Project 1-5579] Found utility IPs instantiated in one or more block designs which have equivalent inline hdl with improved performance and reduced diskspace. It is recommended to migrate these utility IPs to inline hdl using the command upgrade_project -migrate_to_inline_hdl. The utility IPs may be deprecated in future releases. More information on inline hdl is available in UG994.
+open_project: Time (s): cpu = 00:00:35 ; elapsed = 00:00:43 . Memory (MB): peak = 8290.844 ; gain = 675.039 ; free physical = 1098 ; free virtual = 7175
+update_compile_order -fileset sources_1
+open_bd_design {/home/gorruy/Desktop/diploma--2-/vivado/zynq_test.srcs/sources_1/bd/system/system.bd}
+Reading block design file </home/gorruy/Desktop/diploma--2-/vivado/zynq_test.srcs/sources_1/bd/system/system.bd>...
+Adding component instance block -- xilinx.com:ip:processing_system7:5.5 - processing_system7_0
+Adding component instance block -- xilinx.com:ip:xlconcat:2.1 - xlconcat_0
+Adding component instance block -- xilinx.com:ip:xlconcat:2.1 - xlconcat_1
+Adding component instance block -- xilinx.com:ip:axi_dma:7.1 - axi_dma_0
+Adding component instance block -- xilinx.com:ip:smartconnect:1.0 - axi_smc
+Adding component instance block -- xilinx.com:ip:proc_sys_reset:5.0 - rst_ps7_0_200M
+Adding component instance block -- xilinx.com:ip:axi_interconnect:2.1 - axi_mem_intercon
+Adding component instance block -- xilinx.com:ip:axi_crossbar:2.1 - xbar
+Adding component instance block -- xilinx.com:ip:axi_dwidth_converter:2.1 - auto_us
+Adding component instance block -- xilinx.com:ip:axi_dwidth_converter:2.1 - auto_us
+Adding component instance block -- xilinx.com:ip:axi_dwidth_converter:2.1 - auto_us
+Adding component instance block -- xilinx.com:ip:axi_protocol_converter:2.1 - auto_pc
+Adding component instance block -- user.org:user:acc_top:1.0 - acc_top_0
+Successfully read diagram <system> from block design file </home/gorruy/Desktop/diploma--2-/vivado/zynq_test.srcs/sources_1/bd/system/system.bd>
+open_bd_design: Time (s): cpu = 00:00:06 ; elapsed = 00:00:14 . Memory (MB): peak = 8576.625 ; gain = 0.000 ; free physical = 981 ; free virtual = 7123
+reset_run synth_1
+launch_runs synth_1 -jobs 8
+INFO: [IP_Flow 19-6930] IPCACHE: runCacheChecks() number of threads = 8
+INFO: [IP_Flow 19-6921] IPCACHE: Adding cache check func to thread queue for IP system_acc_top_0_0
+INFO: [IP_Flow 19-6921] IPCACHE: Adding cache check func to thread queue for IP system_axi_dma_0_0
+INFO: [IP_Flow 19-6921] IPCACHE: Adding cache check func to thread queue for IP system_axi_mem_intercon_imp_auto_pc_0
+INFO: [IP_Flow 19-6921] IPCACHE: Adding cache check func to thread queue for IP system_axi_mem_intercon_imp_auto_us_0
+INFO: [IP_Flow 19-6921] IPCACHE: Adding cache check func to thread queue for IP system_axi_mem_intercon_imp_auto_us_1
+INFO: [IP_Flow 19-6921] IPCACHE: Adding cache check func to thread queue for IP system_axi_mem_intercon_imp_auto_us_2
+INFO: [IP_Flow 19-6921] IPCACHE: Adding cache check func to thread queue for IP system_axi_mem_intercon_imp_xbar_0
+INFO: [IP_Flow 19-6921] IPCACHE: Adding cache check func to thread queue for IP system_axi_smc_1
+INFO: [IP_Flow 19-6921] IPCACHE: Adding cache check func to thread queue for IP system_rst_ps7_0_200M_1
+INFO: [IP_Flow 19-8020] IPCACHE: runCacheChecks() calling threadPool finishWork()
+INFO: [IP_Flow 19-6924] IPCACHE: Running cache check for IP inst: system_acc_top_0_0
+INFO: [IP_Flow 19-6924] IPCACHE: Running cache check for IP inst: system_axi_dma_0_0
+INFO: [IP_Flow 19-6924] IPCACHE: Running cache check for IP inst: system_axi_mem_intercon_imp_auto_pc_0
+INFO: [IP_Flow 19-6924] IPCACHE: Running cache check for IP inst: system_axi_mem_intercon_imp_auto_us_0
+INFO: [IP_Flow 19-6924] IPCACHE: Running cache check for IP inst: system_axi_mem_intercon_imp_auto_us_1
+INFO: [IP_Flow 19-6924] IPCACHE: Running cache check for IP inst: system_axi_mem_intercon_imp_auto_us_2
+INFO: [IP_Flow 19-6924] IPCACHE: Running cache check for IP inst: system_axi_mem_intercon_imp_xbar_0
+INFO: [IP_Flow 19-6924] IPCACHE: Running cache check for IP inst: system_axi_smc_1
+INFO: [IP_Flow 19-6924] IPCACHE: Running cache check for IP inst: system_rst_ps7_0_200M_1
+[Mon May 26 02:48:55 2025] Launched system_processing_system7_0_0_synth_1, system_axi_smc_1_synth_1, system_rst_ps7_0_200M_1_synth_1, system_axi_dma_0_0_synth_1, system_axi_mem_intercon_imp_xbar_0_synth_1, system_acc_top_0_0_synth_1, system_axi_mem_intercon_imp_auto_pc_0_synth_1, system_axi_mem_intercon_imp_auto_us_2_synth_1, system_axi_mem_intercon_imp_auto_us_1_synth_1, system_axi_mem_intercon_imp_auto_us_0_synth_1...
+Run output will be captured here:
+system_processing_system7_0_0_synth_1: /home/gorruy/Desktop/diploma--2-/vivado/zynq_test.runs/system_processing_system7_0_0_synth_1/runme.log
+system_axi_smc_1_synth_1: /home/gorruy/Desktop/diploma--2-/vivado/zynq_test.runs/system_axi_smc_1_synth_1/runme.log
+system_rst_ps7_0_200M_1_synth_1: /home/gorruy/Desktop/diploma--2-/vivado/zynq_test.runs/system_rst_ps7_0_200M_1_synth_1/runme.log
+system_axi_dma_0_0_synth_1: /home/gorruy/Desktop/diploma--2-/vivado/zynq_test.runs/system_axi_dma_0_0_synth_1/runme.log
+system_axi_mem_intercon_imp_xbar_0_synth_1: /home/gorruy/Desktop/diploma--2-/vivado/zynq_test.runs/system_axi_mem_intercon_imp_xbar_0_synth_1/runme.log
+system_acc_top_0_0_synth_1: /home/gorruy/Desktop/diploma--2-/vivado/zynq_test.runs/system_acc_top_0_0_synth_1/runme.log
+system_axi_mem_intercon_imp_auto_pc_0_synth_1: /home/gorruy/Desktop/diploma--2-/vivado/zynq_test.runs/system_axi_mem_intercon_imp_auto_pc_0_synth_1/runme.log
+system_axi_mem_intercon_imp_auto_us_2_synth_1: /home/gorruy/Desktop/diploma--2-/vivado/zynq_test.runs/system_axi_mem_intercon_imp_auto_us_2_synth_1/runme.log
+system_axi_mem_intercon_imp_auto_us_1_synth_1: /home/gorruy/Desktop/diploma--2-/vivado/zynq_test.runs/system_axi_mem_intercon_imp_auto_us_1_synth_1/runme.log
+system_axi_mem_intercon_imp_auto_us_0_synth_1: /home/gorruy/Desktop/diploma--2-/vivado/zynq_test.runs/system_axi_mem_intercon_imp_auto_us_0_synth_1/runme.log
+[Mon May 26 02:48:56 2025] Launched synth_1...
+Run output will be captured here: /home/gorruy/Desktop/diploma--2-/vivado/zynq_test.runs/synth_1/runme.log
+launch_runs: Time (s): cpu = 00:00:08 ; elapsed = 00:00:08 . Memory (MB): peak = 8582.340 ; gain = 5.715 ; free physical = 927 ; free virtual = 7088
